@@ -9,7 +9,7 @@ import android.widget.Toast;
 import com.google.mcommerce.sample.android.R;
 
 public class ActivityFirst extends Activity {
-	private static final int REQUEST_CODE = 10;
+	private static final int REQUEST_CODE = -1;
 
 	/** Called when the activity is first created. */
 

@@ -25,7 +25,7 @@ import com.google.mcommerce.sample.android.R;
  * Demonstrates setting size constraints on {@link android.widget.ImageView}
  * 
  */
-public class ImageViewActivtiy extends Activity {
+public class ImageViewActivity extends Activity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

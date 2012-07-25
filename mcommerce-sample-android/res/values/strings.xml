@@ -34,6 +34,10 @@
     <string name="activity_BrowerView">chapter08/BrowerView</string>
     <string name="activity_OauthTaobao">chapter08/OaothTaobao</string>
     <string name="activity_WebView">chapter08/WebView</string>
+    <string name="activity_service">chapter09/Service</string>
+    <string name="activity_binding_service">chapter09/BindingService</string>
+    <string name="activity_messenger_service">chapter09/MessengerService</string>
+    <string name="activity_broadcast_receiver">chapter09/BroadcastReceiver</string>
     <string name="taobao_Mcommerce_android">移动电子商务开发实践：http://code.google.com/p/taobao-sdk-for-android-platform/</string>
     <string name="radio_group_snack">Snack</string>
     <string name="radio_group_selection">"You have selected: "</string>

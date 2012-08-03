@@ -26,6 +26,7 @@
     <string name="activity_Handler">chapter06/Handler</string>
     <string name="activity_ListView">chapter06/ListView</string>
     <string name="activity_Thread">chapter06/Thread</string>
+    <string name="activity_processLifecycle">chapter06/processLifecycle</string>
     <string name="activity_ImageView">chapter07/ImageView</string>
     <string name="activity_SharedPreferences">chapter07/SharedPreferences</string>
     <string name="activity_BasicContentProvider">chapter07/BasicContentProvider</string>
@@ -38,6 +39,9 @@
     <string name="activity_binding_service">chapter09/BindingService</string>
     <string name="activity_messenger_service">chapter09/MessengerService</string>
     <string name="activity_broadcast_receiver">chapter09/BroadcastReceiver</string>
+    <string name="activity_location">chapter09/Location</string>
+    <string name="activity_audio">chapter10/Audio</string>
+    <string name="activity_map">chpter10/Map</string>
     <string name="taobao_Mcommerce_android">移动电子商务开发实践：http://code.google.com/p/taobao-sdk-for-android-platform/</string>
     <string name="radio_group_snack">Snack</string>
     <string name="radio_group_selection">"You have selected: "</string>
@@ -61,7 +65,6 @@
     <string name="radio_button_6">Show contacts</string>
     <string name="radio_button_7">Edit first contact</string>
     <string name="hello_mobile_world">hello mobile world</string>
-    
     <string name="image_view_large_normal">Large image at normal size</string>
     <string name="image_view_large_at_most">Large image scaled to at most 50x50</string>
     <string name="image_view_large_at_most_padded">Large image scaled to at most 70x70 with padding</string>
@@ -80,5 +83,6 @@
     <string name="update">修改</string>
     <string name="button_search">搜索</string>
     <string name="input_keyword">输入单词</string>
+    <string name="directions">Press a button to hear a sound: Up, right, down, left, enter, A, S, D, or F.</string>
 
 </resources>

@@ -14,6 +14,8 @@
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
     <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -232,6 +234,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter06.ProcessLifecycleActivity"
+            android:label="@string/activity_processLifecycle"
+            android:process="com.taobao.mcommerce.sample" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter07.ImageViewActivity"
             android:label="@string/activity_ImageView" >
             <intent-filter>
@@ -372,6 +384,36 @@
                 </action>
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name="com.google.mcommerce.sample.android.chapter10.LocationActivity"
+            android:label="@string/activity_location" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.mcommerce.sample.android.chapter10.AudioActivity"
+            android:label="@string/activity_audio" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.mcommerce.sample.android.chapter10.MapActivity"
+            android:label="@string/activity_map" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
+        <uses-library android:name="com.google.android.maps" />
     </application>
 
 </manifest>

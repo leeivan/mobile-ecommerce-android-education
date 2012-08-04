@@ -244,6 +244,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter06.SearchProductsAPIActivity"
+            android:label="@string/search_product_api"
+            android:process="com.taobao.mcommerce.sample" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter07.ImageViewActivity"
             android:label="@string/activity_ImageView" >
             <intent-filter>

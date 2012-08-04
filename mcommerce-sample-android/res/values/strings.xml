@@ -26,7 +26,8 @@
     <string name="activity_Handler">chapter06/Handler</string>
     <string name="activity_ListView">chapter06/ListView</string>
     <string name="activity_Thread">chapter06/Thread</string>
-    <string name="activity_processLifecycle">chapter06/processLifecycle</string>
+    <string name="activity_processLifecycle">chapter06/ProcessLifecycle</string>
+    <string name="search_product_api">chapter06/SearchProducts</string>
     <string name="activity_ImageView">chapter07/ImageView</string>
     <string name="activity_SharedPreferences">chapter07/SharedPreferences</string>
     <string name="activity_BasicContentProvider">chapter07/BasicContentProvider</string>
@@ -41,7 +42,7 @@
     <string name="activity_broadcast_receiver">chapter09/BroadcastReceiver</string>
     <string name="activity_location">chapter09/Location</string>
     <string name="activity_audio">chapter10/Audio</string>
-    <string name="activity_map">chpter10/Map</string>
+    <string name="activity_map">chapter10/Map</string>
     <string name="taobao_Mcommerce_android">移动电子商务开发实践：http://code.google.com/p/taobao-sdk-for-android-platform/</string>
     <string name="radio_group_snack">Snack</string>
     <string name="radio_group_selection">"You have selected: "</string>

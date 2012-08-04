@@ -15,7 +15,7 @@ public class MyMapActivity extends MapActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_map);
+		setContentView(R.layout.c10_map_layout);
 		initMapView();
 		initMyLocation();
 	}

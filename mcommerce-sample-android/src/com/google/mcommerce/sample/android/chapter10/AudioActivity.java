@@ -14,7 +14,7 @@ public class AudioActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_audio);
+		setContentView(R.layout.c10_audio_layout);
 
 		// Native rate is 44.1kHz 16 bit stereo, but
 		// to save space we just use MPEG-3 22kHz mono

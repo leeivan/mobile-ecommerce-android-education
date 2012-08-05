@@ -296,8 +296,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter07.BasicContentProviderActivity"
-            android:label="@string/activity_BasicContentProvider" >
+            android:name=".chapter07.UserDictionaryActivity"
+            android:label="@string/activity_UserDictionaryProvider" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -316,6 +316,15 @@
         <activity
             android:name=".chapter07.SQLiteActivity"
             android:label="@string/activity_SQLite" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter07.ShowProductImageActivity"
+            android:label="@string/activity_show_product" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

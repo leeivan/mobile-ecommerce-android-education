@@ -30,9 +30,10 @@
     <string name="search_product_api">chapter06/SearchProducts</string>
     <string name="activity_ImageView">chapter07/ImageView</string>
     <string name="activity_SharedPreferences">chapter07/SharedPreferences</string>
-    <string name="activity_BasicContentProvider">chapter07/BasicContentProvider</string>
+    <string name="activity_UserDictionaryProvider">chapter07/UserDictionaryProvider</string>
     <string name="activity_QuickContacts">chapter07/QuickContacts</string>
     <string name="activity_SQLite">chapter07/SQLite</string>
+    <string name="activity_show_product">chapter07/ShowProduct</string>
     <string name="activity_BrowerView">chapter08/BrowerView</string>
     <string name="activity_OauthTaobao">chapter08/OaothTaobao</string>
     <string name="activity_WebView">chapter08/WebView</string>

@@ -43,6 +43,7 @@ public class SearchProductsAPIActivity extends Activity {
 			if (response != null) {
 				TaobaokeItem taobaoitem = response.getTaobaokeItems().get(0);
 				productTitle.setText(Html.fromHtml(taobaoitem.getTitle()));
+				Log.i("SearchProductsAPIActivity", taobaoitem.getPicUrl());
 				productPrice.setText(taobaoitem.getPrice());
 			}
 		} catch (ApiException e) {

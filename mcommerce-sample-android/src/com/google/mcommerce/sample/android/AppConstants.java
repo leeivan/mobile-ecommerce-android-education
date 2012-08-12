@@ -8,8 +8,8 @@ package com.google.mcommerce.sample.android;
 public class AppConstants {
 
 	public static final String URL = "http://gw.api.taobao.com/router/rest";
-	public static final String APP_KEY = "xxxxx";
-	public static final String SECRET = "ssss2f8dddea956e494f9e3100dc1";
+	public static final String APP_KEY = "12380481";
+	public static final String SECRET = "7a1a232f80d05ea956e494f9e3100dc1";
 	public static final String TTID = "500000_12380481@yddzswjxjh_android_1.0.0";
 	public static final String IMEI = "89014103211118510720";
 	public static final String IMSI = "310260000000000";

@@ -2,6 +2,7 @@ package com.google.mcommerce.sample.android.chapter08;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.webkit.WebView;
@@ -37,17 +38,13 @@ public class Oauth2TaobaoActivity extends Activity {
 			public void onPageFinished(WebView view, String url) {
 				log(url);
 				if (url.startsWith(AppConstants.OAUTH_CALLBACK_URL)) {
-
-					if (url.indexOf("access_token=") != -1) {
-						url = url.substring(url.indexOf("access_token="),
-								url.indexOf("&"));
-						String accessToken = url.substring(url.indexOf("=") + 1);
-						log(accessToken);
-						i = new Intent(Oauth2TaobaoActivity.this,
-								UserInfoActivity.class);
-						i.putExtra("accessToken", accessToken);
-						startActivity(i);
-					}
+					String accessToken = Uri.parse(url).getQueryParameter(
+							"access_token");
+					log(accessToken);
+					i = new Intent(Oauth2TaobaoActivity.this,
+							UserInfoActivity.class);
+					i.putExtra("accessToken", accessToken);
+					startActivity(i);
 				}
 			}
 		});

@@ -27,22 +27,28 @@ public class ParseJSONActivity extends Activity {
 
 	/** Called when the activity is first created. */
 	private static final String TAG = "ParseJSONActivity";
-	private TextView textViewCity;
-	private TextView textViewNick;
+	private TextView textViewSingleCity;
+	private TextView textViewSingleNick;
+	private TextView textViewMultiCity;
+	private TextView textViewMultiNick;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.c03_parse_json_xml_layout);
-		textViewCity = (TextView) findViewById(R.id.c03_textView1);
-		textViewNick = (TextView) findViewById(R.id.c03_textView4);
-		//返回单个用户
+		textViewSingleCity = (TextView) findViewById(R.id.c03_textView1);
+		textViewSingleNick = (TextView) findViewById(R.id.c03_textView4);
+		textViewMultiCity = (TextView) findViewById(R.id.c03_textView6);
+		textViewMultiNick = (TextView) findViewById(R.id.c03_textView8);
+		// 返回单个用户
 		String userUrl = "http://gw.api.taobao.com/router/rest?sign=EF87CC42B707AFF1234FF8782113CDFB&timestamp=2012-08-13+20%3A50%3A28&v=2.0&app_key=12129701&method=taobao.user.get&partner_id=top-apitools&format=json&nick=lihaifeng555&fields=user_id,uid,nick,sex,buyer_credit,seller_credit,location,created,last_visit,birthday,type,status,alipay_no,alipay_account,alipay_account,email,consumer_protection,alipay_bind";
 		String userString = getUsers(userUrl);
-		//返回多个用户
+		Log.i("ParseJSONActivity", userString);
+		// 返回多个用户
 		parseJson(userString);
-		String usersUrl = "http://gw.api.taobao.com/router/rest?sign=5AAFF7B2157B05B975282B71820F683F&timestamp=2012-08-21+12%3A22%3A35&v=2.0&app_key=12129701&method=taobao.users.get&partner_id=top-apitools&format=xml&nicks=lihaifeng555,andyy_tan&fields=user_id,nick,sex,buyer_credit,seller_credit,location,created,last_visit";
+		String usersUrl = "http://gw.api.taobao.com/router/rest?sign=BDD6F4A3DDBF2F42AB67530CBD6ACBCB&timestamp=2012-08-21+23%3A06%3A04&v=2.0&app_key=12129701&method=taobao.users.get&partner_id=top-apitools&format=json&nicks=lihaifeng555,andyy_tan&fields=user_id,nick,sex,buyer_credit,seller_credit,location,created,last_visit";
 		String usersString = getUsers(usersUrl);
+		Log.i("ParseJSONActivity", usersString);
 		parseJsonMulti(usersString);
 	}
 
@@ -79,13 +85,13 @@ public class ParseJSONActivity extends Activity {
 	private void parseJson(String strResult) {
 		try {
 			// 获取用户对象
-			JSONObject jsonUserObj = new JSONObject(strResult)
-					.getJSONObject("user");
+			JSONObject jsonUserObj = new JSONObject(strResult).getJSONObject(
+					"user_get_response").getJSONObject("user");
 			String name = jsonUserObj.getString("nick");
-			JSONObject jsonLocationObj = jsonUserObj.getJSONObject("Location");
+			JSONObject jsonLocationObj = jsonUserObj.getJSONObject("location");
 			String city = jsonLocationObj.getString("city");
-			textViewCity.setText(city);
-			textViewNick.setText(name);
+			textViewSingleCity.setText(city);
+			textViewSingleNick.setText(name);
 		} catch (JSONException e) {
 			System.out.println("Json parse error");
 			e.printStackTrace();
@@ -93,26 +99,25 @@ public class ParseJSONActivity extends Activity {
 	}
 
 	// 解析多个数据的Json
-
 	private void parseJsonMulti(String strResult) {
-
+		String nick = "";
+		String city = "";
 		try {
 			JSONArray jsonObjs = new JSONObject(strResult)
-					.getJSONArray("users");
-			String s = "";
+					.getJSONObject("users_get_response").getJSONObject("users")
+					.getJSONArray("user");
 			for (int i = 0; i < jsonObjs.length(); i++) {
-				JSONObject jsonObj = ((JSONObject) jsonObjs.opt(i))
-						.getJSONObject("user");
-				int id = jsonObj.getInt("id");
-				String name = jsonObj.getString("name");
-				String gender = jsonObj.getString("gender");
-				s += "ID号" + id + ", 姓名：" + name + ",性别：" + gender + "\n";
-
+				JSONObject jsonUserObj = ((JSONObject) jsonObjs.opt(i));
+				nick = jsonUserObj.getString("nick") + ";" + nick;
+				JSONObject jsonLocationObj = jsonUserObj
+						.getJSONObject("location");
+				city = jsonLocationObj.getString("city") + ";" + city;
 			}
+			textViewMultiCity.setText(city);
+			textViewMultiNick.setText(nick);
 		} catch (JSONException e) {
 			System.out.println("Jsons parse error !");
 			e.printStackTrace();
 		}
 	}
-
 }

@@ -1,21 +1,12 @@
 package com.google.mcommerce.sample.android.chapter03;
 
-import java.io.IOException;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.xml.sax.SAXException;
-
-import com.google.mcommerce.sample.android.R;
+import java.util.ArrayList;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.google.mcommerce.sample.android.R;
 
 public class ParseXMLActivity extends Activity {
 
@@ -34,33 +25,15 @@ public class ParseXMLActivity extends Activity {
 		textViewMultiCity = (TextView) findViewById(R.id.c03_textView6);
 		textViewMultiNick = (TextView) findViewById(R.id.c03_textView8);
 		String url = "http://gw.api.taobao.com/router/rest?sign=05BD06221FC4BE98C0EAF71811A2EE3C&timestamp=2012-08-26+17%3A33%3A23&v=2.0&app_key=12129701&method=taobao.user.get&partner_id=top-apitools&format=xml&nick=andyy_tan&fields=user_id,uid,nick,sex,buyer_credit,seller_credit,location,created,last_visit,birthday,type,status,alipay_no,alipay_account,alipay_account,email,consumer_protection,alipay_bind";
-	}
-
-	private User readSingleUser(String userXML) {
-		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder dBuilder;
-		User user = new User();
-		try {
-			dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(userXML);
-			doc.getDocumentElement().normalize();
-			Node userNode = doc.getElementsByTagName("user").item(0);
-			if (userNode.getNodeType() == Node.ELEMENT_NODE) {
-				Element userElement = (Element) userNode;
-				user.setNick(userElement.getElementsByTagName("nick").item(0)
-						.getFirstChild().getNodeValue());
-			}
-		} catch (ParserConfigurationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SAXException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		User user = Util.readSingleUserByDOM(url);
+		textViewSingleNick.setText(user.getNick());
+		textViewSingleCity.setText(user.getCity());
+		url = "http://gw.api.taobao.com/router/rest?sign=28F5C6C7CD64F4101F79009B28E76355&timestamp=2012-08-26+22%3A22%3A28&v=2.0&app_key=12129701&method=taobao.users.get&partner_id=top-apitools&format=xml&nicks=andyy_tan,lihaifeng555&fields=user_id,nick,sex,buyer_credit,seller_credit,location,created,last_visit";
+		ArrayList<User> users = Util.readMultiUserByDOM(url);
+		for (User u : users) {
+			textViewMultiNick.append(u.getNick() + ";");
+			textViewMultiCity.append(u.getCity() + ";");
 		}
-		return null;
 	}
 
 }

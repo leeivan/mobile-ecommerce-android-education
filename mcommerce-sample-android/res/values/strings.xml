@@ -6,6 +6,7 @@
     <string name="planet_prompt">Choose a planet</string>
     <string name="activity_taobao_api">chapter03/TaoBaoAPITest</string>
     <string name="activity_parse_JSON">chapter03/ParseJSON</string>
+    <string name="activity_parse_XML">chapter03/ParseXML</string>
     <string name="activity_textView">chapter04/TextView</string>
     <string name="activity_textView_web">chapter04/TextView_Web</string>
     <string name="activity_linear_layout">chapter04/LinearLayout</string>

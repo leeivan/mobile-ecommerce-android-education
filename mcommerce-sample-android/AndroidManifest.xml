@@ -66,6 +66,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter03.ParseXMLActivity"
+            android:label="@string/activity_parse_XML" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter04.TextViewActivity"
             android:label="@string/activity_textView" >
             <intent-filter>

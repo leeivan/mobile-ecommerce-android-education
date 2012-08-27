@@ -93,5 +93,9 @@
     <string name="nick">账号:</string>
     <string name="single_user">单个用户的解析</string>
     <string name="multi_user">多个用户的解析</string>
+    <string name="single_user_dom">使用DOM解析单个用户</string>
+    <string name="multi_user_dom">使用DOM解析</string>
+    <string name="multi_user_pull">使用PULL解析</string>
+    <string name="multi_user_sax">使用SAX解析</string>
 
 </resources>

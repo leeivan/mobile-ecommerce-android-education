@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter03;
+package com.google.mcommerce.sample.android.chapter03.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -25,15 +25,14 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.Attributes;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
-import org.xml.sax.helpers.DefaultHandler;
+
 
 import android.util.Log;
 
-public class Util {
+public class UserUtil {
 	private static final String TAG = "XMLUtil";
 
 	public static String getStringByUrl(String url) {
@@ -127,43 +126,16 @@ public class Util {
 		return users;
 	}
 
-	public static User readSingleUserBySAX(String url) {
-		return null;
-
-	}
-
 	public static ArrayList<User> readMultiUserBySAX(String url) {
 		SAXParserFactory factory = SAXParserFactory.newInstance();
+		ArrayList<User> users = new ArrayList<User>();
 		try {
 			SAXParser saxParser = factory.newSAXParser();
 			XMLReader xmlReader = saxParser.getXMLReader();
-			DefaultHandler handler = new DefaultHandler() {
-
-				@Override
-				public void characters(char[] ch, int start, int length)
-						throws SAXException {
-					// TODO Auto-generated method stub
-					super.characters(ch, start, length);
-				}
-
-				@Override
-				public void endElement(String uri, String localName,
-						String qName) throws SAXException {
-					// TODO Auto-generated method stub
-					super.endElement(uri, localName, qName);
-				}
-
-				@Override
-				public void startElement(String uri, String localName,
-						String qName, Attributes attributes)
-						throws SAXException {
-					// TODO Auto-generated method stub
-					super.startElement(uri, localName, qName, attributes);
-				}
-
-			};
+			XMLHandler handler = new XMLHandler();
 			xmlReader.setContentHandler(handler);
 			xmlReader.parse(new InputSource(new URL(url).openStream()));
+			users = handler.getUsers();
 		} catch (ParserConfigurationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -177,7 +149,8 @@ public class Util {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return null;
+		return users;
 
 	}
+	
 }

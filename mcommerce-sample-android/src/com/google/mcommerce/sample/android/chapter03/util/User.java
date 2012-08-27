@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter03;
+package com.google.mcommerce.sample.android.chapter03.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;

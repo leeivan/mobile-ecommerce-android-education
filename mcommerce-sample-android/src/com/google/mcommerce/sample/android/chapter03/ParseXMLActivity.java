@@ -26,16 +26,18 @@ public class ParseXMLActivity extends Activity {
 	private Button button4;
 	private String userUrl;
 	private String usersUrl;
+	private TextView textView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c03_parse_json_layout);
-		textViewSingleCity = (TextView) findViewById(R.id.c03_textView1);
-		textViewSingleNick = (TextView) findViewById(R.id.c03_textView4);
-		textViewMultiCity = (TextView) findViewById(R.id.c03_textView6);
-		textViewMultiNick = (TextView) findViewById(R.id.c03_textView8);
+		setContentView(R.layout.c03_parse_xml_layout);
+		textViewSingleCity = (TextView) findViewById(R.id.textView1);
+		textViewSingleNick = (TextView) findViewById(R.id.textView4);
+		textViewMultiCity = (TextView) findViewById(R.id.textView6);
+		textViewMultiNick = (TextView) findViewById(R.id.textView8);
+		textView = (TextView)findViewById(R.id.textView9);
 		button1 = (Button) findViewById(R.id.button1);
 		button2 = (Button) findViewById(R.id.button2);
 		button3 = (Button) findViewById(R.id.button3);
@@ -60,8 +62,10 @@ public class ParseXMLActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				textViewMultiNick.setText("");
+				textViewMultiCity.setText("");
+				textView.setText("使用DOM解析多个用户");
 				String usersString = UserUtil.getStringByUrl(usersUrl);
-				Log.i("ParseJSONActivity", usersString);
 				ArrayList<User> users = UserUtil.readMultiUserByDOM(usersUrl);
 				for (User u : users) {
 					textViewMultiNick.append(u.getNick() + ";");
@@ -70,10 +74,13 @@ public class ParseXMLActivity extends Activity {
 			}
 		});
 		button3.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				textViewMultiNick.setText("");
+				textViewMultiCity.setText("");
+				textView.setText("使用SAX解析多个用户");
 				ArrayList<User> users = UserUtil.readMultiUserBySAX(usersUrl);
 				for (User u : users) {
 					textViewMultiNick.append(u.getNick() + ";");
@@ -82,11 +89,18 @@ public class ParseXMLActivity extends Activity {
 			}
 		});
 		button4.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
+				textViewMultiNick.setText("");
+				textViewMultiCity.setText("");
+				textView.setText("使用PULL解析多个用户");
+				ArrayList<User> users = UserUtil.readMultiUserByPULL(usersUrl);
+				for (User u : users) {
+					textViewMultiNick.append(u.getNick() + ";");
+					textViewMultiCity.append(u.getCity() + ";");
+				}
 			}
 		});
 	}

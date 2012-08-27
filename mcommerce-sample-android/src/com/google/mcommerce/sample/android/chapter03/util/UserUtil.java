@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.StringReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -28,12 +29,14 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
-
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
 
 import android.util.Log;
+import android.util.Xml;
 
 public class UserUtil {
-	private static final String TAG = "XMLUtil";
+	private static final String TAG = "UserUtil";
 
 	public static String getStringByUrl(String url) {
 		StringBuilder builder = new StringBuilder();
@@ -152,5 +155,48 @@ public class UserUtil {
 		return users;
 
 	}
-	
+
+	public static ArrayList<User> readMultiUserByPULL(String url) {
+		ArrayList<User> users = null;
+		// XmlPullParser解析器
+		XmlPullParser parser = Xml.newPullParser();
+		try {
+			parser.setInput(new StringReader(getStringByUrl(url)));
+			int eventType = parser.getEventType();
+			// 创建一个User对象
+			User user = null;
+			// 开始解析
+			while (eventType != XmlPullParser.END_DOCUMENT) {
+				switch (eventType) {
+				case XmlPullParser.START_DOCUMENT:
+					users = new ArrayList<User>();
+					break;
+				case XmlPullParser.START_TAG:
+					// 判断当前元素名是否为user
+					if ("user".equals(parser.getName())) {
+						user = new User();
+					} else if ("nick".equals(parser.getName())) {
+						user.setNick(parser.nextText());
+					} else if ("city".equals(parser.getName())) {
+						user.setCity(parser.nextText());
+					}
+					break;
+				case XmlPullParser.END_TAG:
+					if ("user".equals(parser.getName()) && user != null) {
+						users.add(user);
+						user = null;
+					}
+					break;
+				}
+				eventType = parser.next();
+			}
+		} catch (XmlPullParserException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return users;
+
+	}
 }

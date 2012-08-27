@@ -28,10 +28,10 @@ public class ParseJSONActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.c03_parse_json_layout);
-		textViewSingleCity = (TextView) findViewById(R.id.c03_textView1);
-		textViewSingleNick = (TextView) findViewById(R.id.c03_textView4);
-		textViewMultiCity = (TextView) findViewById(R.id.c03_textView6);
-		textViewMultiNick = (TextView) findViewById(R.id.c03_textView8);
+		textViewSingleCity = (TextView) findViewById(R.id.textView1);
+		textViewSingleNick = (TextView) findViewById(R.id.textView4);
+		textViewMultiCity = (TextView) findViewById(R.id.textView6);
+		textViewMultiNick = (TextView) findViewById(R.id.textView8);
 		// 返回单个用户
 		String userUrl = "http://gw.api.taobao.com/router/rest?sign=EF87CC42B707AFF1234FF8782113CDFB&timestamp=2012-08-13+20%3A50%3A28&v=2.0&app_key=12129701&method=taobao.user.get&partner_id=top-apitools&format=json&nick=lihaifeng555&fields=user_id,uid,nick,sex,buyer_credit,seller_credit,location,created,last_visit,birthday,type,status,alipay_no,alipay_account,alipay_account,email,consumer_protection,alipay_bind";
 		String userString = UserUtil.getStringByUrl(userUrl);

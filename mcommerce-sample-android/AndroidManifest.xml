@@ -373,7 +373,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter08.WebViewActivity"
+            android:name=".chapter08.WebViewActivity"
             android:label="@string/activity_WebView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -382,7 +382,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter09.StartServiceActivity"
+            android:name=".chapter09.StartServiceActivity"
             android:label="@string/activity_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -391,13 +391,13 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.google.mcommerce.sample.android.chapter09.HelloIntentService" >
+        <service android:name=".chapter09.HelloIntentService" >
         </service>
-        <service android:name="com.google.mcommerce.sample.android.chapter09.HelloService" >
+        <service android:name=".chapter09.HelloService" >
         </service>
 
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter09.BindingServiceActivity"
+            android:name=".chapter09.BindingServiceActivity"
             android:label="@string/activity_binding_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -406,11 +406,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.google.mcommerce.sample.android.chapter09.LocalService" >
+        <service android:name=".chapter09.LocalService" >
         </service>
 
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter09.MessengerServiceActivity"
+            android:name=".chapter09.MessengerServiceActivity"
             android:label="@string/activity_messenger_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -419,11 +419,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.google.mcommerce.sample.android.chapter09.MessengerService" >
+        <service android:name=".chapter09.MessengerService" >
         </service>
 
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter09.MySendBroActivity"
+            android:name=".chapter09.MySendBroActivity"
             android:label="@string/activity_broadcast_receiver" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -433,16 +433,16 @@
         </activity>
 
         <receiver
-            android:name="com.google.mcommerce.sample.android.chapter09.MyBroadcastReceiver"
+            android:name=".chapter09.MyBroadcastReceiver"
             android:exported="true" >
             <intent-filter>
-                <action android:name="com.google.mcommerce.sample.android.chapter09.mybroadcast" >
+                <action android:name=".chapter09.mybroadcast" >
                 </action>
             </intent-filter>
         </receiver>
 
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter10.LocationActivity"
+            android:name=".chapter10.LocationActivity"
             android:label="@string/activity_location" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -451,7 +451,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter10.AudioActivity"
+            android:name=".chapter10.AudioActivity"
             android:label="@string/activity_audio" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -471,6 +471,24 @@
         <activity
             android:name=".chapter10.BaiduMapActivity"
             android:label="@string/activity_map_baidu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter10.SensorListActivity"
+            android:label="@string/activity_sensor_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter10.LightSensorActivity"
+            android:label="@string/activity_sensor_light" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

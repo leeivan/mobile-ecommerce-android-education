@@ -43,10 +43,12 @@
     <string name="activity_binding_service">chapter09/BindingService</string>
     <string name="activity_messenger_service">chapter09/MessengerService</string>
     <string name="activity_broadcast_receiver">chapter09/BroadcastReceiver</string>
-    <string name="activity_location">chapter10/Location</string>
-    <string name="activity_audio">chapter10/Audio</string>
-    <string name="activity_map_google">chapter10/GoogleMap</string>
-    <string name="activity_map_baidu">chapter10/BaiduMap</string>
+    <string name="activity_location">chapter10/Location/Location</string>
+    <string name="activity_map_google">chapter10/Location/GoogleMap</string>
+    <string name="activity_map_baidu">chapter10/Location/BaiduMap</string>
+    <string name="activity_sensor_list">chapter10/Sensor/SensorList</string>
+    <string name="activity_sensor_light">chapter10/Sensor/SensorLight</string>
+    <string name="activity_audio">chapter11/Audio</string>
     <string name="taobao_Mcommerce_android">移动电子商务开发实践：http://code.google.com/p/taobao-sdk-for-android-platform/</string>
     <string name="radio_group_snack">Snack</string>
     <string name="radio_group_selection">"You have selected: "</string>

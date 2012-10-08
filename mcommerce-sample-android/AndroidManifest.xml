@@ -27,6 +27,7 @@
     </uses-permission>
     <uses-permission android:name="android.permission.INTERNET" >
     </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
     </uses-permission>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
@@ -489,6 +490,15 @@
         <activity
             android:name=".chapter10.LightSensorActivity"
             android:label="@string/activity_sensor_light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.MediaDemoActivity"
+            android:label="@string/activity_media_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

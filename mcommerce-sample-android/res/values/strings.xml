@@ -49,6 +49,7 @@
     <string name="activity_sensor_list">chapter10/Sensor/SensorList</string>
     <string name="activity_sensor_light">chapter10/Sensor/SensorLight</string>
     <string name="activity_audio">chapter11/Audio</string>
+    <string name="activity_media_demo">chapter11/Media</string>
     <string name="taobao_Mcommerce_android">移动电子商务开发实践：http://code.google.com/p/taobao-sdk-for-android-platform/</string>
     <string name="radio_group_snack">Snack</string>
     <string name="radio_group_selection">"You have selected: "</string>

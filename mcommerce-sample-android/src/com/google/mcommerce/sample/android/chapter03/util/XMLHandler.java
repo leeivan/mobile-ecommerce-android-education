@@ -6,15 +6,18 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-
 public class XMLHandler extends DefaultHandler {
 
-	ArrayList<User> users = new ArrayList<User>();
+	ArrayList<User> users;
 	boolean isUser;
 	User user;
 	boolean isNick;
 	boolean isLocation;
 	boolean isCity;
+
+	public XMLHandler() {
+		users = new ArrayList<User>();
+	}
 
 	@Override
 	public void characters(char[] ch, int start, int length)

@@ -38,13 +38,17 @@ public class Oauth2TaobaoActivity extends Activity {
 			public void onPageFinished(WebView view, String url) {
 				log(url);
 				if (url.startsWith(AppConstants.OAUTH_CALLBACK_URL)) {
-					String accessToken = Uri.parse(url).getQueryParameter(
-							"access_token");
-					log(accessToken);
-					i = new Intent(Oauth2TaobaoActivity.this,
-							UserInfoActivity.class);
-					i.putExtra("accessToken", accessToken);
-					startActivity(i);
+					String[] params = Uri.parse(url).getFragment().split("\\&");
+					for (String param : params) {
+						String[] parts = param.split("\\=");
+						if (parts[0].equals("access_token")) {
+							log(parts[0]);
+							i = new Intent(Oauth2TaobaoActivity.this,
+									UserInfoActivity.class);
+							i.putExtra("accessToken", parts[1]);
+							startActivity(i);
+						}
+					}
 				}
 			}
 		});

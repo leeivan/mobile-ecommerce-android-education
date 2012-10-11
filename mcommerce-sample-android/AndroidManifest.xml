@@ -588,7 +588,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".chapter12.motionevent.TouchDemo01Activity"
-            android:label="@string/multi_touch_motionEvent" >
+            android:label="@string/multiTouch_motionEvent_demo01" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter12.motionevent.TouchDemo02Activity"
+            android:label="@string/multiTouch_motionEvent_demo02" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

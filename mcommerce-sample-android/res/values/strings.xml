@@ -109,6 +109,7 @@
     <string name="media_record_mediaStore">chapter11/Record/MediaStore</string>
     <string name="media_record_captureImage">chapter11/Record/CaptureImage</string>
     <string name="media_record_mediaScanner">chapter11/Record/MediaScanner</string>
-    <string name="multi_touch_motionEvent">chapter12/MultiTouch/MotionEvent</string>
+    <string name="multiTouch_motionEvent_demo01">chapter12/MotionEvent/Demo1</string>
+    <string name="multiTouch_motionEvent_demo02">chapter12/MotionEvent/Demo2</string>
 
 </resources>

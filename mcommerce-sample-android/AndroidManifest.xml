@@ -505,7 +505,16 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+		<activity
+            android:name=".chapter11.VideoDemoActivity"
+            android:label="@string/activity_video_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        
         <uses-library android:name="com.google.android.maps" />
     </application>
 

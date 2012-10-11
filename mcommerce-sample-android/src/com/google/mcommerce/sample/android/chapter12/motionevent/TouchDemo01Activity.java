@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12;
+package com.google.mcommerce.sample.android.chapter12.motionevent;
 
 // This file is MainActivity.java
 import com.google.mcommerce.sample.android.R;
@@ -12,12 +12,12 @@ import android.view.View.OnTouchListener;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
-public class TouchDemo1 extends Activity implements OnTouchListener {
+public class TouchDemo01Activity extends Activity implements OnTouchListener {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.c12_touch_demo_layout);
+        setContentView(R.layout.c12_touch_demo01_layout);
         
         RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.layout1);
         layout1.setOnTouchListener(this);

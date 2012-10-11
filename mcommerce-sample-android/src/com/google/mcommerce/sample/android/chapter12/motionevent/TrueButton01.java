@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12;
+package com.google.mcommerce.sample.android.chapter12.motionevent;
 
 // This file is TrueButton.java
 import android.content.Context;

@@ -579,8 +579,16 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name="chapter11.mediaplay.MediaScannerActivity"
+        <activity android:name=".chapter11.mediaplay.MediaScannerActivity"
             android:label="@string/media_record_mediaScanner" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter12.motionevent.TouchDemo01Activity"
+            android:label="@string/multi_touch_motionEvent" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

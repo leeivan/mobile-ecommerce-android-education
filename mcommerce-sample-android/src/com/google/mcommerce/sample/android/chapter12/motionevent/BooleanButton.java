@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12;
+package com.google.mcommerce.sample.android.chapter12.motionevent;
 
 // This file is BooleanButton.java
 import android.content.Context;
@@ -20,7 +20,7 @@ public abstract class BooleanButton extends Button {
 	public boolean onTouchEvent(MotionEvent event) {
         String myTag = this.getTag().toString();
         Log.v(myTag, "-----------------------------------");
-        Log.v(myTag, TouchDemo1.describeEvent(this, event));
+        Log.v(myTag, TouchDemo01Activity.describeEvent(this, event));
         Log.v(myTag, "super onTouchEvent() returns " + super.onTouchEvent(event));
         Log.v(myTag, "and I'm returning " + myValue());
         return(myValue());

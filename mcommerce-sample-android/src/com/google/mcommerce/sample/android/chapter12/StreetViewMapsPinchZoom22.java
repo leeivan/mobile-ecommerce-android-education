@@ -6,18 +6,18 @@ import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapView;
 import com.google.mcommerce.sample.android.R;
 
-public class MapViewWithTouchActivity extends MapActivity
+public class StreetViewMapsPinchZoom22 extends MapActivity
 {
-    private MapView mapView;
+	protected MapView mapView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.c12_mapview_01);
+        setContentView(R.layout.c12_mapview_02);
 
         mapView = (MapView)findViewById(R.id.mapview);
 
-        ClickReceiver1 clickRecvr = new ClickReceiver1(this);
+        ClickReceiver03 clickRecvr = new ClickReceiver03(this);
         mapView.getOverlays().add(clickRecvr);
         mapView.invalidate();
     }
@@ -33,11 +33,15 @@ public class MapViewWithTouchActivity extends MapActivity
         case R.id.sat:
         	mapView.setSatellite(true);
         	break;
+        case R.id.street:
+        	mapView.setStreetView(true);
+        	break;
         case R.id.traffic:
         	mapView.setTraffic(true);
         	break;
         case R.id.normal:
         	mapView.setSatellite(false);
+        	mapView.setStreetView(false);
         	mapView.setTraffic(false);
         	break;
         }

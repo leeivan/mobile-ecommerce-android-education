@@ -6,10 +6,10 @@ import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
 
-public class ClickReceiver extends Overlay{
+public class ClickReceiver1 extends Overlay{
 	private Context mContext;
 
-	public ClickReceiver(Context context) {
+	public ClickReceiver1(Context context) {
         mContext = context;
 	}
 	

@@ -452,7 +452,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.AudioActivity"
+            android:name=".chapter11.AudioActivity"
             android:label="@string/activity_audio" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -499,6 +499,15 @@
         <activity
             android:name=".chapter11.MediaDemoActivity"
             android:label="@string/activity_media_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.SoundPoolDemoActivity"
+            android:label="@string/activity_soundPool_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

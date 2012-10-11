@@ -1,14 +1,15 @@
-package com.google.mcommerce.sample.android.chapter11;
+package com.google.mcommerce.sample.android.chapter11.mediarecorder;
 
 import android.app.Activity;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
+import android.media.AudioRecord.OnRecordPositionUpdateListener;
 import android.os.Bundle;
 import android.util.Log;
 
-public class AudioRecordActivity extends Activity {
-	protected static final String TAG = "AudioRecord";
+public class AudioRecordWithCallbacksActivity extends Activity {
+	private static final String TAG = "AudioRecordCallbacks";
 	private int mAudioBufferSize;
 	private int mAudioBufferSampleSize;
 	private AudioRecord mAudioRecord;
@@ -19,6 +20,7 @@ public class AudioRecordActivity extends Activity {
 
 		initAudioRecord();
 	}
+
 
 	@Override
 	public void onResume() {
@@ -51,6 +53,18 @@ public class AudioRecordActivity extends Activity {
 		super.onDestroy();
 	}
 
+    public OnRecordPositionUpdateListener mListener = new OnRecordPositionUpdateListener() {
+
+		public void onPeriodicNotification(AudioRecord recorder) {
+			Log.v(TAG, "in onPeriodicNotification");
+	    }
+
+        public void onMarkerReached(AudioRecord recorder) {
+		    Log.v(TAG, "in onMarkerReached");
+		    inRecordMode = false;
+        }
+    };
+
 	private void initAudioRecord() {
 		try {
 			int sampleRate = 8000;
@@ -70,6 +84,10 @@ public class AudioRecordActivity extends Activity {
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
+		
+		mAudioRecord.setNotificationMarkerPosition(10000);
+		mAudioRecord.setPositionNotificationPeriod(1000);
+		mAudioRecord.setRecordPositionUpdateListener(mListener);
 		
 		int audioRecordState = mAudioRecord.getState();
 		if(audioRecordState != AudioRecord.STATE_INITIALIZED) {

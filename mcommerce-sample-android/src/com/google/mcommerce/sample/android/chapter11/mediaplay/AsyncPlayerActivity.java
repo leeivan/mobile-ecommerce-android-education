@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter11;
+package com.google.mcommerce.sample.android.chapter11.mediaplay;
 
 import android.app.Activity;
 import android.media.AsyncPlayer;
@@ -22,7 +22,7 @@ public class AsyncPlayerActivity extends Activity {
 				Uri.parse("file://"
 						+ Environment
 								.getExternalStoragePublicDirectory(Environment.DIRECTORY_RINGTONES)
-						+ "/perry_ringtone.mp3"), false,
+						+ "/music_file.mp3"), false,
 				AudioManager.STREAM_MUSIC);
 	}
 

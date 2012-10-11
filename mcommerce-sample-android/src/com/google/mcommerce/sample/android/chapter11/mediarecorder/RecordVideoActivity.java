@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter11;
+package com.google.mcommerce.sample.android.chapter11.mediarecorder;
 
 import java.io.File;
 import java.io.IOException;

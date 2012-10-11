@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter11;
+package com.google.mcommerce.sample.android.chapter11.mediarecorder;
 
 import com.google.mcommerce.sample.android.R;
 

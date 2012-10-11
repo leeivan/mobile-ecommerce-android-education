@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter11;
+package com.google.mcommerce.sample.android.chapter11.mediaplay;
 
 import com.google.mcommerce.sample.android.R;
 
@@ -29,7 +29,7 @@ public class VideoDemoActivity extends Activity {
 				.setVideoURI(Uri.parse("file://"
 						+ Environment
 								.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES)
-						+ "/movie.mp4"));
+						+ "/GANGNAM_STYLE_MV.mp4"));
 
 		videoView.requestFocus();
 		videoView.start();

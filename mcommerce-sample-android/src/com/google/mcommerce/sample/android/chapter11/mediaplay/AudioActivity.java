@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter11;
+package com.google.mcommerce.sample.android.chapter11.mediaplay;
 
 import android.app.Activity;
 import android.media.MediaPlayer;

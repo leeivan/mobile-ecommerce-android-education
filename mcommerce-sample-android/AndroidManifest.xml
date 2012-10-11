@@ -27,7 +27,7 @@
     </uses-permission>
     <uses-permission android:name="android.permission.INTERNET" >
     </uses-permission>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
     </uses-permission>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
@@ -36,6 +36,8 @@
     </uses-permission>
     <uses-permission android:name="android.permission.READ_PHONE_STATE" >
     </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -50,7 +52,7 @@
         </activity>
         <activity
             android:name=".chapter03.TaoBaoAPITestActivity"
-            android:label="@string/activity_taobao_api" >
+            android:label="@string/taobao_api" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -59,7 +61,7 @@
         </activity>
         <activity
             android:name=".chapter03.ParseJSONActivity"
-            android:label="@string/activity_parse_JSON" >
+            android:label="@string/parse_JSON" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -68,7 +70,7 @@
         </activity>
         <activity
             android:name=".chapter03.ParseXMLActivity"
-            android:label="@string/activity_parse_XML" >
+            android:label="@string/parse_XML" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -77,7 +79,7 @@
         </activity>
         <activity
             android:name=".chapter04.TextViewActivity"
-            android:label="@string/activity_textView" >
+            android:label="@string/textView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -86,7 +88,7 @@
         </activity>
         <activity
             android:name=".chapter04.TextViewWebActivity"
-            android:label="@string/activity_textView_web" >
+            android:label="@string/textView_web" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -95,7 +97,7 @@
         </activity>
         <activity
             android:name=".chapter04.TableLayoutActivity"
-            android:label="@string/activity_table_layout" >
+            android:label="@string/table_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -104,7 +106,7 @@
         </activity>
         <activity
             android:name=".chapter04.AbsoluteLayoutActivity"
-            android:label="@string/activity_absolute_layout" >
+            android:label="@string/absolute_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -113,7 +115,7 @@
         </activity>
         <activity
             android:name=".chapter04.FrameLayoutActivity"
-            android:label="@string/activity_frame_layout" >
+            android:label="@string/frame_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -122,7 +124,7 @@
         </activity>
         <activity
             android:name=".chapter04.RelativeLayoutActivity"
-            android:label="@string/activity_relative_layout" >
+            android:label="@string/relative_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -131,7 +133,7 @@
         </activity>
         <activity
             android:name=".chapter04.LinearLayoutActivity"
-            android:label="@string/activity_linear_layout" >
+            android:label="@string/linear_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -140,7 +142,7 @@
         </activity>
         <activity
             android:name=".chapter05.SimpleEventActivity"
-            android:label="@string/activity_simple_event" >
+            android:label="@string/simple_event" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -149,7 +151,7 @@
         </activity>
         <activity
             android:name=".chapter05.ActivityFirst"
-            android:label="@string/activity_IntentDataTransfer" >
+            android:label="@string/IntentDataTransfer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -165,7 +167,7 @@
         </activity>
         <activity
             android:name=".chapter05.CallIntentsActivity"
-            android:label="@string/activity_implicitIntent" >
+            android:label="@string/implicitIntent" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -174,7 +176,7 @@
         </activity>
         <activity
             android:name=".chapter05.EditTextActivity"
-            android:label="@string/activity_editText" >
+            android:label="@string/editText" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -183,7 +185,7 @@
         </activity>
         <activity
             android:name=".chapter05.EditTextSearchActivity"
-            android:label="@string/activity_editText_search" >
+            android:label="@string/editText_search" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -192,7 +194,7 @@
         </activity>
         <activity
             android:name=".chapter05.RadioGroupActivity"
-            android:label="@string/activity_radioGroup" >
+            android:label="@string/radioGroup" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -201,7 +203,7 @@
         </activity>
         <activity
             android:name=".chapter05.CheckBoxActivity"
-            android:label="@string/activity_checkBox" >
+            android:label="@string/checkBox" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -210,7 +212,7 @@
         </activity>
         <activity
             android:name=".chapter06.SpinnerActivity"
-            android:label="@string/activity_spinner" >
+            android:label="@string/spinner" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -219,7 +221,7 @@
         </activity>
         <activity
             android:name=".chapter06.ProgressBar1"
-            android:label="@string/activity_progressbar1" >
+            android:label="@string/progressbar1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -228,7 +230,7 @@
         </activity>
         <activity
             android:name=".chapter06.ProgressBar2"
-            android:label="@string/activity_progressbar2" >
+            android:label="@string/progressbar2" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -237,7 +239,7 @@
         </activity>
         <activity
             android:name=".chapter06.AsyncTaskActivity"
-            android:label="@string/activity_AsynTask" >
+            android:label="@string/AsynTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -246,7 +248,7 @@
         </activity>
         <activity
             android:name=".chapter06.HandlerActivity"
-            android:label="@string/activity_Handler" >
+            android:label="@string/Handler" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -255,7 +257,7 @@
         </activity>
         <activity
             android:name=".chapter06.ThreadActivity"
-            android:label="@string/activity_Thread" >
+            android:label="@string/Thread" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -264,7 +266,7 @@
         </activity>
         <activity
             android:name=".chapter06.SimpleListViewActivity"
-            android:label="@string/activity_ListView" >
+            android:label="@string/ListView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -273,7 +275,7 @@
         </activity>
         <activity
             android:name=".chapter06.ProcessLifecycleActivity"
-            android:label="@string/activity_processLifecycle"
+            android:label="@string/processLifecycle"
             android:process="com.taobao.mcommerce.sample" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -293,7 +295,7 @@
         </activity>
         <activity
             android:name=".chapter07.ImageViewActivity"
-            android:label="@string/activity_ImageView" >
+            android:label="@string/ImageView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -302,7 +304,7 @@
         </activity>
         <activity
             android:name=".chapter07.SharedPreferencesActivity"
-            android:label="@string/activity_SharedPreferences" >
+            android:label="@string/SharedPreferences" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -316,7 +318,7 @@
         </activity>
         <activity
             android:name=".chapter07.UserDictionaryActivity"
-            android:label="@string/activity_UserDictionaryProvider" >
+            android:label="@string/UserDictionaryProvider" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -325,7 +327,7 @@
         </activity>
         <activity
             android:name=".chapter07.ContactsActivity"
-            android:label="@string/activity_QuickContacts" >
+            android:label="@string/QuickContacts" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -334,7 +336,7 @@
         </activity>
         <activity
             android:name=".chapter07.SQLiteActivity"
-            android:label="@string/activity_SQLite" >
+            android:label="@string/SQLite" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -343,7 +345,7 @@
         </activity>
         <activity
             android:name=".chapter07.ShowProductImageActivity"
-            android:label="@string/activity_show_product" >
+            android:label="@string/show_product" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -352,7 +354,7 @@
         </activity>
         <activity
             android:name=".chapter08.BrowserViewActivity"
-            android:label="@string/activity_BrowerView" >
+            android:label="@string/BrowerView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -361,7 +363,7 @@
         </activity>
         <activity
             android:name=".chapter08.Oauth2TaobaoActivity"
-            android:label="@string/activity_OauthTaobao" >
+            android:label="@string/OauthTaobao" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -375,7 +377,7 @@
         </activity>
         <activity
             android:name=".chapter08.WebViewActivity"
-            android:label="@string/activity_WebView" >
+            android:label="@string/WebView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -384,7 +386,7 @@
         </activity>
         <activity
             android:name=".chapter09.StartServiceActivity"
-            android:label="@string/activity_service" >
+            android:label="@string/service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -399,7 +401,7 @@
 
         <activity
             android:name=".chapter09.BindingServiceActivity"
-            android:label="@string/activity_binding_service" >
+            android:label="@string/binding_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -412,7 +414,7 @@
 
         <activity
             android:name=".chapter09.MessengerServiceActivity"
-            android:label="@string/activity_messenger_service" >
+            android:label="@string/messenger_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -425,7 +427,7 @@
 
         <activity
             android:name=".chapter09.MySendBroActivity"
-            android:label="@string/activity_broadcast_receiver" >
+            android:label="@string/broadcast_receiver" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -444,16 +446,7 @@
 
         <activity
             android:name=".chapter10.LocationActivity"
-            android:label="@string/activity_location" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter10.AudioActivity"
-            android:label="@string/activity_audio" >
+            android:label="@string/location" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -462,7 +455,7 @@
         </activity>
         <activity
             android:name=".chapter10.GoogleMapActivity"
-            android:label="@string/activity_map_google" >
+            android:label="@string/map_google" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -471,7 +464,7 @@
         </activity>
         <activity
             android:name=".chapter10.BaiduMapActivity"
-            android:label="@string/activity_map_baidu" >
+            android:label="@string/map_baidu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -480,7 +473,7 @@
         </activity>
         <activity
             android:name=".chapter10.SensorListActivity"
-            android:label="@string/activity_sensor_list" >
+            android:label="@string/sensor_list" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -489,7 +482,7 @@
         </activity>
         <activity
             android:name=".chapter10.LightSensorActivity"
-            android:label="@string/activity_sensor_light" >
+            android:label="@string/sensor_light" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -497,8 +490,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.MediaDemoActivity"
-            android:label="@string/activity_media_demo" >
+            android:name=".chapter11.mediaplay.MediaDemoActivity"
+            android:label="@string/media_audio_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -506,32 +499,95 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.SoundPoolDemoActivity"
-            android:label="@string/activity_soundPool_demo" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-		<activity
-            android:name=".chapter11.VideoDemoActivity"
-            android:label="@string/activity_video_demo" >
+            android:name=".chapter11.mediaplay.SoundPoolDemoActivity"
+            android:label="@string/media_audio_soundPool" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-		<activity
-            android:name=".chapter11.VideoDemoActivity"
-            android:label="@string/activity_video_demo" >
+        <activity
+            android:name=".chapter11.mediaplay.AsyncPlayerActivity"
+            android:label="@string/media_audio_asyncPlayer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        
+        <activity
+            android:name=".chapter11.mediaplay.VideoDemoActivity"
+            android:label="@string/media_video_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        
+        <activity
+            android:name=".chapter11.mediarecorder.RecordAudioActivity"
+            android:label="@string/media_record_audio" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.mediarecorder.AudioRecordActivity"
+            android:label="@string/media_record_audioRecord" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.mediarecorder.AudioRecordWithCallbacksActivity"
+            android:label="@string/media_record_audioRecordWithCallback" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.mediarecorder.RecordVideoActivity"
+            android:label="@string/media_record_video" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.mediarecorder.UsingMediaStoreActivity"
+            android:label="@string/media_record_mediaStore" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.CaptureImageWithIntentActivity"
+            android:label="@string/media_record_captureImage" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name="chapter11.mediaplay.MediaScannerActivity"
+            android:label="@string/media_record_mediaScanner" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
         <uses-library android:name="com.google.android.maps" />
     </application>
 

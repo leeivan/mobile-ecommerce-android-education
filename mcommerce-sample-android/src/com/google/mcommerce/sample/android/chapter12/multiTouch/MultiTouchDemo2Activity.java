@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12;
+package com.google.mcommerce.sample.android.chapter12.multiTouch;
 
 // This file is MainActivity.java
 import com.google.mcommerce.sample.android.R;

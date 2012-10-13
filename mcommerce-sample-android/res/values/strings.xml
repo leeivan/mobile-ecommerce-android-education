@@ -111,5 +111,6 @@
     <string name="media_record_mediaScanner">chapter11/Record/MediaScanner</string>
     <string name="multiTouch_motionEvent_demo01">chapter12/MotionEvent/Demo1</string>
     <string name="multiTouch_motionEvent_demo02">chapter12/MotionEvent/Demo2</string>
+    <string name="multiTouch_motionEvent_velocityTracker">chapter12/MotionEvent/VelocityTracker</string>
 
 </resources>

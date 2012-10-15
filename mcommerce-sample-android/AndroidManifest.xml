@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.google.mcommerce.sample.android"
+    android:installLocation="preferExternal"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -11,7 +12,7 @@
         android:resizeable="true"
         android:smallScreens="true" />
 
-    <uses-sdk android:minSdkVersion="9" />
+    <uses-sdk android:minSdkVersion="14" />
 
     <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -605,6 +606,14 @@
         </activity>
         <activity android:name=".chapter12.motionevent.VelocityTrackerActivity"
             android:label="@string/multiTouch_motionEvent_velocityTracker" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter12.dragAndDrop.DragDropFragDemoActivity"
+            android:label="@string/multiTouch_drag_drop_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

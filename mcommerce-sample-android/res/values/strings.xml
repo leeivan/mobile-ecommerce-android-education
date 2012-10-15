@@ -112,6 +112,7 @@
     <string name="multiTouch_motionEvent_demo01">chapter12/MotionEvent/Demo1</string>
     <string name="multiTouch_motionEvent_demo02">chapter12/MotionEvent/Demo2</string>
     <string name="multiTouch_motionEvent_velocityTracker">chapter12/MotionEvent/VelocityTracker</string>
-    <string name="multiTouch_drag_drop_demo">chapter12/DragDrop/Demo</string>
+    <string name="multiTouch_drag_drop_demo">chapter12/DragDrop</string>
+    <string name="multiTouch_drag_touch_demo">chapter12/TouchDrag</string>
 
 </resources>

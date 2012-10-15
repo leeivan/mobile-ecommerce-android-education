@@ -620,6 +620,14 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <activity android:name=".chapter12.touchDrag.TouchDragActivity"
+            android:label="@string/multiTouch_drag_touch_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
 
         <uses-library android:name="com.google.android.maps" />
     </application>

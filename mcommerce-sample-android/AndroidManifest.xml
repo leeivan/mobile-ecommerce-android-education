@@ -612,6 +612,22 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <activity android:name=".chapter12.multiTouch.MultiTouchDemo1Activity"
+            android:label="@string/multiTouch_multi_touch_demo1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter12.multiTouch.MultiTouchDemo2Activity"
+            android:label="@string/multiTouch_multi_touch_demo2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
         <activity android:name=".chapter12.dragAndDrop.DragDropFragDemoActivity"
             android:label="@string/multiTouch_drag_drop_demo" >
             <intent-filter>

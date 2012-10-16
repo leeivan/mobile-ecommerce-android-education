@@ -15,8 +15,9 @@ import android.view.View;
 
 public class MediaDemoActivity extends Activity implements OnPreparedListener {
 	static final String AUDIO_PATH =
-	// "http://streaming103.radionomy.com:80/Radio-Mozart";
-	"rtsp://64.202.98.91:554/sa.sdp"; // http://somafm.com/secretagent/
+	// "mms://enmms.chinabroadcast.cn/fm91.5";
+	"http://streaming103.radionomy.com:80/Radio-Mozart";
+	// "rtsp://64.202.98.91:554/sa.sdp"; // http://somafm.com/secretagent/
 	// "http://www.androidbook.com/akc/filestorage/android/documentfiles/3389/play.mp3";
 	// Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC)
 	// + "/music_file.mp3";
@@ -79,7 +80,7 @@ public class MediaDemoActivity extends Activity implements OnPreparedListener {
 	}
 
 	private void playLocalAudio() throws Exception {
-//		mediaPlayer = MediaPlayer.create(this,Uri.parse(url));
+		// mediaPlayer = MediaPlayer.create(this,Uri.parse(url));
 		mediaPlayer = MediaPlayer.create(this, R.raw.music_file);
 		mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
 		mediaPlayer.start();

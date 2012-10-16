@@ -588,7 +588,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter12.motionevent.TouchDemo01Activity"
+        <activity android:name=".chapter12.motionEvent.TouchDemo01Activity"
             android:label="@string/multiTouch_motionEvent_demo01" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -596,7 +596,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter12.motionevent.TouchDemo02Activity"
+        <activity android:name=".chapter12.motionEvent.TouchDemo02Activity"
             android:label="@string/multiTouch_motionEvent_demo02" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -604,7 +604,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter12.motionevent.VelocityTrackerActivity"
+        <activity android:name=".chapter12.motionEvent.VelocityTrackerActivity"
             android:label="@string/multiTouch_motionEvent_velocityTracker" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -630,6 +630,14 @@
         </activity>
         <activity android:name=".chapter12.dragAndDrop.DragDropFragDemoActivity"
             android:label="@string/multiTouch_drag_drop_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter12.touchDrag.TouchDragActivity"
+            android:label="@string/multiTouch_drag_touch_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

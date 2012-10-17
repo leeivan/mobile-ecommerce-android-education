@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter10;
+package com.google.mcommerce.sample.android.chapter10.sensor;
 
 //This file is MainActivity.java
 import java.util.HashMap;

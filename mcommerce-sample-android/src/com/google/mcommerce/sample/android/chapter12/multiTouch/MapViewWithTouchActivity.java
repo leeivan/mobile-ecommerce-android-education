@@ -1,10 +1,11 @@
-package com.google.mcommerce.sample.android.chapter12;
+package com.google.mcommerce.sample.android.chapter12.multiTouch;
 
 import android.os.Bundle;
 import android.view.View;
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapView;
 import com.google.mcommerce.sample.android.R;
+import com.google.mcommerce.sample.android.chapter12.ClickReceiver1;
 
 public class MapViewWithTouchActivity extends MapActivity
 {

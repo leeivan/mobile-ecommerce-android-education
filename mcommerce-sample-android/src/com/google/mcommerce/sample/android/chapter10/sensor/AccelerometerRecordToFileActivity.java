@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter10;
+package com.google.mcommerce.sample.android.chapter10.sensor;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

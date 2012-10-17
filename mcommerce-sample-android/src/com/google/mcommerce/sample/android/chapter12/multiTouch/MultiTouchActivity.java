@@ -1,8 +1,6 @@
 package com.google.mcommerce.sample.android.chapter12.multiTouch;
 
 // This file is MainActivity.java
-import com.google.mcommerce.sample.android.R;
-
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,13 +10,15 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.RelativeLayout;
 
-public class MultiTouchDemo1Activity extends Activity implements OnTouchListener {
+import com.google.mcommerce.sample.android.R;
+
+public class MultiTouchActivity extends Activity implements OnTouchListener {
     private int os;
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.c12_multi_touch_demo_layout);
+        setContentView(R.layout.c12_multi_touch_layout);
 
         RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.layout1);
         layout1.setOnTouchListener(this);

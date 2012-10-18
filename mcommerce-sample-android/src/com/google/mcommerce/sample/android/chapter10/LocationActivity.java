@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter10.location;
+package com.google.mcommerce.sample.android.chapter10;
 
 import java.util.List;
 

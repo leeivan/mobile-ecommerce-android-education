@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12;
+package com.google.mcommerce.sample.android.chapter10.map;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -6,10 +6,10 @@ import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
 
-public class ClickReceiver1 extends Overlay{
+public class ClickReceiver extends Overlay{
 	private Context mContext;
 
-	public ClickReceiver1(Context context) {
+	public ClickReceiver(Context context) {
         mContext = context;
 	}
 	

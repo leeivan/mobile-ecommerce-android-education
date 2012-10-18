@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is /res/layout/mapview.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/zoomin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="myClickHandler"
+            android:padding="12px"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/zoomout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="myClickHandler"
+            android:padding="12px"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="myClickHandler"
+            android:padding="8px"
+            android:text="Satellite" />
+
+        <Button
+            android:id="@+id/traffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="myClickHandler"
+            android:padding="8px"
+            android:text="Traffic" />
+
+        <Button
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="myClickHandler"
+            android:padding="8px"
+            android:text="Normal" />
+    </LinearLayout>
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:apiKey="0E5ymLpzYDHnVG4ucDPWuwwSRJNmGNFtjsrt0Nw"
+        android:clickable="true" />
+
+</LinearLayout>

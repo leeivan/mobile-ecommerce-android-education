@@ -446,7 +446,7 @@
         </receiver>
 
         <activity
-            android:name=".chapter10.map.LocationActivity"
+            android:name=".chapter10.LocationActivity"
             android:label="@string/location" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -455,7 +455,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.GoogleMapActivity"
+            android:name=".chapter10.map.GoogleMapActivity"
             android:label="@string/map_google" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -464,7 +464,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.BaiduMapActivity"
+            android:name=".chapter10.map.MapViewWithTouchActivity"
+            android:label="@string/map_google_touch" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter10.map.BaiduMapActivity"
             android:label="@string/map_baidu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

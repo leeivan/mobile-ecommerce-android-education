@@ -93,9 +93,10 @@
     <string name="binding_service">Chapter09/BindingService</string>
     <string name="messenger_service">Chapter09/MessengerService</string>
     <string name="broadcast_receiver">Chapter09/BroadcastReceiver</string>
-    <string name="location">Chapter10/Location/Location</string>
-    <string name="map_google">Chapter10/Location/GoogleMap</string>
-    <string name="map_baidu">Chapter10/Location/BaiduMap</string>
+    <string name="map_google_touch">Chapter10/Map/GoogleTouch</string>
+    <string name="map_google">Chapter10/Map/GoogleMap</string>
+    <string name="map_baidu">Chapter10/Map/BaiduMap</string>
+    <string name="location">Chapter10/Location</string>
     <string name="sensor_list">Chapter10/Sensor/SensorList</string>
     <string name="sensor_light">Chapter10/Sensor/SensorLight</string>
     <string name="media_audio_demo">Chapter11/Media/Audio/Demo</string>

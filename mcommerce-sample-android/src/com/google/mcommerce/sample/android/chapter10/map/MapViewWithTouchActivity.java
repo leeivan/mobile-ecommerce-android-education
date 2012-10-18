@@ -1,11 +1,10 @@
-package com.google.mcommerce.sample.android.chapter12.multiTouch;
+package com.google.mcommerce.sample.android.chapter10.map;
 
 import android.os.Bundle;
 import android.view.View;
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapView;
 import com.google.mcommerce.sample.android.R;
-import com.google.mcommerce.sample.android.chapter12.ClickReceiver1;
 
 public class MapViewWithTouchActivity extends MapActivity
 {
@@ -14,11 +13,11 @@ public class MapViewWithTouchActivity extends MapActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.c12_mapview_01);
+        setContentView(R.layout.c10_mapview);
 
         mapView = (MapView)findViewById(R.id.mapview);
 
-        ClickReceiver1 clickRecvr = new ClickReceiver1(this);
+        ClickReceiver clickRecvr = new ClickReceiver(this);
         mapView.getOverlays().add(clickRecvr);
         mapView.invalidate();
     }

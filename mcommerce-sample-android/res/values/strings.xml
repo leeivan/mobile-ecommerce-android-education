@@ -43,6 +43,7 @@
     <string name="insert">插入</string>
     <string name="delete">删除</string>
     <string name="update">修改</string>
+    <string name="show">显示</string>
     <string name="button_search">搜索</string>
     <string name="input_keyword">输入单词</string>
     <string name="directions">Press a button to hear a sound: Up, right, down, left, enter, A, S, D, or F.</string>
@@ -99,6 +100,12 @@
     <string name="location">Chapter10/Location</string>
     <string name="sensor_list">Chapter10/Sensor/SensorList</string>
     <string name="sensor_light">Chapter10/Sensor/SensorLight</string>
+    <string name="sensor_campass">Chapter10/Sensor/Campass</string>
+    <string name="sensor_gravity">Chapter10/Sensor/Gravity</string>
+    <string name="sensor_gyroscope">Chapter10/Sensor/Gyroscope</string>
+    <string name="sensor_proximity">Chapter10/Sensor/Proximity</string>
+    <string name="sensor_virltualJax">Chapter10/Sensor/VirtualJax</string>
+    <string name="sensor_accelerometer">Chapter10/Sensor/Accelerometer</string>
     <string name="media_audio_demo">Chapter11/Media/Audio/Demo</string>
     <string name="media_audio_soundPool">Chapter11/Media/Audio/Soundpool</string>
     <string name="media_audio_asyncPlayer">Chapter11/Media/Audio/AsyncPlayer</string>
@@ -116,5 +123,7 @@
     <string name="multiTouch_drag_drop_demo">Chapter12/DragDrop</string>
     <string name="multiTouch_drag_touch_demo">Chapter12/TouchDrag</string>
     <string name="multiTouch_multi_touch">Chapter12/MultiTouch</string>
+    <string name="multiTouch_scale_detector">Chapter12/Gesture/ScaleDetector</string>
+    <string name="multiTouch_gesture_revealer">Chapter12/Gesture/Revealer</string>
 
 </resources>

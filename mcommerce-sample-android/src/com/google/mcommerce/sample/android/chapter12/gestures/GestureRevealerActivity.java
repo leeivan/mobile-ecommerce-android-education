@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12;
+package com.google.mcommerce.sample.android.chapter12.gestures;
 
 import java.util.ArrayList;
 
@@ -26,19 +26,19 @@ public class GestureRevealerActivity extends Activity implements OnGesturePerfor
         super.onCreate(savedInstanceState);
         setContentView(R.layout.c12_gesture_revealer_layout);
         
-//        gestureLib = GestureLibraries.fromRawResource(this, R.raw.gestures_letters);
-        String filename = Environment.getExternalStorageDirectory().toString() +
-                          "/gestures";
-        gestureLib = GestureLibraries.fromFile(filename);
+        gestureLib = GestureLibraries.fromRawResource(this, R.raw.gestures_letters);
+//        String filename = Environment.getExternalStorageDirectory().toString() +
+//                          "/gestures";
+//        gestureLib = GestureLibraries.fromFile(filename);
 
         // Here's where we can change the default values, prior to load
         //gestureLib.setOrientationStyle(GestureStore.ORIENTATION_INVARIANT);
         //gestureLib.setSequenceType(GestureStore.SEQUENCE_INVARIANT);
 
-        if (!gestureLib.load()) {
-            Toast.makeText(this, "Could not load " + filename, Toast.LENGTH_SHORT).show();
-            finish();
-        }
+//        if (!gestureLib.load()) {
+//            Toast.makeText(this, "Could not load " + filename, Toast.LENGTH_SHORT).show();
+//            finish();
+//        }
         
         // Let's take a look at the gesture library we have work with
         Log.v(TAG, "Library features:");

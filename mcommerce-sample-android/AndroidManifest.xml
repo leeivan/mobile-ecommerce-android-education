@@ -482,7 +482,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.sensor.SensorListActivityctivity"
+            android:name=".chapter10.sensor.SensorListActivity"
             android:label="@string/sensor_list" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -491,8 +491,62 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.sensor.LightSensorActivitySensorActivity"
+            android:name=".chapter10.sensor.LightSensorActivity"
             android:label="@string/sensor_light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter10.sensor.CampassSensorActivity"
+            android:label="@string/sensor_campass" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter10.sensor.GravityActivity"
+            android:label="@string/sensor_gravity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter10.sensor.GyroscopeActivity"
+            android:label="@string/sensor_gyroscope" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter10.sensor.ProximitySensorActivity"
+            android:label="@string/sensor_proximity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter10.sensor.AccelerometerActivity"
+            android:label="@string/sensor_accelerometer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter10.sensor.VirtualIJaxActivity"
+            android:label="@string/sensor_virltualJax" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -646,6 +700,24 @@
         <activity
             android:name=".chapter12.touchDrag.TouchDragActivity"
             android:label="@string/multiTouch_drag_touch_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter12.gestures.ScaleDetectorActivity"
+            android:label="@string/multiTouch_scale_detector" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter12.gestures.GestureRevealerActivity"
+            android:label="@string/multiTouch_gesture_revealer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

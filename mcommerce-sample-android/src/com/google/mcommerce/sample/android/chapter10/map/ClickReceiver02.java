@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12;
+package com.google.mcommerce.sample.android.chapter10.map;
 
 import android.content.Context;
 import android.content.Intent;

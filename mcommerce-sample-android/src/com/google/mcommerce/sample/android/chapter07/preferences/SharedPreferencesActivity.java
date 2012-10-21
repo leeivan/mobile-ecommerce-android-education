@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter07;
+package com.google.mcommerce.sample.android.chapter07.preferences;
 
 import android.app.Activity;
 import android.content.Intent;

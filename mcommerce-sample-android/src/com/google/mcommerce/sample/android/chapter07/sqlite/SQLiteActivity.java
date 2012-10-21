@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter07;
+package com.google.mcommerce.sample.android.chapter07.sqlite;
 
 import android.app.ListActivity;
 import android.database.Cursor;
@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.SimpleCursorAdapter;
 
-import com.google.mcommerce.sample.android.chapter07.sqlite.ContactsDataSource;
-import com.google.mcommerce.sample.android.chapter07.sqlite.MySQLiteHelper;
 import com.google.mcommerce.sample.android.R;
 
 public class SQLiteActivity extends ListActivity {

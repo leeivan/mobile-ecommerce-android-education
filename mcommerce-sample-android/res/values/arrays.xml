@@ -11,4 +11,36 @@
         <item>Uranus</item>
         <item>Neptune</item>
     </string-array>
+    <string-array name="flight_sort_options">
+        <item>Total Cost</item>
+        <item># of Stops</item>
+        <item>Airline</item>
+    </string-array>
+    <string-array name="flight_sort_options_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="entries">
+        <item>Snow White</item>
+        <item>Dopey</item>
+        <item>Bashful</item>
+        <item>Doc</item>
+        <item>Sleepy</item>
+        <item>Sneezy</item>
+        <item>Grumpy</item>
+        <item>Happy</item>
+    </string-array>
+ <!-- Used in app/menu examples -->
+    <string-array name="values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
 </resources>

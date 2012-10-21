@@ -125,5 +125,14 @@
     <string name="multiTouch_multi_touch">Chapter12/MultiTouch</string>
     <string name="multiTouch_scale_detector">Chapter12/Gesture/ScaleDetector</string>
     <string name="multiTouch_gesture_revealer">Chapter12/Gesture/Revealer</string>
+    <string name="prefTitle">My Preferences</string>
+    <string name="prefSummary">Set Flight Option Preferences</string>
+    <string name="flight_sort_option_default_value">1</string>
+    <string name="dialogTitle">Choose Flight Options</string>
+    <string name="listSummary">Set Search Options</string>
+    <string name="listTitle">Flight Options</string>
+    <string name="selected_flight_sort_option">selected_flight_sort_option</string>
+    <string name="menu_prefs_title">Settings</string>
+    <string name="menu_quit_title">Quit</string>
 
 </resources>

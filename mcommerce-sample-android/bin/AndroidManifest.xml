@@ -304,7 +304,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter07.SharedPreferencesActivity"
+            android:name=".chapter07.preferences.SharedPreferencesActivity"
             android:label="@string/SharedPreferences" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -312,13 +312,13 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter07.SharedPreferencesGetter" >
+        <activity android:name=".chapter07.preferences.SharedPreferencesGetter" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter07.UserDictionaryActivity"
+            android:name=".chapter07.contentProvider.UserDictionaryActivity"
             android:label="@string/UserDictionaryProvider" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -327,7 +327,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter07.ContactsActivity"
+           android:name=".chapter07.contentProvider.ContactsActivity"
             android:label="@string/QuickContacts" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

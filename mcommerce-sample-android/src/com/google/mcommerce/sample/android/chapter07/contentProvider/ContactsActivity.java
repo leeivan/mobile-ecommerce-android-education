@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter07;
+package com.google.mcommerce.sample.android.chapter07.contentProvider;
 
 import java.util.ArrayList;
 

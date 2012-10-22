@@ -239,7 +239,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.AsyncTaskActivity"
+            android:name=".chapter06.asyncTask.AsyncTaskActivity"
             android:label="@string/AsynTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -327,7 +327,7 @@
             </intent-filter>
         </activity>
         <activity
-           android:name=".chapter07.contentProvider.ContactsActivity"
+            android:name=".chapter07.contentProvider.ContactsActivity"
             android:label="@string/QuickContacts" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

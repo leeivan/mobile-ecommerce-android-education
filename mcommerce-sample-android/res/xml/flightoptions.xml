@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This file is /res/xml/mypreferences.xml -->
-<PreferenceScreen
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="flight_option_preference"
-    android:title="@string/prefTitle"
-    android:summary="@string/prefSummary">
+    android:summary="@string/prefSummary"
+    android:title="@string/prefTitle" >
 
   <ListPreference
     android:key="@string/selected_flight_sort_option"

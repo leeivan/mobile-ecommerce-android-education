@@ -82,9 +82,10 @@
     <string name="processLifecycle">Chapter06/ProcessLifecycle</string>
     <string name="search_product_api">Chapter06/SearchProducts</string>
     <string name="ImageView">Chapter07/ImageView</string>
-    <string name="SharedPreferences">Chapter07/SharedPreferences</string>
-    <string name="UserDictionaryProvider">Chapter07/UserDictionaryProvider</string>
-    <string name="QuickContacts">Chapter07/QuickContacts</string>
+    <string name="preferences_default">Chapter07/Preferences/Default</string>
+    <string name="SharedPreferences">Chapter07/Preferences/SharedPreferences</string>
+    <string name="UserDictionaryProvider">Chapter07/Content Provider/UserDictionaryProvider</string>
+    <string name="QuickContacts">Chapter07/Content Provider/QuickContacts</string>
     <string name="SQLite">Chapter07/SQLite</string>
     <string name="show_product">Chapter07/ShowProduct</string>
     <string name="BrowerView">Chapter08/BrowerView</string>

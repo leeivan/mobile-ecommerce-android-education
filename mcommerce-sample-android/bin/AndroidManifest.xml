@@ -318,6 +318,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter07.preferences.PreferencesWithDefaultsActivity"
+            android:label="@string/preferences_default" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter07.preferences.FlightPreferenceActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter07.contentProvider.UserDictionaryActivity"
             android:label="@string/UserDictionaryProvider" >
             <intent-filter>

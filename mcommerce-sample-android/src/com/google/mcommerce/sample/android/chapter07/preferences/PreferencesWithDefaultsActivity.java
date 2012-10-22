@@ -23,7 +23,7 @@ public class PreferencesWithDefaultsActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(R.layout.c07_preferences_layout);
 
 		resources = this.getResources();
 

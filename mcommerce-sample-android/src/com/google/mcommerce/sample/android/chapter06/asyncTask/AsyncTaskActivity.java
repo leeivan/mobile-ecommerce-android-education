@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter06;
+package com.google.mcommerce.sample.android.chapter06.asyncTask;
 
 import android.app.Activity;
 import android.os.AsyncTask;

@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter06;
+package com.google.mcommerce.sample.android.chapter06.handler;
 
 import android.app.Activity;
 import android.os.Bundle;

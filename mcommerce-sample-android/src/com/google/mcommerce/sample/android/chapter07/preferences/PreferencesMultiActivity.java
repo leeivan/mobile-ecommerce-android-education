@@ -20,14 +20,15 @@ public class PreferencesMultiActivity extends Activity {
 	private Resources resources;
 	private TextView tv = null;
 
+	// private SharedPreferences prefs;
+
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(R.layout.c07_preferences_layout);
 
 		resources = this.getResources();
-
 		tv = (TextView) findViewById(R.id.text1);
 
 		setOptionText();
@@ -43,10 +44,8 @@ public class PreferencesMultiActivity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getItemId() == R.id.menu_prefs) {
-			Intent intent = new Intent()
-					.setClass(
-							this,
-							FlightPreferenceActivity02.class);
+			Intent intent = new Intent().setClass(this,
+					FlightPreferenceMulti.class);
 			this.startActivityForResult(intent, 0);
 		}
 		return true;
@@ -61,7 +60,6 @@ public class PreferencesMultiActivity extends Activity {
 	private void setOptionText() {
 		SharedPreferences prefs = PreferenceManager
 				.getDefaultSharedPreferences(this);
-
 		Set<String> option = prefs
 				.getStringSet(resources
 						.getString(R.string.selected_flight_sort_option), null);

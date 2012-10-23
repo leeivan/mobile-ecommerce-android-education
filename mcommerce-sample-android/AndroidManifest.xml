@@ -326,9 +326,43 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter07.preferences.FlightPreferenceActivity" >
+        <activity android:name=".chapter07.preferences.FlightPreferenceSingle" >
+            <intent-filter>
+                <action android:name="com.google.mcommerce.sample.android.intent.action.FlightPreferences" />
+
+                <category android:name="android.intent.category.PREFERENCE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter07.preferences.PreferencesMultiActivity"
+            android:label="@string/preferences_multi" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter07.preferences.FlightPreferenceMulti" >
+            <intent-filter>
+                <action android:name="com.google.mcommerce.sample.android.intent.action.FlightPreferences" />
+
+                <category android:name="android.intent.category.PREFERENCE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter07.preferences.PreferencesDemoActivity"
+            android:label="@string/preferences_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter07.preferences.MainPreferenceActivity" >
+            <intent-filter>
+                <action android:name="com.google.mcommerce.sample.android.intent.action.MainPreferences" />
+
+                <category android:name="android.intent.category.PREFERENCE" />
             </intent-filter>
         </activity>
         <activity

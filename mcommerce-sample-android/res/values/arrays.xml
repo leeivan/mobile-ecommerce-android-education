@@ -31,7 +31,7 @@
         <item>Grumpy</item>
         <item>Happy</item>
     </string-array>
- <!-- Used in app/menu examples -->
+   <!-- Used in app/menu examples -->
     <string-array name="values">
         <item>0</item>
         <item>1</item>

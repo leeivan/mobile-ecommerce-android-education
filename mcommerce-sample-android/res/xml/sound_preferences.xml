@@ -1,35 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-        xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <PreferenceCategory
-            android:title="First Sounds">
-
+    <PreferenceCategory android:title="First Sounds" >
         <CheckBoxPreference
-                android:key="checkbox_preference"
-                android:title="Checkbox 1"
-                android:summary="Our first checkbox preference" />
-
+            android:key="checkbox_preference"
+            android:summary="Our first checkbox preference"
+            android:title="Checkbox 1" />
     </PreferenceCategory>
-
-    <PreferenceCategory
-            android:title="Second Sounds">
-
+    <PreferenceCategory android:title="Second Sounds" >
         <EditTextPreference
-                android:key="edittext_preference"
-                android:title="EditText Preference"
-                android:summary="Here's an edittext preference"
-                android:dialogTitle="Title for our dialog" />
+            android:dialogTitle="Title for our dialog"
+            android:key="edittext_preference"
+            android:summary="Here&apos;s an edittext preference"
+            android:title="EditText Preference" />
 
         <ListPreference
-                android:key="list_preference"
-                android:title="Favorite Character"
-                android:summary="from Snow White and the Seven Dwarves"
-                android:entries="@array/entries"
-                android:entryValues="@array/values"
-                android:dialogTitle="Choose a Character" />
-
+            android:dialogTitle="Choose a Character"
+            android:entries="@array/entries"
+            android:entryValues="@array/values"
+            android:key="list_preference"
+            android:summary="from Snow White and the Seven Dwarves"
+            android:title="Favorite Character" />
     </PreferenceCategory>
 
 </PreferenceScreen>
-

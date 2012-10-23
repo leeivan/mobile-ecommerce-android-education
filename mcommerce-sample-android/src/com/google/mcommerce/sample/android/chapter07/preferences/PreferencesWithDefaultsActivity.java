@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -26,10 +27,13 @@ public class PreferencesWithDefaultsActivity extends Activity {
 		setContentView(R.layout.c07_preferences_layout);
 
 		resources = this.getResources();
-
+		// 获得默认的preference对象
 		prefs = PreferenceManager.getDefaultSharedPreferences(this);
-
-		PreferenceManager.setDefaultValues(this, R.xml.flightoptions, false);
+		Log.i("PreferencesWithDefaultsActivity", "0");
+//		prefs.edit().clear().commit();
+		// 在应用目录中设置配置文件缺省值
+		PreferenceManager.setDefaultValues(this, R.xml.flightoptions_single, false);
+		Log.i("PreferencesWithDefaultsActivity", "1");
 
 		tv = (TextView) findViewById(R.id.text1);
 
@@ -47,7 +51,7 @@ public class PreferencesWithDefaultsActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getItemId() == R.id.menu_prefs) {
 			Intent intent = new Intent().setClass(this,
-					FlightPreferenceActivity.class);
+					FlightPreferenceSingle.class);
 			this.startActivityForResult(intent, 0);
 		}
 		return true;

@@ -1,9 +1,9 @@
-package com.google.mcommerce.sample.android.chapter06.util;
+package com.google.mcommerce.sample.android.chapter06.handler;
 
 import android.os.Bundle;
 import android.util.Log;
 
-public class ThreadUtils {
+public class Utils {
 	public static long getThreadId() {
 		Thread t = Thread.currentThread();
 		return t.getId();

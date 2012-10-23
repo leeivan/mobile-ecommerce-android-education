@@ -248,8 +248,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.HandlerActivity"
+            android:name=".chapter06.handler.HandlerActivity"
             android:label="@string/Handler" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter06.handler.TestHandlersDriverActivity"
+            android:label="@string/TestHandlersDriver" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

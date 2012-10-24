@@ -17,7 +17,7 @@ public class TestHandlersDriverActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(R.layout.c06_handler_test02);
 	}
 
 	@Override
@@ -85,6 +85,8 @@ public class TestHandlersDriverActivity extends Activity {
 			statusBackHandler = new ReportStatusHandler(this);
 			workerThread = new Thread(new WorkerThreadRunnable(
 					statusBackHandler));
+			workerThread.start();
+			return;
 		}
 		if (workerThread.getState() != Thread.State.TERMINATED) {
 			Log.d(tag, "thread is new or alive, but not terminated");

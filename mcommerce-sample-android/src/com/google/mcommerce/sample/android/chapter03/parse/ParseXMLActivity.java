@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter03;
+package com.google.mcommerce.sample.android.chapter03.parse;
 
 import java.util.ArrayList;
 

@@ -10,6 +10,7 @@ extends AsyncTask<String,Integer,Integer>
 	Context ctx;
 	public String tag = null;
 	ProgressDialog pd = null;
+
 	MyLongTask(IReportBack inr, Context inCtx, String inTag)
 	{
 		r = inr;

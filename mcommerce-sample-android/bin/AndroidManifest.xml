@@ -61,7 +61,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.ParseJSONActivity"
+            android:name=".chapter03.parse.ParseJSONActivity"
             android:label="@string/parse_JSON" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,7 +70,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.ParseXMLActivity"
+            android:name=".chapter03.parse.ParseXMLActivity"
             android:label="@string/parse_XML" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -78,6 +78,25 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".chapter03.http.HttpGetDemo"
+            android:label="@string/http_get" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter03.http.HttpPostDemo"
+            android:label="@string/http_post" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        
         <activity
             android:name=".chapter04.TextViewActivity"
             android:label="@string/textView" >
@@ -240,7 +259,25 @@
         </activity>
         <activity
             android:name=".chapter06.asyncTask.AsyncTaskActivity"
-            android:label="@string/AsynTask" >
+            android:label="@string/AsynTask01" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter06.asyncTask.TestAsyncTaskDriverActivity"
+            android:label="@string/AsynTask02" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter06.asyncTask.DownloadAsyncTaskForRotateActivity"
+            android:label="@string/AsynTask_Download" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

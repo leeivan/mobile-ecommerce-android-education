@@ -56,8 +56,10 @@
     <string name="multi_user_pull">使用PULL解析</string>
     <string name="multi_user_sax">使用SAX解析</string>
     <string name="taobao_api">Chapter03/TaoBaoAPITest</string>
-    <string name="parse_JSON">Chapter03/ParseJSON</string>
-    <string name="parse_XML">Chapter03/ParseXML</string>
+    <string name="parse_JSON">Chapter03/Parse/JSON</string>
+    <string name="parse_XML">Chapter03/Parse/XML</string>
+    <string name="http_get">Chapter03/HTTP/Get</string>
+    <string name="http_post">Chapter03/HTTP/Post</string>
     <string name="textView">Chapter04/TextView</string>
     <string name="textView_web">Chapter04/TextView_Web</string>
     <string name="linear_layout">Chapter04/LinearLayout</string>
@@ -75,7 +77,9 @@
     <string name="spinner">Chapter06/Spinner</string>
     <string name="progressbar1">Chapter06/Progress Bar/1. Incremental</string>
     <string name="progressbar2">Chapter06/Progress Bar/2. Smooth</string>
-    <string name="AsynTask">Chapter06/AsynTask</string>
+    <string name="AsynTask01">Chapter06/AsyncTask/Test01</string>
+    <string name="AsynTask02">Chapter06/AsyncTask/Test02</string>
+    <string name="AsynTask_Download">Chapter06/AsyncTask/Download</string>
     <string name="Handler">Chapter06/Handler/Test01</string>
     <string name="TestHandlersDriver">Chapter06/Handler/Test02</string>
     <string name="ListView">Chapter06/ListView</string>

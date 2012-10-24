@@ -24,7 +24,7 @@ implements IReportBack
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.c06_async_task_test02);
         asyncTester = new AsyncTester(this,this);
     }
     @Override

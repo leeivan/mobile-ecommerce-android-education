@@ -98,6 +98,7 @@
     <string name="binding_service">Chapter09/BindingService</string>
     <string name="messenger_service">Chapter09/MessengerService</string>
     <string name="broadcast_receiver">Chapter09/BroadcastReceiver</string>
+    <string name="alarm">Chapter09/Alarm</string>
     <string name="map_google_touch">Chapter10/Map/GoogleTouch</string>
     <string name="map_google">Chapter10/Map/GoogleMap</string>
     <string name="map_baidu">Chapter10/Map/BaiduMap</string>
@@ -129,6 +130,10 @@
     <string name="multiTouch_multi_touch">Chapter12/MultiTouch</string>
     <string name="multiTouch_scale_detector">Chapter12/Gesture/ScaleDetector</string>
     <string name="multiTouch_gesture_revealer">Chapter12/Gesture/Revealer</string>
+    <string name="animation_frame">Chapter13/Frame</string>
+    <string name="animation_layout">Chapter13/Layout</string>
+    <string name="animation_property">Chapter13/Property</string>
+    <string name="animation_view">Chapter13/View</string>
     <string name="prefTitle">My Preferences</string>
     <string name="prefSummary">Set Flight Option Preferences</string>
     <string name="flight_sort_option_default_value">1</string>
@@ -138,5 +143,14 @@
     <string name="selected_flight_sort_option">selected_flight_sort_option</string>
     <string name="menu_prefs_title">Settings</string>
     <string name="menu_quit_title">Quit</string>
+    <string name="startMyActivityDesc">Allows starting my activity</string>
+
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#00FF00</color>
 
 </resources>

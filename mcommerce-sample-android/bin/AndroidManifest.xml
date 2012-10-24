@@ -142,6 +142,22 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter04.permission.CustPermMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.permission.PrivActivity"
+            android:permission="chapter04.permission.STARTMYACTIVITY" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter05.SimpleEventActivity"
             android:label="@string/simple_event" >
             <intent-filter>
@@ -503,6 +519,27 @@
         </receiver>
 
         <activity
+            android:name=".chapter09.alarm.TestAlarmsDriverActivity"
+            android:label="@string/alarm" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".chapter09.alarm.TestReceiver" >
+            <intent-filter>
+                <action android:name="com.ai.android.intents.testbc" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".chapter09.alarm.TestReceiver2" >
+            <intent-filter>
+                <action android:name="com.ai.android.intents.testbc" />
+            </intent-filter>
+        </receiver>
+
+        <activity
             android:name=".chapter10.LocationActivity"
             android:label="@string/location" >
             <intent-filter>
@@ -781,8 +818,62 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".chapter13.frame.MainActivity"
+            android:label="@string/animation_frame" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter13.frame.FrameAnimationActivity"
+            android:label="Frame Animation Test" >
+        </activity>
+        <activity
+            android:name=".chapter13.layout.MainActivity"
+            android:label="@string/animation_layout" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter13.layout.LayoutAnimationActivity"
+            android:label="Layout Animation Test" >
+        </activity>
+        <activity
+            android:name=".chapter13.property.TestPropertyAnimationActivity"
+            android:label="@string/animation_property" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter13.view.MainActivity"
+            android:label="@string/animation_view" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter13.view.ViewAnimationActivity"
+            android:label="View Animation Test Activity" >
+        </activity>
 
         <uses-library android:name="com.google.android.maps" />
     </application>
+
+    <permission
+        android:name="chapter04.permission.STARTMYACTIVITY"
+        android:description="@string/startMyActivityDesc"
+        android:label="Start My Activity"
+        android:protectionLevel="normal" />
 
 </manifest>

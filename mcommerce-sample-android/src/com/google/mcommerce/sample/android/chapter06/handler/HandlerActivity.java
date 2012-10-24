@@ -101,7 +101,7 @@ public class HandlerActivity extends Activity implements OnClickListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c06_handler_layout);
+		setContentView(R.layout.c06_handler_test01);
 		((Button) findViewById(R.id.btnStart)).setOnClickListener(this);
 		((Button) findViewById(R.id.btnStop)).setOnClickListener(this);
 		((Button) findViewById(R.id.btnShowToast)).setOnClickListener(this);

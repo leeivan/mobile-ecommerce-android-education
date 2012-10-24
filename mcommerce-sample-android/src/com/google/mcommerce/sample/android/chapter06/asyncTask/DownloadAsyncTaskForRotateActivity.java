@@ -8,14 +8,14 @@ import android.view.View;
 
 import com.google.mcommerce.sample.android.R;
 
-public class HttpActivity extends Activity {
+public class DownloadAsyncTaskForRotateActivity extends Activity {
     private DownloadImageTask diTask;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.c06_async_task);
+        setContentView(R.layout.c06_async_task_download);
     }
 
     public void doClick(View view) {

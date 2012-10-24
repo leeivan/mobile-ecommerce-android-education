@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter03;
+package com.google.mcommerce.sample.android.chapter03.http;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,7 +24,7 @@ public class HttpPostDemo extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.c03_simple_http_layout);
 
         BufferedReader in = null;
         try {

@@ -22,7 +22,7 @@ public class AsyncTaskActivity extends Activity implements OnClickListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c06_async_task_layout);
+		setContentView(R.layout.c06_async_task_test01);
 		Btn = (Button) findViewById(R.id.button1);
 		txt = (TextView) findViewById(R.id.textView1);
 		progressBar = (ProgressBar) findViewById(R.id.progressBar1);

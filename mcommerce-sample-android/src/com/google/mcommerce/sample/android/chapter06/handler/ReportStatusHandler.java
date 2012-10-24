@@ -1,7 +1,6 @@
 package com.google.mcommerce.sample.android.chapter06.handler;
 
 
-import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;

@@ -24,7 +24,7 @@ public class TestHandlersDriverActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
 		MenuInflater inflater = getMenuInflater(); // from activity
-		inflater.inflate(R.menu.c07_menu_handler, menu);
+		inflater.inflate(R.menu.c06_menu_handler, menu);
 		return true;
 	}
 

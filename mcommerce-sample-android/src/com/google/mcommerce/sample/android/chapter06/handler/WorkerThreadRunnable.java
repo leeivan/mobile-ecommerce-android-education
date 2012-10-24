@@ -4,7 +4,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
-import com.google.mcommerce.sample.android.chapter06.util.ThreadUtils;
 
 public class WorkerThreadRunnable implements Runnable {
 	Handler mainThreadHandler = null;
@@ -20,7 +19,7 @@ public class WorkerThreadRunnable implements Runnable {
 		Log.d(tag, "start execution");
 		informStart();
 		for (int i = 1; i <= 10; i++) {
-			ThreadUtils.sleepForInSecs(1);
+			Utils.sleepForInSecs(1);
 			informMiddle(i);
 		}
 		informFinish();
@@ -28,19 +27,19 @@ public class WorkerThreadRunnable implements Runnable {
 
 	public void informMiddle(int count) {
 		Message m = this.mainThreadHandler.obtainMessage();
-		m.setData(ThreadUtils.getStringAsABundle("done:" + count));
+		m.setData(Utils.getStringAsABundle("done:" + count));
 		this.mainThreadHandler.sendMessage(m);
 	}
 
 	public void informStart() {
 		Message m = this.mainThreadHandler.obtainMessage();
-		m.setData(ThreadUtils.getStringAsABundle("starting run"));
+		m.setData(Utils.getStringAsABundle("starting run"));
 		this.mainThreadHandler.sendMessage(m);
 	}
 
 	public void informFinish() {
 		Message m = this.mainThreadHandler.obtainMessage();
-		m.setData(ThreadUtils.getStringAsABundle("Finishing run"));
+		m.setData(Utils.getStringAsABundle("Finishing run"));
 		this.mainThreadHandler.sendMessage(m);
 	}
 }

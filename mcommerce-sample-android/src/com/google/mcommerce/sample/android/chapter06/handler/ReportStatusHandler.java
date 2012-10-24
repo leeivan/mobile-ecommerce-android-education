@@ -1,6 +1,5 @@
 package com.google.mcommerce.sample.android.chapter06.handler;
 
-import com.google.mcommerce.sample.android.chapter06.util.ThreadUtils;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,7 +16,7 @@ public class ReportStatusHandler extends Handler {
 
 	@Override
 	public void handleMessage(Message msg) {
-		String pm = ThreadUtils.getStringFromABundle(msg.getData());
+		String pm = Utils.getStringFromABundle(msg.getData());
 
 		Log.d(tag, pm);
 		this.printMessage(pm);

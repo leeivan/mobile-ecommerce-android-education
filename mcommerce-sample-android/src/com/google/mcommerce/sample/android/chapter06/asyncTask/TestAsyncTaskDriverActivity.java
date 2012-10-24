@@ -31,7 +31,7 @@ implements IReportBack
     public boolean onCreateOptionsMenu(Menu menu){ 
     	super.onCreateOptionsMenu(menu);
  	   	MenuInflater inflater = getMenuInflater();
- 	   	inflater.inflate(R.menu.c07_menu_async_task, menu);
+ 	   	inflater.inflate(R.menu.c06_menu_async_task, menu);
     	return true;
     }
     @Override

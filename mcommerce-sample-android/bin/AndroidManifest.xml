@@ -257,6 +257,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter06.handler.TestHandlersDriverActivity"
+            android:label="@string/TestHandlersDriver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter06.ThreadActivity"
             android:label="@string/Thread" >
             <intent-filter>

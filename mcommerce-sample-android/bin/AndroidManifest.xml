@@ -96,9 +96,8 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        
         <activity
-            android:name=".chapter04.TextViewActivity"
+            android:name=".chapter05.text.TextViewActivity"
             android:label="@string/textView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -107,7 +106,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.TextViewWebActivity"
+            android:name=".chapter05.text.TextViewWebActivity"
             android:label="@string/textView_web" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -161,6 +160,18 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter04.menu.SampleMenusActivity"
+            android:label="@string/wiget_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.menu.XMLMenusActivity"
+            android:label="Test XML and PopupMenus" />
+        <activity
             android:name=".chapter04.permission.CustPermMainActivity"
             android:label="@string/app_name" >
             <intent-filter>
@@ -211,7 +222,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.EditTextActivity"
+            android:name=".chapter05.text.EditTextActivity"
             android:label="@string/editText" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -220,7 +231,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.EditTextSearchActivity"
+            android:name=".chapter05.text.EditTextSearchActivity"
             android:label="@string/editText_search" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -229,7 +240,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.RadioGroupActivity"
+            android:name=".chapter05.button.RadioGroupActivity"
             android:label="@string/radioGroup" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -238,7 +249,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.CheckBoxActivity"
+            android:name=".chapter05.button.CheckBoxActivity"
             android:label="@string/checkBox" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

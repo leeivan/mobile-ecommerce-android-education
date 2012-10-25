@@ -16,7 +16,7 @@ public class ViewAnimationActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) 
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_layout);
+        setContentView(R.layout.c13_view_layout);
         setupListView();
         this.setupButton();
     }

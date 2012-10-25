@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.mcommerce.sample.android.chapter05;
+package com.google.mcommerce.sample.android.chapter05.button;
 
 import android.app.Activity;
 import android.os.Bundle;

@@ -35,7 +35,7 @@ implements IReportBack
     	//call the parent to attach any system level menus
     	super.onCreateOptionsMenu(menu);
  	   	MenuInflater inflater = getMenuInflater(); //from activity
- 	   	inflater.inflate(R.menu.c09_alarm, menu);
+ 	   	inflater.inflate(R.menu.c09_alarm_menu, menu);
     	return true;
     }
     

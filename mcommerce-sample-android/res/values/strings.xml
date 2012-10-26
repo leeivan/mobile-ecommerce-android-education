@@ -104,6 +104,7 @@
     <string name="messenger_service">Chapter09/MessengerService</string>
     <string name="broadcast_receiver">Chapter09/BroadcastReceiver</string>
     <string name="alarm">Chapter09/Alarm</string>
+    <string name="test">Chapter09/Test</string>
     <string name="map_google_touch">Chapter10/Map/GoogleTouch</string>
     <string name="map_google">Chapter10/Map/GoogleMap</string>
     <string name="map_baidu">Chapter10/Map/BaiduMap</string>

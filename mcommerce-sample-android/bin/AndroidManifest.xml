@@ -599,17 +599,17 @@
 
         <receiver android:name=".chapter09.test.TestReceiver" >
             <intent-filter>
-                <action android:name="com.androidbook.intents.testbc1" />
+                <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
             </intent-filter>
         </receiver>
         <receiver android:name=".chapter09.test.TestTimeDelayReceiver" >
             <intent-filter>
-                <action android:name="com.androidbook.intents.testbc1" />
+                <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
             </intent-filter>
         </receiver>
         <receiver android:name=".chapter09.test.TestReceiver2" >
             <intent-filter>
-                <action android:name="com.androidbook.intents.testbc1" />
+                <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
             </intent-filter>
         </receiver>
 

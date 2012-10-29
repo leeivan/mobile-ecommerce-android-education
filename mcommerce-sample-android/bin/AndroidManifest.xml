@@ -12,7 +12,9 @@
         android:resizeable="true"
         android:smallScreens="true" />
 
-    <uses-sdk android:minSdkVersion="14" />
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
 
     <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -566,6 +568,20 @@
             </intent-filter>
         </receiver>
 
+        <activity
+            android:name="chapter09.NotificationMainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name="chapter09.HandleNotificationActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".chapter09.alarm.TestAlarmsDriverActivity"
             android:label="@string/alarm" >

@@ -2,4 +2,5 @@
 <resources>
     <string name="hello">Your debug will appear here</string>
     <string name="app_name">HelloWorld</string>
+    <string name="tvHandleNotification">You can handle notification intent here.</string>
 </resources>

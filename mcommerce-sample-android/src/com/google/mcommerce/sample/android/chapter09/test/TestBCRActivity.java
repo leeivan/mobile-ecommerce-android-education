@@ -57,7 +57,7 @@ public class TestBCRActivity extends Activity
     	Utils.logThreadSignature(tag);
     	
     	//Create an intent with an action
-    	Intent broadcastIntent = new Intent("com.androidbook.intents.testbc1");
+    	Intent broadcastIntent = new Intent("com.google.mcommerce.sample.android.chapter09.test");
     	//load up the intent with a message
     	//you want to broadcast
     	broadcastIntent.putExtra("message", "Hello world");

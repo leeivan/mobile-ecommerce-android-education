@@ -1,0 +1,21 @@
+<com.google.mcommerce.sample.android.chapter12.motionEvent.RootView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center" >
+
+    <com.google.mcommerce.sample.android.chapter12.motionEvent.Cell0
+        android:layout_width="200dip"
+        android:layout_height="300dip"
+        android:background="#ff0000"
+        android:gravity="center" >
+
+        <com.google.mcommerce.sample.android.chapter12.motionEvent.Cell1
+            android:layout_width="100dip"
+            android:layout_height="200dip"
+            android:background="#00ff00" >
+        </com.google.mcommerce.sample.android.chapter12.motionEvent.Cell1>
+    </com.google.mcommerce.sample.android.chapter12.motionEvent.Cell0>
+
+</com.google.mcommerce.sample.android.chapter12.motionEvent.RootView>

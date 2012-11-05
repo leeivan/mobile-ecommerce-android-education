@@ -855,6 +855,33 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter12.motionEvent.InterceptTouchStudyActivity"
+            android:label="@string/multiTouch_motionEvent_intercept" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter12.motionEvent.Test01"
+            android:label="@string/multiTouch_motionEvent_test01" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter12.motionEvent.Test02"
+            android:label="@string/multiTouch_motionEvent_test02" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter12.motionEvent.VelocityTrackerActivity"
             android:label="@string/multiTouch_motionEvent_velocityTracker" >
             <intent-filter>

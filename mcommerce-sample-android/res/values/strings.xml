@@ -131,6 +131,9 @@
     <string name="media_record_mediaScanner">Chapter11/Record/MediaScanner</string>
     <string name="multiTouch_motionEvent_demo01">Chapter12/MotionEvent/Demo1</string>
     <string name="multiTouch_motionEvent_demo02">Chapter12/MotionEvent/Demo2</string>
+    <string name="multiTouch_motionEvent_intercept">Chapter12/MotionEvent/Intercept</string>
+    <string name="multiTouch_motionEvent_test01">Chapter12/MotionEvent/Test01</string>
+    <string name="multiTouch_motionEvent_test02">Chapter12/MotionEvent/Test02</string>
     <string name="multiTouch_motionEvent_velocityTracker">Chapter12/MotionEvent/VelocityTracker</string>
     <string name="multiTouch_drag_drop_demo">Chapter12/DragDrop</string>
     <string name="multiTouch_drag_touch_demo">Chapter12/TouchDrag</string>

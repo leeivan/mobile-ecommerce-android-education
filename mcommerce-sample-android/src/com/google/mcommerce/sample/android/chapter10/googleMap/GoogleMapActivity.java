@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter10.map;
+package com.google.mcommerce.sample.android.chapter10.googleMap;
 
 import android.os.Bundle;
 

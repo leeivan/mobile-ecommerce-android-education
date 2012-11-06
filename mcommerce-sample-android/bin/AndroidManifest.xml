@@ -639,7 +639,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.map.GoogleMapActivity"
+            android:name=".chapter10.googleMap.GoogleMapActivity"
             android:label="@string/map_google" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -648,7 +648,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.map.MapViewWithTouchActivity"
+            android:name=".chapter10.googleMap.MapViewWithTouchActivity"
             android:label="@string/map_google_touch" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -657,7 +657,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.map.BaiduMapActivity"
+            android:name=".chapter10.baiduMap.BaiduMapActivity"
             android:label="@string/map_baidu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

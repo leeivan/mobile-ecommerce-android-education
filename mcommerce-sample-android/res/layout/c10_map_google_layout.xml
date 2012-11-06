@@ -9,7 +9,7 @@
         android:id="@+id/map"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:apiKey="0E5ymLpzYDHnVG4ucDPWuwwSRJNmGNFtjsrt0Nw"
+        android:apiKey="0E5ymLpzYDHlguYKgcjQUF5OyZQ1ql-B5NdmAFQ"
         android:clickable="true" />
 
 </LinearLayout>

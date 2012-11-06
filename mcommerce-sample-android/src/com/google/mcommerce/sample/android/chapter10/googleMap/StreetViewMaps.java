@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter10.map;
+package com.google.mcommerce.sample.android.chapter10.googleMap;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,9 +6,9 @@ import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapView;
 import com.google.mcommerce.sample.android.R;
 
-public class StreetViewMapsPinchZoom22 extends MapActivity
+public class StreetViewMaps extends MapActivity
 {
-	protected MapView mapView;
+    private MapView mapView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class StreetViewMapsPinchZoom22 extends MapActivity
 
         mapView = (MapView)findViewById(R.id.mapview);
 
-        ClickReceiver03 clickRecvr = new ClickReceiver03(this);
+        ClickReceiver02 clickRecvr = new ClickReceiver02(this);
         mapView.getOverlays().add(clickRecvr);
         mapView.invalidate();
     }

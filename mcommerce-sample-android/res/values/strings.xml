@@ -106,9 +106,9 @@
     <string name="alarm">Chapter09/Alarm</string>
     <string name="test">Chapter09/Test</string>
     <string name="title_activity_main">Chapter09/Notification</string>
-    <string name="map_google_touch">Chapter10/Map/GoogleTouch</string>
-    <string name="map_google">Chapter10/Map/GoogleMap</string>
-    <string name="map_baidu">Chapter10/Map/BaiduMap</string>
+    <string name="map_google_touch">Chapter10/GoogleMap/GoogleTouch</string>
+    <string name="map_google">Chapter10/GoogleMap/GoogleMap</string>
+    <string name="map_baidu">Chapter10/BaiduMap/BaiduMap</string>
     <string name="location">Chapter10/Location</string>
     <string name="sensor_list">Chapter10/Sensor/SensorList</string>
     <string name="sensor_light">Chapter10/Sensor/SensorLight</string>

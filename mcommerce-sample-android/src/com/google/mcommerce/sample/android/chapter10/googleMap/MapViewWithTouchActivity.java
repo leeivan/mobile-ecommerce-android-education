@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter10.map;
+package com.google.mcommerce.sample.android.chapter10.googleMap;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,18 +6,18 @@ import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapView;
 import com.google.mcommerce.sample.android.R;
 
-public class StreetViewMapsPinchZoom extends MapActivity
+public class MapViewWithTouchActivity extends MapActivity
 {
-	private MapView mapView;
+    private MapView mapView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.c12_mapview_02);
+        setContentView(R.layout.c10_mapview);
 
         mapView = (MapView)findViewById(R.id.mapview);
 
-        ClickReceiver03 clickRecvr = new ClickReceiver03(this);
+        ClickReceiver clickRecvr = new ClickReceiver(this);
         mapView.getOverlays().add(clickRecvr);
         mapView.invalidate();
     }
@@ -33,15 +33,11 @@ public class StreetViewMapsPinchZoom extends MapActivity
         case R.id.sat:
         	mapView.setSatellite(true);
         	break;
-        case R.id.street:
-        	mapView.setStreetView(true);
-        	break;
         case R.id.traffic:
         	mapView.setTraffic(true);
         	break;
         case R.id.normal:
         	mapView.setSatellite(false);
-        	mapView.setStreetView(false);
         	mapView.setTraffic(false);
         	break;
         }

@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter10.map;
+package com.google.mcommerce.sample.android.chapter10.googleMap;
 
 // This file is ClickReceiver.java
 import android.content.Context;

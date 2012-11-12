@@ -22,8 +22,7 @@ public class AsyncPlayerActivity extends Activity {
 				Uri.parse("file://"
 						+ Environment
 								.getExternalStoragePublicDirectory(Environment.DIRECTORY_RINGTONES)
-						+ "/music_file.mp3"), false,
-				AudioManager.STREAM_MUSIC);
+						+ "/music_file.mp3"), false, AudioManager.STREAM_MUSIC);
 	}
 
 	@Override

@@ -6,14 +6,14 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
-import com.google.mcommerce.sample.android.R;
-
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import com.google.mcommerce.sample.android.R;
 
 public class ShowProductImageActivity extends Activity {
 
@@ -34,7 +34,8 @@ public class ShowProductImageActivity extends Activity {
 			// TODO Auto-generated method stub
 			Bitmap bm = null;
 			try {
-				URL u = new URL("http://img04.taobaocdn.com/bao/uploaded/i4/T1O9aOXethXXXPxkLa_091741.jpg");
+				URL u = new URL(
+						"http://img04.taobaocdn.com/bao/uploaded/i4/T1O9aOXethXXXPxkLa_091741.jpg");
 				URLConnection con = u.openConnection();
 				InputStream input = con.getInputStream();
 				bm = BitmapFactory.decodeStream(input);

@@ -11,46 +11,39 @@ import com.google.mcommerce.sample.android.R;
 
 public class FrameAnimationActivity extends Activity {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) 
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.c13_frame_animations_layout);
-        this.setupButton();
-    }
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.c13_frame_animations_layout);
+		this.setupButton();
+	}
 
-    private void setupButton()
-    {
-       Button b = (Button)this.findViewById(R.id.startFAButtonId);
-       b.setOnClickListener(
-             new Button.OnClickListener(){
-                public void onClick(View v)
-                {
-                   parentButtonClicked(v);
-                }
-             });
-    }
-    private void parentButtonClicked(View v)
-    {
-    	animate();
-    }    
-    private void animate()
-    {
-    	 ImageView imgView = (ImageView)findViewById(R.id.imageView);
-    	 imgView.setVisibility(ImageView.VISIBLE);
-    	 imgView.setBackgroundResource(R.drawable.frame_animation);
+	private void setupButton() {
+		Button b = (Button) this.findViewById(R.id.startFAButtonId);
+		b.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+				parentButtonClicked(v);
+			}
+		});
+	}
 
-    	 AnimationDrawable frameAnimation = 
-    		 (AnimationDrawable) imgView.getBackground();
+	private void parentButtonClicked(View v) {
+		animate();
+	}
 
-    	 if (frameAnimation.isRunning())
-    	 {
-        	 frameAnimation.stop();
-    	 }
-    	 else
-    	 {
-        	 frameAnimation.stop();
-        	 frameAnimation.start();
-    	 }
-    }
-}//eof-class
+	private void animate() {
+		ImageView imgView = (ImageView) findViewById(R.id.imageView);
+		imgView.setVisibility(ImageView.VISIBLE);
+		imgView.setBackgroundResource(R.drawable.frame_animation);
+
+		AnimationDrawable frameAnimation = (AnimationDrawable) imgView
+				.getBackground();
+
+		if (frameAnimation.isRunning()) {
+			frameAnimation.stop();
+		} else {
+			frameAnimation.stop();
+			frameAnimation.start();
+		}
+	}
+}// eof-class

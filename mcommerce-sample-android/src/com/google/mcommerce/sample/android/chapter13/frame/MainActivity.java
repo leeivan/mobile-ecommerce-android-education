@@ -11,96 +11,80 @@ import android.widget.TextView;
 
 import com.google.mcommerce.sample.android.R;
 
-public class MainActivity extends Activity 
-{
-	
+public class MainActivity extends Activity {
+
 	private final static String L = "MainActivity";
-	
-	
-	//Initialize this in onCreateOptions
+
+	// Initialize this in onCreateOptions
 	Menu myMenu = null;
-	
-    /** Called when the activity is first created. */
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.c13_frame_main);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) 
-    {
-    	//call the parent to attach any system level menus
-    	super.onCreateOptionsMenu(menu);
-    	
-    	this.myMenu = menu;
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.c13_frame_main);
+	}
 
-    	MenuInflater mi = this.getMenuInflater();
-    	mi.inflate(R.menu.c13_menu_frame,menu);
-    	
-    	return true;
-    }
-    
-    
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) 
-    {
-    	try
-    	{
-    		handleMenus(item);
-    	}
-    	catch(Throwable t)
-    	{
-    		Log.d(this.L,t.getMessage(),t);
-    		throw new RuntimeException("error",t);
-    	}
-    	//should return true if the menu item
-    	//is handled
-    	return true;
-    	
-    	//If it is not our menu item
-    	//let the base class handle it
-        //return super.onOptionsItemSelected(item);
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// call the parent to attach any system level menus
+		super.onCreateOptionsMenu(menu);
 
-    }
-    private void handleMenus(MenuItem item)
-    {
-		this.appendMenuItemText(item);
-		if (item.getItemId() == R.id.menu_clear)
-		{
-			this.emptyText();
+		this.myMenu = menu;
+
+		MenuInflater mi = this.getMenuInflater();
+		mi.inflate(R.menu.c13_menu_frame, menu);
+
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		try {
+			handleMenus(item);
+		} catch (Throwable t) {
+			Log.d(this.L, t.getMessage(), t);
+			throw new RuntimeException("error", t);
 		}
-		else if (item.getItemId() == R.id.menu_list_animation)
-		{
+		// should return true if the menu item
+		// is handled
+		return true;
+
+		// If it is not our menu item
+		// let the base class handle it
+		// return super.onOptionsItemSelected(item);
+
+	}
+
+	private void handleMenus(MenuItem item) {
+		this.appendMenuItemText(item);
+		if (item.getItemId() == R.id.menu_clear) {
+			this.emptyText();
+		} else if (item.getItemId() == R.id.menu_list_animation) {
 			Intent intent = new Intent(this, FrameAnimationActivity.class);
 			startActivity(intent);
 		}
-    }
-    
-    private TextView getTextView()
-    {
-       	TextView tv = 
-       		(TextView)this.findViewById(R.id.textViewId);
-       	return tv;
-    }
-    public void appendText(String text)
-    {
-       	TextView tv = 
-       		(TextView)this.findViewById(R.id.textViewId);
-       	tv.setText(tv.getText() + text);
-    }
-    public void appendMenuItemText(MenuItem menuItem)
-    {
-    	String title = menuItem.getTitle().toString();
-       	TextView tv = 
-       		(TextView)this.findViewById(R.id.textViewId);
-       	tv.setText(tv.getText() + "\n" + title + ":" + menuItem.getItemId());
-    }
-    private void emptyText()
-    {
-       	TextView tv = 
-       		(TextView)this.findViewById(R.id.textViewId);
-       	tv.setText("");
-    }
-    
-}//eof-class
+	}
+
+	private TextView getTextView() {
+		TextView tv = (TextView) this.findViewById(R.id.textViewId);
+		return tv;
+	}
+
+	public void appendText(String text) {
+		TextView tv = (TextView) this.findViewById(R.id.textViewId);
+		tv.setText(tv.getText() + text);
+	}
+
+	public void appendMenuItemText(MenuItem menuItem) {
+		String title = menuItem.getTitle().toString();
+		TextView tv = (TextView) this.findViewById(R.id.textViewId);
+		tv.setText(tv.getText() + "\n" + title + ":" + menuItem.getItemId());
+	}
+
+	private void emptyText() {
+		TextView tv = (TextView) this.findViewById(R.id.textViewId);
+		tv.setText("");
+	}
+
+}// eof-class

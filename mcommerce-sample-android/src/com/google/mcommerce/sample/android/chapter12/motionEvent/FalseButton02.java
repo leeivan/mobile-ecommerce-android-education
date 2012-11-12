@@ -19,8 +19,9 @@ public class FalseButton02 extends Button {
 		String myTag = this.getTag().toString();
 		Log.v(myTag, "-----------------------------------");
 		Log.v(myTag, TouchDemo02Activity.describeEvent(this, event));
-		Log.v(myTag, "super onTouchEvent() returns " + super.onTouchEvent(event));
+		Log.v(myTag,
+				"super onTouchEvent() returns " + super.onTouchEvent(event));
 		Log.v(myTag, "and I'm returning false");
-		return(false);
+		return (false);
 	}
 }

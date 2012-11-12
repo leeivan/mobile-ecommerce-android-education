@@ -16,5 +16,5 @@ public class InterceptTouchStudyActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.c12_layers_touch_pass_test);
 	}
-	
+
 }

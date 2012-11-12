@@ -1,13 +1,13 @@
 package com.google.mcommerce.sample.android.chapter11.mediaplay;
 
-import com.google.mcommerce.sample.android.R;
-
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import com.google.mcommerce.sample.android.R;
 
 public class VideoDemoActivity extends Activity {
 	/** Called when the activity is first created. */

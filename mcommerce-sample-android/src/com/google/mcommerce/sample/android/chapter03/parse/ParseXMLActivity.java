@@ -37,7 +37,7 @@ public class ParseXMLActivity extends Activity {
 		textViewSingleNick = (TextView) findViewById(R.id.textView4);
 		textViewMultiCity = (TextView) findViewById(R.id.textView6);
 		textViewMultiNick = (TextView) findViewById(R.id.textView8);
-		textView = (TextView)findViewById(R.id.textView9);
+		textView = (TextView) findViewById(R.id.textView9);
 		button1 = (Button) findViewById(R.id.button1);
 		button2 = (Button) findViewById(R.id.button2);
 		button3 = (Button) findViewById(R.id.button3);

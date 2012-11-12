@@ -78,7 +78,7 @@ public class ProgressBar1 extends Activity {
 		button = (Button) findViewById(R.id.decrease_secondary);
 		button.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
-				//ProgressBar背后的第二个进度条 进度值减少1
+				// ProgressBar背后的第二个进度条 进度值减少1
 				progressHorizontal.incrementSecondaryProgressBy(-1);
 				// Title progress is in range 0..10000
 				setSecondaryProgress(100 * progressHorizontal

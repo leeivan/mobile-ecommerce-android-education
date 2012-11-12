@@ -67,5 +67,5 @@ public class LayoutView1 extends LinearLayout {
 		// TODO Auto-generated method stub
 		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 	}
-	
+
 }

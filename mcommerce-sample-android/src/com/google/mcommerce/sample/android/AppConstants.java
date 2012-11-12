@@ -2,8 +2,9 @@ package com.google.mcommerce.sample.android;
 
 /**
  * 定义常量
+ * 
  * @author ivan
- *
+ * 
  */
 public class AppConstants {
 

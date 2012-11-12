@@ -5,7 +5,6 @@ package com.google.mcommerce.sample.android.chapter09.alarm;
  * so that a worker class can report back
  * on what happened.
  */
-public interface IReportBack 
-{
+public interface IReportBack {
 	public void reportBack(String tag, String message);
 }

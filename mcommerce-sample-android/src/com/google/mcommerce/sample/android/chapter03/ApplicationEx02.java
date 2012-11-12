@@ -15,68 +15,63 @@ import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.params.HttpProtocolParams;
 import org.apache.http.protocol.HTTP;
+
 import android.app.Application;
 
-public class ApplicationEx02 extends Application
-{
-    private HttpClient httpClient;
+public class ApplicationEx02 extends Application {
+	private HttpClient httpClient;
 
-    @Override
-    public void onCreate()
-    {
-        super.onCreate();
-        httpClient = createHttpClient();
-    }
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		httpClient = createHttpClient();
+	}
 
-    private HttpClient createHttpClient()
-    {
-        HttpParams params = new BasicHttpParams();
-        HttpProtocolParams.setVersion(params, HttpVersion.HTTP_1_1);
-        HttpProtocolParams.setContentCharset(params, HTTP.DEFAULT_CONTENT_CHARSET);
-        HttpProtocolParams.setUseExpectContinue(params, true);
-        
-        ConnManagerParams.setTimeout(params, 1000);
+	private HttpClient createHttpClient() {
+		HttpParams params = new BasicHttpParams();
+		HttpProtocolParams.setVersion(params, HttpVersion.HTTP_1_1);
+		HttpProtocolParams.setContentCharset(params,
+				HTTP.DEFAULT_CONTENT_CHARSET);
+		HttpProtocolParams.setUseExpectContinue(params, true);
 
-        HttpConnectionParams.setConnectionTimeout(params, 5000);
-        HttpConnectionParams.setSoTimeout(params, 10000);
-        
-        SchemeRegistry schReg = new SchemeRegistry();
-        schReg.register(new Scheme("http", 
-                        PlainSocketFactory.getSocketFactory(), 80));
-        schReg.register(new Scheme("https", 
-                        SSLSocketFactory.getSocketFactory(), 443));
-        ClientConnectionManager conMgr = new 
-                        ThreadSafeClientConnManager(params,schReg);
-        
-        return new DefaultHttpClient(conMgr, params);
-    }
+		ConnManagerParams.setTimeout(params, 1000);
 
-    public HttpClient getHttpClient() {
-    	if(httpClient == null)
-    		httpClient = createHttpClient();
-        return httpClient;
-    }
+		HttpConnectionParams.setConnectionTimeout(params, 5000);
+		HttpConnectionParams.setSoTimeout(params, 10000);
 
-    @Override
-    public void onLowMemory()
-    {
-        super.onLowMemory();
-        shutdownHttpClient();
-    }
+		SchemeRegistry schReg = new SchemeRegistry();
+		schReg.register(new Scheme("http", PlainSocketFactory
+				.getSocketFactory(), 80));
+		schReg.register(new Scheme("https",
+				SSLSocketFactory.getSocketFactory(), 443));
+		ClientConnectionManager conMgr = new ThreadSafeClientConnManager(
+				params, schReg);
 
-    @Override
-    public void onTerminate()
-    {
-        super.onTerminate();
-        shutdownHttpClient();
-    }
+		return new DefaultHttpClient(conMgr, params);
+	}
 
-    private void shutdownHttpClient()
-    {
-        if(httpClient!=null && httpClient.getConnectionManager()!=null)
-        {
-            httpClient.getConnectionManager().shutdown();
-            httpClient = null;
-        }
-    }
+	public HttpClient getHttpClient() {
+		if (httpClient == null)
+			httpClient = createHttpClient();
+		return httpClient;
+	}
+
+	@Override
+	public void onLowMemory() {
+		super.onLowMemory();
+		shutdownHttpClient();
+	}
+
+	@Override
+	public void onTerminate() {
+		super.onTerminate();
+		shutdownHttpClient();
+	}
+
+	private void shutdownHttpClient() {
+		if (httpClient != null && httpClient.getConnectionManager() != null) {
+			httpClient.getConnectionManager().shutdown();
+			httpClient = null;
+		}
+	}
 }

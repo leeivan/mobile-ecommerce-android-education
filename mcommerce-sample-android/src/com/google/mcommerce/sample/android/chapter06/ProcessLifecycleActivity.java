@@ -28,7 +28,8 @@ public class ProcessLifecycleActivity extends Activity {
 				.getSystemService(ACTIVITY_SERVICE);
 		List<RunningAppProcessInfo> processList = am.getRunningAppProcesses();
 		for (int i = 0; i < processList.size(); i++) {
-			if (processList.get(i).processName.equals("com.taobao.mcommerce.sample")) {
+			if (processList.get(i).processName
+					.equals("com.taobao.mcommerce.sample")) {
 				curRunningProcessInfo = processList.get(i);
 				return;
 			}

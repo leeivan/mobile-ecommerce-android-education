@@ -15,7 +15,8 @@ import android.widget.TextView;
 
 import com.google.mcommerce.sample.android.R;
 
-public class VirtualIJaxActivity extends Activity implements SensorEventListener {
+public class VirtualIJaxActivity extends Activity implements
+		SensorEventListener {
 	private static final String TAG = "VirtualJax";
 	private SensorManager mgr;
 	private Sensor accel;

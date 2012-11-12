@@ -9,7 +9,7 @@ import android.view.MotionEvent;
 import android.widget.Button;
 
 public class TrueButton02 extends Button {
-    
+
 	public TrueButton02(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
@@ -19,8 +19,9 @@ public class TrueButton02 extends Button {
 		String myTag = this.getTag().toString();
 		Log.v(myTag, "-----------------------------------");
 		Log.v(myTag, TouchDemo02Activity.describeEvent(this, event));
-		Log.v(myTag, "super onTouchEvent() returns " + super.onTouchEvent(event));
+		Log.v(myTag,
+				"super onTouchEvent() returns " + super.onTouchEvent(event));
 		Log.v(myTag, "and I'm returning true");
-		return(true);
+		return (true);
 	}
 }

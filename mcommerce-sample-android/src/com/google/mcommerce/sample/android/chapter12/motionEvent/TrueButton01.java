@@ -5,10 +5,10 @@ import android.content.Context;
 import android.util.AttributeSet;
 
 public class TrueButton01 extends BooleanButton {
-    protected boolean myValue() {
-    	return true;
-    }
-    
+	protected boolean myValue() {
+		return true;
+	}
+
 	public TrueButton01(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}

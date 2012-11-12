@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 /**
  * @author ivan
- *
+ * 
  */
 public class HelloActivity extends Activity {
 	/** Called when the activity is first created. */

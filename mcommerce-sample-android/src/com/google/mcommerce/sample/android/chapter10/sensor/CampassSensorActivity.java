@@ -10,43 +10,44 @@ import android.widget.TextView;
 
 import com.google.mcommerce.sample.android.R;
 
-public class CampassSensorActivity extends Activity implements SensorEventListener {
-    private SensorManager mgr;
-    private Sensor compass;
-    private TextView text;
+public class CampassSensorActivity extends Activity implements
+		SensorEventListener {
+	private SensorManager mgr;
+	private Sensor compass;
+	private TextView text;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.c10_campass_sensor);
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.c10_campass_sensor);
 
-        mgr = (SensorManager) this.getSystemService(SENSOR_SERVICE);
+		mgr = (SensorManager) this.getSystemService(SENSOR_SERVICE);
 
-        compass = mgr.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
-        
-        text = (TextView) findViewById(R.id.text);
-    }
+		compass = mgr.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
 
-    @Override
-    protected void onResume() {
-        mgr.registerListener(this, compass, SensorManager.SENSOR_DELAY_NORMAL);
-    	super.onResume();
-    }
+		text = (TextView) findViewById(R.id.text);
+	}
 
-    @Override
-    protected void onPause() {
-        mgr.unregisterListener(this, compass);
-    	super.onPause();
-    }
+	@Override
+	protected void onResume() {
+		mgr.registerListener(this, compass, SensorManager.SENSOR_DELAY_NORMAL);
+		super.onResume();
+	}
+
+	@Override
+	protected void onPause() {
+		mgr.unregisterListener(this, compass);
+		super.onPause();
+	}
 
 	public void onAccuracyChanged(Sensor sensor, int accuracy) {
 		// ignore
 	}
 
 	public void onSensorChanged(SensorEvent event) {
-            String msg = String.format("X: %8.4f\nY: %8.4f\nZ: %8.4f",
-	            event.values[0], event.values[1], event.values[2]);
-    		text.setText(msg);
-    		text.invalidate();
+		String msg = String.format("X: %8.4f\nY: %8.4f\nZ: %8.4f",
+				event.values[0], event.values[1], event.values[2]);
+		text.setText(msg);
+		text.invalidate();
 	}
 }

@@ -37,7 +37,7 @@ public class ProgressBar2 extends Activity {
 
 		setContentView(R.layout.c06_progressbar_2);
 
-		//设置标题栏中的圆形进度条是否可以显示
+		// 设置标题栏中的圆形进度条是否可以显示
 		setProgressBarIndeterminateVisibility(true);
 	}
 }

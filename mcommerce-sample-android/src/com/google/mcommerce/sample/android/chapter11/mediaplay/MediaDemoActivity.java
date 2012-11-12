@@ -1,7 +1,5 @@
 package com.google.mcommerce.sample.android.chapter11.mediaplay;
 
-import com.google.mcommerce.sample.android.R;
-
 import android.app.Activity;
 import android.content.res.AssetFileDescriptor;
 import android.media.AudioManager;
@@ -12,6 +10,8 @@ import android.os.Bundle;
 import android.os.PowerManager;
 import android.util.Log;
 import android.view.View;
+
+import com.google.mcommerce.sample.android.R;
 
 public class MediaDemoActivity extends Activity implements OnPreparedListener {
 	static final String AUDIO_PATH =

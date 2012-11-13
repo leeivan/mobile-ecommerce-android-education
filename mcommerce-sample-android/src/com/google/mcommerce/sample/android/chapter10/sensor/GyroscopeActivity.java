@@ -11,42 +11,41 @@ import android.widget.TextView;
 import com.google.mcommerce.sample.android.R;
 
 public class GyroscopeActivity extends Activity implements SensorEventListener {
-    private SensorManager mgr;
-    private Sensor gyro;
-    private TextView text;
+	private SensorManager mgr;
+	private Sensor gyro;
+	private TextView text;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.c10_sensor_gravity);
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.c10_sensor_gravity);
 
-        mgr = (SensorManager) this.getSystemService(SENSOR_SERVICE);
+		mgr = (SensorManager) this.getSystemService(SENSOR_SERVICE);
 
-        gyro = mgr.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
-        
-        text = (TextView) findViewById(R.id.text);
-    }
+		gyro = mgr.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
 
-    @Override
-    protected void onResume() {
-        mgr.registerListener(this, gyro, SensorManager.SENSOR_DELAY_GAME);
-    	super.onResume();
-    }
+		text = (TextView) findViewById(R.id.text);
+	}
 
-    @Override
-    protected void onPause() {
-        mgr.unregisterListener(this, gyro);
-    	super.onPause();
-    }
+	@Override
+	protected void onResume() {
+		mgr.registerListener(this, gyro, SensorManager.SENSOR_DELAY_GAME);
+		super.onResume();
+	}
+
+	@Override
+	protected void onPause() {
+		mgr.unregisterListener(this, gyro);
+		super.onPause();
+	}
 
 	public void onAccuracyChanged(Sensor sensor, int accuracy) {
 		// ignore
 	}
 
 	public void onSensorChanged(SensorEvent event) {
-		String msg = "0: " + event.values[0] + "\n" +
-		    "1: " + event.values[1] + "\n" +
-		    "2: " + event.values[2] + "\n";
+		String msg = "0: " + event.values[0] + "\n" + "1: " + event.values[1]
+				+ "\n" + "2: " + event.values[2] + "\n";
 		text.setText(msg);
 		text.invalidate();
 	}

@@ -16,7 +16,8 @@ public class HelloIntentService extends IntentService {
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-		Toast.makeText(this, "My intent service starting !", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "My intent service starting !", Toast.LENGTH_SHORT)
+				.show();
 		return super.onStartCommand(intent, flags, startId);
 	}
 

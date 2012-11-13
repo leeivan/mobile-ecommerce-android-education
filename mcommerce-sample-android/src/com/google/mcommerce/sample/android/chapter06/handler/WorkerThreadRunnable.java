@@ -4,7 +4,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
-
 public class WorkerThreadRunnable implements Runnable {
 	Handler mainThreadHandler = null;
 	int count = 0;

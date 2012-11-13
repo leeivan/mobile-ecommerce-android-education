@@ -26,33 +26,35 @@ public class HttpSingleton {
 
 	public static synchronized HttpClient getHttpClient() {
 		if (customHttpClient == null) {
-	        HttpParams params = new BasicHttpParams();
-	        HttpProtocolParams.setVersion(params, HttpVersion.HTTP_1_1);
-	        HttpProtocolParams.setContentCharset(params, HTTP.DEFAULT_CONTENT_CHARSET);
-	        HttpProtocolParams.setUseExpectContinue(params, true);
+			HttpParams params = new BasicHttpParams();
+			HttpProtocolParams.setVersion(params, HttpVersion.HTTP_1_1);
+			HttpProtocolParams.setContentCharset(params,
+					HTTP.DEFAULT_CONTENT_CHARSET);
+			HttpProtocolParams.setUseExpectContinue(params, true);
 
-	        HttpProtocolParams.setUserAgent(params,
-"Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; Nexus One Build/FRG83) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
-            );
+			HttpProtocolParams
+					.setUserAgent(
+							params,
+							"Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; Nexus One Build/FRG83) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1");
 
-	        ConnManagerParams.setTimeout(params, 1000);
+			ConnManagerParams.setTimeout(params, 1000);
 
-	        HttpConnectionParams.setConnectionTimeout(params, 5000);
-	        HttpConnectionParams.setSoTimeout(params, 10000);
+			HttpConnectionParams.setConnectionTimeout(params, 5000);
+			HttpConnectionParams.setSoTimeout(params, 10000);
 
-	        SchemeRegistry schReg = new SchemeRegistry();
-	        schReg.register(new Scheme("http", 
-	                        PlainSocketFactory.getSocketFactory(), 80));
-	        schReg.register(new Scheme("https", 
-	                        SSLSocketFactory.getSocketFactory(), 443));
-	        ClientConnectionManager conMgr = new 
-	                        ThreadSafeClientConnManager(params,schReg);
+			SchemeRegistry schReg = new SchemeRegistry();
+			schReg.register(new Scheme("http", PlainSocketFactory
+					.getSocketFactory(), 80));
+			schReg.register(new Scheme("https", SSLSocketFactory
+					.getSocketFactory(), 443));
+			ClientConnectionManager conMgr = new ThreadSafeClientConnManager(
+					params, schReg);
 
-	        customHttpClient = new DefaultHttpClient(conMgr, params);
+			customHttpClient = new DefaultHttpClient(conMgr, params);
 		}
 		return customHttpClient;
 	}
-	
+
 	public Object clone() throws CloneNotSupportedException {
 		throw new CloneNotSupportedException();
 	}

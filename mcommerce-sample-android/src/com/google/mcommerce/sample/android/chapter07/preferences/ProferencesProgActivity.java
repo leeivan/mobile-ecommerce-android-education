@@ -63,8 +63,10 @@ public class ProferencesProgActivity extends Activity {
 				resources.getString(R.string.selected_flight_sort_option),
 				resources.getString(R.string.flight_sort_option_default_value));
 
-		tv.setText("option value is " + option + " ("
-				+ FlightPreferenceActivity01.optionText[Integer.parseInt(option)]
-				+ ")");
+		tv.setText("option value is "
+				+ option
+				+ " ("
+				+ FlightPreferenceActivity01.optionText[Integer
+						.parseInt(option)] + ")");
 	}
 }

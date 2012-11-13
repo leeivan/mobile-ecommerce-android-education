@@ -1,8 +1,6 @@
 package com.google.mcommerce.sample.android.chapter12.dragAndDrop;
 
 // This file is Dot.java
-import com.google.mcommerce.sample.android.R;
-
 import android.content.ClipData;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,6 +11,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.DragEvent;
 import android.view.View;
+
+import com.google.mcommerce.sample.android.R;
 
 public class Dot extends View implements View.OnDragListener {
 	private static final int DEFAULT_RADIUS = 20;

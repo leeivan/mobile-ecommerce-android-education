@@ -44,9 +44,9 @@ public class AudioRecordActivity extends Activity {
 	@Override
 	protected void onDestroy() {
 		Log.v(TAG, "Destroying...");
-		if(mAudioRecord != null) {
+		if (mAudioRecord != null) {
 			mAudioRecord.release();
-            Log.v(TAG, "Released AudioRecord");			
+			Log.v(TAG, "Released AudioRecord");
 		}
 		super.onDestroy();
 	}
@@ -59,61 +59,52 @@ public class AudioRecordActivity extends Activity {
 			mAudioBufferSize = 2 * AudioRecord.getMinBufferSize(sampleRate,
 					channelConfig, audioFormat);
 			mAudioBufferSampleSize = mAudioBufferSize / 2;
-			mAudioRecord = new AudioRecord(
-					MediaRecorder.AudioSource.MIC,
-					sampleRate,
-					channelConfig,
-					audioFormat,
-					mAudioBufferSize);
-			Log.v(TAG, "Setup of AudioRecord okay. Buffer size = " + mAudioBufferSize);
+			mAudioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC,
+					sampleRate, channelConfig, audioFormat, mAudioBufferSize);
+			Log.v(TAG, "Setup of AudioRecord okay. Buffer size = "
+					+ mAudioBufferSize);
 			Log.v(TAG, "   Sample buffer size = " + mAudioBufferSampleSize);
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
-		
+
 		int audioRecordState = mAudioRecord.getState();
-		if(audioRecordState != AudioRecord.STATE_INITIALIZED) {
+		if (audioRecordState != AudioRecord.STATE_INITIALIZED) {
 			Log.e(TAG, "AudioRecord is not properly initialized");
 			finish();
-		}
-		else {
+		} else {
 			Log.v(TAG, "AudioRecord is initialized");
 		}
 	}
-		
+
 	private void getSamples() {
-		if(mAudioRecord == null) return;
+		if (mAudioRecord == null)
+			return;
 
 		short[] audioBuffer = new short[mAudioBufferSampleSize];
 
 		mAudioRecord.startRecording();
 
 		int audioRecordingState = mAudioRecord.getRecordingState();
-		if(audioRecordingState != AudioRecord.RECORDSTATE_RECORDING) {
+		if (audioRecordingState != AudioRecord.RECORDSTATE_RECORDING) {
 			Log.e(TAG, "AudioRecord is not recording");
 			finish();
-		}
-		else {
+		} else {
 			Log.v(TAG, "AudioRecord has started recording...");
 		}
 
-		while(inRecordMode) {
-		    int samplesRead = mAudioRecord.read(audioBuffer, 0, mAudioBufferSampleSize);
-		    Log.v(TAG, "Got samples: " + samplesRead);
-		    Log.v(TAG, "First few sample values: " +
-		    		audioBuffer[0] + ", " +
-		    		audioBuffer[1] + ", " +
-		    		audioBuffer[2] + ", " +
-		    		audioBuffer[3] + ", " +
-		    		audioBuffer[4] + ", " +
-		    		audioBuffer[5] + ", " +
-		    		audioBuffer[6] + ", " +
-		    		audioBuffer[7] + ", " +
-		    		audioBuffer[8] + ", " +
-		    		audioBuffer[9] + ", "
-		    		);
+		while (inRecordMode) {
+			int samplesRead = mAudioRecord.read(audioBuffer, 0,
+					mAudioBufferSampleSize);
+			Log.v(TAG, "Got samples: " + samplesRead);
+			Log.v(TAG, "First few sample values: " + audioBuffer[0] + ", "
+					+ audioBuffer[1] + ", " + audioBuffer[2] + ", "
+					+ audioBuffer[3] + ", " + audioBuffer[4] + ", "
+					+ audioBuffer[5] + ", " + audioBuffer[6] + ", "
+					+ audioBuffer[7] + ", " + audioBuffer[8] + ", "
+					+ audioBuffer[9] + ", ");
 		}
-		
+
 		mAudioRecord.stop();
 		Log.v(TAG, "AudioRecord has stopped recording");
 	}

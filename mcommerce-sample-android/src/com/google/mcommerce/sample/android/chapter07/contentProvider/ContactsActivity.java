@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import android.app.ListActivity;
 import android.app.LoaderManager;
 import android.content.ContentProviderOperation;
-import android.content.ContentResolver;
-import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.CursorLoader;

@@ -44,5 +44,5 @@ public class MyTextView01 extends TextView {
 		Log.d(TAG, "onLongClick");
 		return false;
 	}
-	
+
 }

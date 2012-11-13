@@ -28,48 +28,48 @@ import com.google.mcommerce.sample.android.R;
  *  for more details.
  */
 
-public class FlightPreferenceActivity01 extends PreferenceActivity implements OnSharedPreferenceChangeListener
-{
+public class FlightPreferenceActivity01 extends PreferenceActivity implements
+		OnSharedPreferenceChangeListener {
 	ListPreference listpref;
-    public final static String[] optionText = getOptionText();
-    public final static String[] optionValues = getOptionValues();
+	public final static String[] optionText = getOptionText();
+	public final static String[] optionValues = getOptionValues();
 
-    static String[] getOptionText() {
-    	return new String[] {"Food", "Lounge", "Frequent Flier Program"};
-    }
+	static String[] getOptionText() {
+		return new String[] { "Food", "Lounge", "Frequent Flier Program" };
+	}
 
-    static String[] getOptionValues() {
-    	return new String[] {"0", "1", "2"};
-    }
+	static String[] getOptionValues() {
+		return new String[] { "0", "1", "2" };
+	}
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.flightoptions01);
-        listpref = (ListPreference)findPreference("selected_flight_sort_option");
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		addPreferencesFromResource(R.xml.flightoptions01);
+		listpref = (ListPreference) findPreference("selected_flight_sort_option");
 
-        listpref.setEntryValues(optionValues);
-        listpref.setEntries(optionText);
-    }
+		listpref.setEntryValues(optionValues);
+		listpref.setEntries(optionText);
+	}
 
-    @Override
-    protected void onResume() {
-    	super.onResume();
-    	getPreferenceScreen().getSharedPreferences()
-            .registerOnSharedPreferenceChangeListener(this);
-    	setSummary();
-    }
+	@Override
+	protected void onResume() {
+		super.onResume();
+		getPreferenceScreen().getSharedPreferences()
+				.registerOnSharedPreferenceChangeListener(this);
+		setSummary();
+	}
 
-    @Override
-    protected void onPause() {
-    	super.onPause();
-    	getPreferenceScreen().getSharedPreferences()
-           .unregisterOnSharedPreferenceChangeListener(this);
-    }
+	@Override
+	protected void onPause() {
+		super.onPause();
+		getPreferenceScreen().getSharedPreferences()
+				.unregisterOnSharedPreferenceChangeListener(this);
+	}
 
 	public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
 			String key) {
-		if("selected_flight_sort_option".equals(key)) {
+		if ("selected_flight_sort_option".equals(key)) {
 			setSummary();
 		}
 	}

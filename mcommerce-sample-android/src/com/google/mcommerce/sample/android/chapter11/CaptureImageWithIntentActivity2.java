@@ -2,8 +2,6 @@ package com.google.mcommerce.sample.android.chapter11;
 
 import java.io.File;
 
-import com.google.mcommerce.sample.android.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -17,78 +15,75 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-public class CaptureImageWithIntentActivity2 extends Activity implements MediaScannerConnectionClient {
-    
+import com.google.mcommerce.sample.android.R;
+
+public class CaptureImageWithIntentActivity2 extends Activity implements
+		MediaScannerConnectionClient {
+
 	private static final String TAG = "CameraWithIntent";
 	private File myImageFile = null;
 	private Uri myPicture = null;
 	private MediaScannerConnection conn = null;
-	
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.c11_capture_image_with_intent_layout);
-        
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-    }
 
-    public void captureImage(View view)
-    {
-        myImageFile = new File(Environment.getExternalStorageDirectory()+"/imageCaptureIntent.jpg");
-        myImageFile.delete();
-        myPicture = Uri.fromFile(myImageFile);
-        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        i.putExtra(MediaStore.EXTRA_OUTPUT, myPicture);
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.c11_capture_image_with_intent_layout);
 
-        startActivityForResult(i, 0);
-    }
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+	}
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode==0 && resultCode==Activity.RESULT_OK)
-        {
-        	// Get the MediaScanner to catalog our new image file
-        	startScan();
-        }
-    }
-    
-    private void startScan()
-    {
-        if(conn !=null)
-        {
-            conn.disconnect();
-        }
-        
-        if(myImageFile.isFile()) {
-            conn = new MediaScannerConnection(this, this);
-            conn.connect();
-        }
-        else {
-            Toast.makeText(this,
-                "Image file does not exist?!?!",
-                Toast.LENGTH_SHORT).show();
-        }
-    }
+	public void captureImage(View view) {
+		myImageFile = new File(Environment.getExternalStorageDirectory()
+				+ "/imageCaptureIntent.jpg");
+		myImageFile.delete();
+		myPicture = Uri.fromFile(myImageFile);
+		Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+		i.putExtra(MediaStore.EXTRA_OUTPUT, myPicture);
 
-    @Override
-    public void onMediaScannerConnected() {
-        conn.scanFile(myImageFile.getPath(), null);
-    }
+		startActivityForResult(i, 0);
+	}
 
-    @Override
-    public void onScanCompleted(String path, Uri uri) {
-        try {
-            if (uri != null) {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(uri);
-                startActivity(intent);
-            }
-            else {
-                Log.e(TAG, "That file is no good");
-            }
-        } finally {
-            conn.disconnect();
-            conn = null;
-        } 
-    }
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		if (requestCode == 0 && resultCode == Activity.RESULT_OK) {
+			// Get the MediaScanner to catalog our new image file
+			startScan();
+		}
+	}
+
+	private void startScan() {
+		if (conn != null) {
+			conn.disconnect();
+		}
+
+		if (myImageFile.isFile()) {
+			conn = new MediaScannerConnection(this, this);
+			conn.connect();
+		} else {
+			Toast.makeText(this, "Image file does not exist?!?!",
+					Toast.LENGTH_SHORT).show();
+		}
+	}
+
+	@Override
+	public void onMediaScannerConnected() {
+		conn.scanFile(myImageFile.getPath(), null);
+	}
+
+	@Override
+	public void onScanCompleted(String path, Uri uri) {
+		try {
+			if (uri != null) {
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setData(uri);
+				startActivity(intent);
+			} else {
+				Log.e(TAG, "That file is no good");
+			}
+		} finally {
+			conn.disconnect();
+			conn = null;
+		}
+	}
 }

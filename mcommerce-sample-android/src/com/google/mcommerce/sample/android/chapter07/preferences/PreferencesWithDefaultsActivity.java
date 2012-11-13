@@ -30,9 +30,10 @@ public class PreferencesWithDefaultsActivity extends Activity {
 		// 获得默认的preference对象
 		prefs = PreferenceManager.getDefaultSharedPreferences(this);
 		Log.i("PreferencesWithDefaultsActivity", "0");
-//		prefs.edit().clear().commit();
+		// prefs.edit().clear().commit();
 		// 在应用目录中设置配置文件缺省值
-		PreferenceManager.setDefaultValues(this, R.xml.flightoptions_single, false);
+		PreferenceManager.setDefaultValues(this, R.xml.flightoptions_single,
+				false);
 		Log.i("PreferencesWithDefaultsActivity", "1");
 
 		tv = (TextView) findViewById(R.id.text1);

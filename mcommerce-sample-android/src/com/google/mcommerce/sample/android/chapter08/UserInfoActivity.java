@@ -6,12 +6,12 @@ import android.util.Log;
 import android.widget.TextView;
 
 import com.google.mcommerce.sample.android.AppConstants;
+import com.google.mcommerce.sample.android.R;
 import com.taobao.api.ApiException;
 import com.taobao.api.DefaultTaobaoClient;
 import com.taobao.api.TaobaoClient;
 import com.taobao.api.request.UserGetRequest;
 import com.taobao.api.response.UserGetResponse;
-import com.google.mcommerce.sample.android.R;
 
 public class UserInfoActivity extends Activity {
 	private static final String TAG = "UserInfoActivity";

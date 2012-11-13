@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+
 /*
  * This receiver is introduced to see 
  * how the main thread schedules broad cast receivers
@@ -16,19 +17,17 @@ import android.util.Log;
  * gets halted for those many secs. You can see this
  * in the Log.d output 
  */
-public class TestTimeDelayReceiver extends BroadcastReceiver 
-{
-	private static final String tag = "TestTimeDelayReceiver"; 
-    @Override
-    public void onReceive(Context context, Intent intent) 
-    {
-    	Utils.logThreadSignature(tag);
-        Log.d(tag, "intent=" + intent);
-        Log.d(tag, "going to sleep for 2 secs");
-        Utils.sleepForInSecs(2);
-        Log.d(tag, "wake up");
-        String message = intent.getStringExtra("message");
-        Log.d(tag, message);
-    }
-}
+public class TestTimeDelayReceiver extends BroadcastReceiver {
+	private static final String tag = "TestTimeDelayReceiver";
 
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		Utils.logThreadSignature(tag);
+		Log.d(tag, "intent=" + intent);
+		Log.d(tag, "going to sleep for 2 secs");
+		Utils.sleepForInSecs(2);
+		Log.d(tag, "wake up");
+		String message = intent.getStringExtra("message");
+		Log.d(tag, message);
+	}
+}

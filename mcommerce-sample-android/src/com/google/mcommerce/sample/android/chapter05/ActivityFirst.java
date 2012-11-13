@@ -20,10 +20,10 @@ public class ActivityFirst extends Activity {
 	}
 
 	public void onClick(View view) {
-		// 实例化Intent  
-		Intent i = new Intent();  
-		//设置Intent的Action属性  
-		i.setAction("com.android.activity.MY_ACTION");  
+		// 实例化Intent
+		Intent i = new Intent();
+		// 设置Intent的Action属性
+		i.setAction("com.android.activity.MY_ACTION");
 		i.putExtra("Value1", "This value one for ActivityTwo ");
 		i.putExtra("Value2", "This value two ActivityTwo");
 		// Set the request code to any code you like, you can identify the

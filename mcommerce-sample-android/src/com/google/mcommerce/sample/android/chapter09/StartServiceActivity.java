@@ -1,13 +1,12 @@
 package com.google.mcommerce.sample.android.chapter09;
 
-import com.google.mcommerce.sample.android.R;
-import com.google.mcommerce.sample.android.chapter05.SimpleEventActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.google.mcommerce.sample.android.R;
 
 public class StartServiceActivity extends Activity {
 	private Button button1;

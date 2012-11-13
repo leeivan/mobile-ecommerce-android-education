@@ -50,8 +50,8 @@ public class WebViewActivity extends Activity {
 		public boolean shouldOverrideUrlLoading(WebView view, String url) {
 			log(url);
 			if (Uri.parse(url).getScheme().equals("tel")) {
-				String page = "<html><body><a href=#>"
-						+ url + "</a></body></html>";
+				String page = "<html><body><a href=#>" + url
+						+ "</a></body></html>";
 				view.loadData(page, "text/html", "UTF-8");
 				return true;
 			}

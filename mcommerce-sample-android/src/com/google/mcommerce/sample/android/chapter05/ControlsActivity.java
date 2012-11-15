@@ -45,8 +45,9 @@ public class ControlsActivity extends ListActivity implements
 	public void onItemClick(AdapterView<?> arg0, View target, int position,
 			long id) {
 		try {
-			Intent intent = new Intent(this,
-					Class.forName("com.androidbook.commoncontrols."
+			Intent intent = new Intent(
+					this,
+					Class.forName("com.google.mcommerce.sample.android.chapter05."
 							+ activities[position]));
 			startActivity(intent);
 		} catch (Exception e) {

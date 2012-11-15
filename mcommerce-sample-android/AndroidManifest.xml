@@ -199,6 +199,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter05.ListDialogActivity"
+            android:label="@string/alart_dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter05.ActivityFirst"
             android:label="@string/IntentDataTransfer" >
             <intent-filter>

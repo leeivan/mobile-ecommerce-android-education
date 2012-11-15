@@ -69,6 +69,7 @@
     <string name="wiget_menu">Chapter04/Wiget/Menu</string>
     <string name="relative_layout">Chapter04/RelativeLayout</string>
     <string name="simple_event">Chapter05/SimpleEvent</string>
+    <string name="alart_dialog">Chapter05/AlartDialog</string>
     <string name="IntentDataTransfer">Chapter05/Intent/DataTransfer</string>
     <string name="implicitIntent">Chapter05/Intent/ImplicitIntent</string>
     <string name="editText">Chapter05/EditText</string>
@@ -207,5 +208,8 @@
     <string name="actv">AutoComplete:</string>
     <string name="mactv">MultiAutoComplete:</string>
     <string name="spinnerprompt">Please choose a planet</string>
+    <string name="list_dialog">单击显示列表对话框</string>
+    <string name="list_single_choise">单击显示单选对话框</string>
+    <string name="list_multi_choise">单击显示多选对话框</string>
 
 </resources>

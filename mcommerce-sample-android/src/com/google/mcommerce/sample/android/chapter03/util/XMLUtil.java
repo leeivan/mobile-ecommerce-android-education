@@ -35,7 +35,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import android.util.Log;
 import android.util.Xml;
 
-public class UserUtil {
+public class XMLUtil {
 	private static final String TAG = "UserUtil";
 
 	public static String getStringByUrl(String url) {

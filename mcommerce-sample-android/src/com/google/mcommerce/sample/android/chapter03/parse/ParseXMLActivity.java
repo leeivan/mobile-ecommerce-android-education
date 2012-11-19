@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.google.mcommerce.sample.android.R;
 import com.google.mcommerce.sample.android.chapter03.util.User;
-import com.google.mcommerce.sample.android.chapter03.util.UserUtil;
+import com.google.mcommerce.sample.android.chapter03.util.XMLUtil;
 
 public class ParseXMLActivity extends Activity {
 
@@ -52,7 +52,7 @@ public class ParseXMLActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Log.i("ParseJSONActivity", userUrl);
-				User user = UserUtil.readSingleUserByDOM(userUrl);
+				User user = XMLUtil.readSingleUserByDOM(userUrl);
 				textViewSingleNick.setText(user.getNick());
 				textViewSingleCity.setText(user.getCity());
 			}
@@ -65,8 +65,8 @@ public class ParseXMLActivity extends Activity {
 				textViewMultiNick.setText("");
 				textViewMultiCity.setText("");
 				textView.setText("使用DOM解析多个用户");
-				String usersString = UserUtil.getStringByUrl(usersUrl);
-				ArrayList<User> users = UserUtil.readMultiUserByDOM(usersUrl);
+				String usersString = XMLUtil.getStringByUrl(usersUrl);
+				ArrayList<User> users = XMLUtil.readMultiUserByDOM(usersUrl);
 				for (User u : users) {
 					textViewMultiNick.append(u.getNick() + ";");
 					textViewMultiCity.append(u.getCity() + ";");
@@ -81,7 +81,7 @@ public class ParseXMLActivity extends Activity {
 				textViewMultiNick.setText("");
 				textViewMultiCity.setText("");
 				textView.setText("使用SAX解析多个用户");
-				ArrayList<User> users = UserUtil.readMultiUserBySAX(usersUrl);
+				ArrayList<User> users = XMLUtil.readMultiUserBySAX(usersUrl);
 				for (User u : users) {
 					textViewMultiNick.append(u.getNick() + ";");
 					textViewMultiCity.append(u.getCity() + ";");
@@ -96,7 +96,7 @@ public class ParseXMLActivity extends Activity {
 				textViewMultiNick.setText("");
 				textViewMultiCity.setText("");
 				textView.setText("使用PULL解析多个用户");
-				ArrayList<User> users = UserUtil.readMultiUserByPULL(usersUrl);
+				ArrayList<User> users = XMLUtil.readMultiUserByPULL(usersUrl);
 				for (User u : users) {
 					textViewMultiNick.append(u.getNick() + ";");
 					textViewMultiCity.append(u.getCity() + ";");

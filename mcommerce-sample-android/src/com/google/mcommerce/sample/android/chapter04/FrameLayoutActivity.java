@@ -2,16 +2,40 @@ package com.google.mcommerce.sample.android.chapter04;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageView;
 
 import com.google.mcommerce.sample.android.R;
 
 public class FrameLayoutActivity extends Activity {
+	private ImageView one = null;
+	private ImageView two = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c04_frame_layout);
-	}
+		setContentView(R.layout.c05_frame);
 
+		one = (ImageView) findViewById(R.id.oneImgView);
+		two = (ImageView) findViewById(R.id.twoImgView);
+
+		one.setOnClickListener(new OnClickListener() {
+
+			public void onClick(View view) {
+				two.setVisibility(View.VISIBLE);
+
+				view.setVisibility(View.GONE);
+			}
+		});
+
+		two.setOnClickListener(new OnClickListener() {
+
+			public void onClick(View view) {
+				one.setVisibility(View.VISIBLE);
+
+				view.setVisibility(View.GONE);
+			}
+		});
+	}
 }

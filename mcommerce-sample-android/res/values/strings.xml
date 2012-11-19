@@ -212,5 +212,7 @@
     <string name="list_dialog">单击显示列表对话框</string>
     <string name="list_single_choise">单击显示单选对话框</string>
     <string name="list_multi_choise">单击显示多选对话框</string>
+    <string name="create_xml_dom">使用DOM创建XML</string>
+    <string name="create_xml_pull">使用PULL创建XML</string>
 
 </resources>

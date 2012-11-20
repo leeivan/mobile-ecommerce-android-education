@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter04;
+package com.google.mcommerce.sample.android.chapter03;
 
 import android.app.Activity;
 import android.graphics.Color;

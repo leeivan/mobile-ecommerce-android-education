@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter04;
+package com.google.mcommerce.sample.android.chapter03.layout;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import com.google.mcommerce.sample.android.R;
 
-public class FrameLayoutActivity extends Activity {
+public class FrameLayoutActivity01 extends Activity {
 	private ImageView one = null;
 	private ImageView two = null;
 

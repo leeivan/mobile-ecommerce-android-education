@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter04;
+package com.google.mcommerce.sample.android.chapter04.button;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.widget.RadioGroup;
 
 import com.google.mcommerce.sample.android.R;
 
-public class RadioGroupActivity extends Activity {
+public class RadioGroupActivity01 extends Activity {
 	protected static final String TAG = "RadioGroupActivity";
 
 	/** Called when the activity is first created. */

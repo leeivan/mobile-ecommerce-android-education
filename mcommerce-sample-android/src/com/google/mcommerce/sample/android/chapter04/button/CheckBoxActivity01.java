@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter04;
+package com.google.mcommerce.sample.android.chapter04.button;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.CompoundButton;
 
 import com.google.mcommerce.sample.android.R;
 
-public class CheckBoxActivity extends Activity {
+public class CheckBoxActivity01 extends Activity {
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter04;
+package com.google.mcommerce.sample.android.chapter04.adapterView;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,22 +10,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.GridView;
+import android.widget.Gallery;
 import android.widget.ImageView;
 
 import com.google.mcommerce.sample.android.R;
 
-public class GridViewCustomAdapter extends Activity {
+public class GalleryActivity extends Activity {
+	/** Called when the activity is first created. */
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_gridviewcustom);
+		setContentView(R.layout.c05_gallery);
 
-		GridView gv = (GridView) findViewById(R.id.gridview);
+		Gallery gallery = (Gallery) findViewById(R.id.gallery);
 
-		ManateeAdapter adapter = new ManateeAdapter(this);
+		ManateeAdapter manateeAdapter = new ManateeAdapter(this);
 
-		gv.setAdapter(adapter);
+		gallery.setAdapter(manateeAdapter);
 	}
 
 	public static class ManateeAdapter extends BaseAdapter {

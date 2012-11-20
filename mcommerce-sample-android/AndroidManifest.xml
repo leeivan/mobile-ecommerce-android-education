@@ -170,7 +170,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.menu.XMLMenusActivity"
+            android:name=".chapter04.menu.XMLMenusActivity"
             android:label="Test XML and PopupMenus" />
         <activity
             android:name=".chapter03.permission.CustPermMainActivity"
@@ -387,7 +387,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.ActivityFirst"
+            android:name=".chapter04.intent.ActivityFirst"
             android:label="@string/IntentDataTransfer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -395,7 +395,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter04.ActivitySecond" >
+        <activity android.chapter04.intent.ActivitySecondySecond" >
             <intent-filter>
                 <action android:name="com.android.activity.MY_ACTION" />
 
@@ -403,7 +403,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.CallIntentsActivity"
+            android:name=".chapter04.intent.CallIntentsActivity"
             android:label="@string/implicitIntent" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter04;
+package com.google.mcommerce.sample.android.chapter04.adapterView;
 
 import android.app.ListActivity;
 import android.database.Cursor;

@@ -16,7 +16,6 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="16" />
 
-    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -54,7 +53,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.TaoBaoAPITestActivity"
+            android:name=".chapter11.TaoBaoAPITestActivity"
             android:label="@string/taobao_api" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,7 +62,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.parse.ParseJSONActivity"
+            android:name=".chapter11.parse.ParseJSONActivity"
             android:label="@string/parse_JSON" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -72,7 +71,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.parse.ParseXMLActivity"
+            android:name=".chapter11.parse.ParseXMLActivity"
             android:label="@string/parse_XML" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -81,7 +80,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.http.HttpGetDemo"
+            android:name=".chapter11.http.HttpGetDemo"
             android:label="@string/http_get" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -90,7 +89,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.http.HttpPostDemo"
+            android:name=".chapter11.http.HttpPostDemo"
             android:label="@string/http_post" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -99,7 +98,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.text.TextViewActivity"
+            android:name=".chapter04.text.TextViewActivity"
             android:label="@string/textView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -108,7 +107,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.text.TextViewWebActivity"
+            android:name=".chapter04.text.TextViewWebActivity"
             android:label="@string/textView_web" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -171,10 +170,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.menu.XMLMenusActivity"
+            android:name=".chapter03.menu.XMLMenusActivity"
             android:label="Test XML and PopupMenus" />
         <activity
-            android:name=".chapter04.permission.CustPermMainActivity"
+            android:name=".chapter03.permission.CustPermMainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -183,14 +182,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.permission.PrivActivity"
+            android:name=".chapter03.permission.PrivActivity"
             android:permission="chapter04.permission.STARTMYACTIVITY" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.SimpleEventActivity"
+            android:name=".chapter04.SimpleEventActivity"
             android:label="@string/simple_event" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -199,7 +198,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.ListDialogActivity"
+            android:name=".chapter04.ListDialogActivity"
             android:label="@string/alart_dialog" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -208,7 +207,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.ControlsActivity"
+            android:name=".chapter04.ControlsActivity"
             android:label="@string/common_control" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -217,7 +216,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.ListViewActivity"
+            android:name=".chapter04.ListViewActivity"
             android:label="@string/listview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -226,7 +225,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.ListViewActivity2"
+            android:name=".chapter04.ListViewActivity2"
             android:label="@string/listview2_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -235,7 +234,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.ListViewActivity3"
+            android:name=".chapter04.ListViewActivity3"
             android:label="@string/listview3_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -244,7 +243,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.ListViewActivity4"
+            android:name=".chapter04.ListViewActivity4"
             android:label="@string/listview4_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -253,7 +252,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.ImageViewActivity"
+            android:name=".chapter04.ImageViewActivity"
             android:label="@string/imageview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -262,25 +261,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.FrameLayoutActivity"
-            android:label="@string/frame_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter05.RelativeLayoutActivity"
-            android:label="@string/relativelayout_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter05.GalleryActivity"
+            android:name=".chapter04.GalleryActivity"
             android:label="@string/gallery_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -289,7 +270,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.GridViewCustomAdapter"
+            android:name=".chapter04.GridViewCustomAdapter"
             android:label="@string/gridviewcustom_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -298,7 +279,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.GridViewActivity"
+            android:name=".chapter04.GridViewActivity"
             android:label="@string/gridview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -307,7 +288,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.DateTimePickerActivity"
+            android:name=".chapter04.DateTimePickerActivity"
             android:label="@string/datetimepicker_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -316,7 +297,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.RadioGroupActivity"
+            android:name=".chapter04.RadioGroupActivity"
             android:label="@string/radio_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -325,7 +306,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.CheckBoxActivity"
+            android:name=".chapter04.CheckBoxActivity"
             android:label="@string/checkbox_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -334,7 +315,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.ButtonActivity"
+            android:name=".chapter04.ButtonActivity"
             android:label="@string/button_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -343,7 +324,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.TableLayoutActivity1"
+            android:name=".chapter04.TableLayoutActivity1"
             android:label="@string/tablelayout1_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -352,7 +333,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.TableLayoutActivity2"
+            android:name=".chapter04.TableLayoutActivity2"
             android:label="@string/tablelayout2_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -361,7 +342,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.TableLayoutActivity3"
+            android:name=".chapter04.TableLayoutActivity3"
             android:label="@string/tablelayout3_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -370,7 +351,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.TextViewActivity"
+            android:name=".chapter04.TextViewActivity"
             android:label="@string/textview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -379,7 +360,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.SpinnerActivity"
+            android:name=".chapter04.SpinnerActivity"
             android:label="@string/spinner_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -388,7 +369,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.StylesActivity"
+            android:name=".chapter04.StylesActivity"
             android:label="@string/styles_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -397,17 +378,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.WeightGravity"
+            android:name=".chapter04.WeightGravity"
             android:label="@string/weightgrav_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
->>>>>>> refs/remotes/github/master
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.ActivityFirst"
+            android:name=".chapter04.ActivityFirst"
             android:label="@string/IntentDataTransfer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -415,7 +395,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter05.ActivitySecond" >
+        <activity android:name=".chapter04.ActivitySecond" >
             <intent-filter>
                 <action android:name="com.android.activity.MY_ACTION" />
 
@@ -423,7 +403,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.CallIntentsActivity"
+            android:name=".chapter04.CallIntentsActivity"
             android:label="@string/implicitIntent" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -432,7 +412,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.text.EditTextActivity"
+            android:name=".chapter04.text.EditTextActivity"
             android:label="@string/editText" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -441,7 +421,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.text.EditTextSearchActivity"
+            android:name=".chapter04.text.EditTextSearchActivity"
             android:label="@string/editText_search" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -450,7 +430,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.button.RadioGroupActivity"
+            android:name=".chapter04.button.RadioGroupActivity"
             android:label="@string/radioGroup" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -459,7 +439,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.button.CheckBoxActivity"
+            android:name=".chapter04.button.CheckBoxActivity"
             android:label="@string/checkBox" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -685,7 +665,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.BrowserViewActivity"
+            android:name=".chapter12.BrowserViewActivity"
             android:label="@string/BrowerView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -694,7 +674,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.Oauth2TaobaoActivity"
+            android:name=".chapter12.Oauth2TaobaoActivity"
             android:label="@string/OauthTaobao" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -702,13 +682,13 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter08.UserInfoActivity" >
+        <activity android:name=".chapter12.UserInfoActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.WebViewActivity"
+            android:name=".chapter12.WebViewActivity"
             android:label="@string/WebView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -717,7 +697,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter09.StartServiceActivity"
+            android:name=".chapter05.StartServiceActivity"
             android:label="@string/service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -726,13 +706,13 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".chapter09.HelloIntentService" >
+        <service android:name=".chapter05.HelloIntentService" >
         </service>
-        <service android:name=".chapter09.HelloService" >
+        <service android:name=".chapter05.HelloService" >
         </service>
 
         <activity
-            android:name=".chapter09.BindingServiceActivity"
+            android:name=".chapter05.BindingServiceActivity"
             android:label="@string/binding_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -745,7 +725,7 @@
         </service>
 
         <activity
-            android:name=".chapter09.MessengerServiceActivity"
+            android:name=".chapter05.MessengerServiceActivity"
             android:label="@string/messenger_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -754,11 +734,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".chapter09.MessengerService" >
+        <service android:name=".chapter05.MessengerService" >
         </service>
 
         <activity
-            android:name=".chapter09.MySendBroActivity"
+            android:name=".chapter05.MySendBroActivity"
             android:label="@string/broadcast_receiver" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -768,7 +748,7 @@
         </activity>
 
         <receiver
-            android:name=".chapter09.MyBroadcastReceiver"
+            android:name=".chapter05.MyBroadcastReceiver"
             android:exported="true" >
             <intent-filter>
                 <action android:name=".chapter09.mybroadcast" >
@@ -777,7 +757,7 @@
         </receiver>
 
         <activity
-            android:name="chapter09.NotificationMainActivity"
+            android:name="chapter05.NotificationMainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -785,13 +765,13 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name="chapter09.HandleNotificationActivity" >
+        <activity android:name="chapter05.HandleNotificationActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter09.alarm.TestAlarmsDriverActivity"
+            android:name=".chapter05.alarm.TestAlarmsDriverActivity"
             android:label="@string/alarm" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -800,19 +780,19 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".chapter09.alarm.TestReceiver" >
+        <receiver android:name=".chapter05.alarm.TestReceiver" >
             <intent-filter>
                 <action android:name="com.ai.android.intents.testbc" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".chapter09.alarm.TestReceiver2" >
+        <receiver android:name=".chapter05.alarm.TestReceiver2" >
             <intent-filter>
                 <action android:name="com.ai.android.intents.testbc" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:name=".chapter09.test.TestBCRActivity"
+            android:name=".chapter05.test.TestBCRActivity"
             android:label="@string/test" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -821,24 +801,24 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".chapter09.test.TestReceiver" >
+        <receiver android:name=".chapter05.test.TestReceiver" >
             <intent-filter>
                 <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".chapter09.test.TestTimeDelayReceiver" >
+        <receiver android:name=".chapter05.test.TestTimeDelayReceiver" >
             <intent-filter>
                 <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".chapter09.test.TestReceiver2" >
+        <receiver android:name=".chapter05.test.TestReceiver2" >
             <intent-filter>
                 <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:name=".chapter10.LocationActivity"
+            android:name=".chapter09.LocationActivity"
             android:label="@string/location" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -847,7 +827,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.googleMap.GoogleMapActivity"
+            android:name=".chapter09.googleMap.GoogleMapActivity"
             android:label="@string/map_google" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -856,7 +836,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.googleMap.MapViewWithTouchActivity"
+            android:name=".chapter09.googleMap.MapViewWithTouchActivity"
             android:label="@string/map_google_touch" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -865,7 +845,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.baiduMap.BaiduMapActivity"
+            android:name=".chapter09.baiduMap.BaiduMapActivity"
             android:label="@string/map_baidu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -874,7 +854,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.sensor.SensorListActivity"
+            android:name=".chapter08.sensor.SensorListActivity"
             android:label="@string/sensor_list" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -883,7 +863,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.sensor.LightSensorActivity"
+            android:name=".chapter08.sensor.LightSensorActivity"
             android:label="@string/sensor_light" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -892,7 +872,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.sensor.CampassSensorActivity"
+            android:name=".chapter08.sensor.CampassSensorActivity"
             android:label="@string/sensor_campass" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -901,7 +881,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.sensor.GravityActivity"
+            android:name=".chapter08.sensor.GravityActivity"
             android:label="@string/sensor_gravity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -910,7 +890,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.sensor.GyroscopeActivity"
+            android:name=".chapter08.sensor.GyroscopeActivity"
             android:label="@string/sensor_gyroscope" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -919,7 +899,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.sensor.ProximitySensorActivity"
+            android:name=".chapter08.sensor.ProximitySensorActivity"
             android:label="@string/sensor_proximity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -928,7 +908,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.sensor.AccelerometerActivity"
+            android:name=".chapter08.sensor.AccelerometerActivity"
             android:label="@string/sensor_accelerometer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -937,7 +917,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.sensor.VirtualIJaxActivity"
+            android:name=".chapter08.sensor.VirtualIJaxActivity"
             android:label="@string/sensor_virltualJax" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -946,7 +926,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.mediaplay.MediaDemoActivity"
+            android:name=".chapter10.mediaplay.MediaDemoActivity"
             android:label="@string/media_audio_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -955,7 +935,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.mediaplay.SoundPoolDemoActivity"
+            android:name=".chapter10.mediaplay.SoundPoolDemoActivity"
             android:label="@string/media_audio_soundPool" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -964,7 +944,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.mediaplay.AsyncPlayerActivity"
+            android:name=".chapter10.mediaplay.AsyncPlayerActivity"
             android:label="@string/media_audio_asyncPlayer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -973,7 +953,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.mediaplay.VideoDemoActivity"
+            android:name=".chapter10.mediaplay.VideoDemoActivity"
             android:label="@string/media_video_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -982,7 +962,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.mediarecorder.RecordAudioActivity"
+            android:name=".chapter10.mediarecorder.RecordAudioActivity"
             android:label="@string/media_record_audio" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -991,7 +971,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.mediarecorder.AudioRecordActivity"
+            android:name=".chapter10.mediarecorder.AudioRecordActivity"
             android:label="@string/media_record_audioRecord" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1000,7 +980,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.mediarecorder.AudioRecordWithCallbacksActivity"
+            android:name=".chapter10.mediarecorder.AudioRecordWithCallbacksActivity"
             android:label="@string/media_record_audioRecordWithCallback" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1009,7 +989,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.mediarecorder.RecordVideoActivity"
+            android:name=".chapter10.mediarecorder.RecordVideoActivity"
             android:label="@string/media_record_video" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1018,7 +998,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.mediarecorder.UsingMediaStoreActivity"
+            android:name=".chapter10.mediarecorder.UsingMediaStoreActivity"
             android:label="@string/media_record_mediaStore" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1027,7 +1007,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.CaptureImageWithIntentActivity"
+            android:name=".chapter10.CaptureImageWithIntentActivity"
             android:label="@string/media_record_captureImage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1036,7 +1016,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.mediaplay.MediaScannerActivity"
+            android:name=".chapter10.mediaplay.MediaScannerActivity"
             android:label="@string/media_record_mediaScanner" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

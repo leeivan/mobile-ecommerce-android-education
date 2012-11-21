@@ -20,7 +20,7 @@ public class LightSensorActivity extends Activity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_light_sensor_layout);
+		setContentView(R.layout.c08_light_sensor_layout);
 		mgr = (SensorManager) this.getSystemService(SENSOR_SERVICE);
 		light = mgr.getDefaultSensor(Sensor.TYPE_LIGHT);
 		text = (TextView) findViewById(R.id.text);

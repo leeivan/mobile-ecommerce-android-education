@@ -19,7 +19,7 @@ public class CampassSensorActivity extends Activity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_campass_sensor);
+		setContentView(R.layout.c08_campass_sensor);
 
 		mgr = (SensorManager) this.getSystemService(SENSOR_SERVICE);
 

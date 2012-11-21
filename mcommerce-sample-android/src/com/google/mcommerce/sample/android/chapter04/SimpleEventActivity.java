@@ -15,7 +15,7 @@ public class SimpleEventActivity extends Activity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_simple_event);
+		setContentView(R.layout.c04_simple_event);
 
 		textview1 = (TextView) findViewById(R.id.textview1);
 		button1 = (Button) findViewById(R.id.button01);

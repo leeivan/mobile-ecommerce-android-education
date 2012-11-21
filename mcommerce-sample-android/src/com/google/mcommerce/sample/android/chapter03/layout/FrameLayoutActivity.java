@@ -11,7 +11,7 @@ public class FrameLayoutActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c04_frame_layout);
+		setContentView(R.layout.c03_frame_layout);
 	}
 
 }

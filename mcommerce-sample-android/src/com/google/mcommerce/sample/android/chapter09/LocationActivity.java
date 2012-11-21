@@ -27,7 +27,7 @@ public class LocationActivity extends Activity implements LocationListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_location_layout);
+		setContentView(R.layout.c09_location_layout);
 
 		mgr = (LocationManager) getSystemService(LOCATION_SERVICE);
 		output = (TextView) findViewById(R.id.location_text);

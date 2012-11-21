@@ -13,7 +13,7 @@ public class StreetViewMapsPinchZoom extends MapActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_mapview_02);
+		setContentView(R.layout.c09_mapview_02);
 
 		mapView = (MapView) findViewById(R.id.mapview);
 

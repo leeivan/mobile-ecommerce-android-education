@@ -14,7 +14,7 @@ public class Palette extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle icicle) {
-		View v = inflater.inflate(R.layout.c12_drag_drop_palette, container,
+		View v = inflater.inflate(R.layout.c08_drag_drop_palette, container,
 				false);
 		return v;
 	}

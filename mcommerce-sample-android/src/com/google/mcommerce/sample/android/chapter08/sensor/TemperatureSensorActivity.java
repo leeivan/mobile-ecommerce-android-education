@@ -20,7 +20,7 @@ public class TemperatureSensorActivity extends Activity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_sensor_temperature_layout);
+		setContentView(R.layout.c08_sensor_temperature_layout);
 
 		mgr = (SensorManager) this.getSystemService(SENSOR_SERVICE);
 

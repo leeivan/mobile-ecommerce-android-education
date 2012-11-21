@@ -11,7 +11,7 @@ public class Test02 extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_test);
+		setContentView(R.layout.c08_test);
 	}
 
 	@Override

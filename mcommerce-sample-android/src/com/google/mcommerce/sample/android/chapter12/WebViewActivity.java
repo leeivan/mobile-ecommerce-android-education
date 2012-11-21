@@ -21,7 +21,7 @@ public class WebViewActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c08_javascript_browser);
+		setContentView(R.layout.c12_javascript_browser);
 		mWebView = (WebView) findViewById(R.id.js_webview);
 		WebSettings webSettings = mWebView.getSettings();
 		webSettings.setJavaScriptEnabled(true);

@@ -14,7 +14,7 @@ public class CheckBoxActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_checkbox);
+		setContentView(R.layout.c04_checkbox);
 	}
 
 	public void onCheckboxClicked(View v) {

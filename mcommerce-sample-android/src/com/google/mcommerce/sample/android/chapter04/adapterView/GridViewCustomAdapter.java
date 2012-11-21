@@ -19,7 +19,7 @@ public class GridViewCustomAdapter extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_gridviewcustom);
+		setContentView(R.layout.c04_gridviewcustom);
 
 		GridView gv = (GridView) findViewById(R.id.gridview);
 
@@ -95,7 +95,7 @@ public class GridViewCustomAdapter extends Activity {
 					+ ((convertView == null) ? "null" : "being recycled"));
 
 			if (convertView == null) {
-				convertView = mInflater.inflate(R.layout.c05_gridimage, null);
+				convertView = mInflater.inflate(R.layout.c04_gridimage, null);
 				convertViewCounter++;
 				Log.v(TAG, convertViewCounter
 						+ " convertViews have been created");

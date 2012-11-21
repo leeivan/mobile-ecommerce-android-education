@@ -16,7 +16,7 @@ public class SensorListActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_sensor_list_layout);
+		setContentView(R.layout.c08_sensor_list_layout);
 
 		TextView text = (TextView) findViewById(R.id.text);
 

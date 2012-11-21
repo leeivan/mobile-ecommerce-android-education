@@ -23,7 +23,7 @@ public class BrowserViewActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c08_browser_view);
+		setContentView(R.layout.c12_browser_view);
 
 		// Get a handle to all user interface elements
 		urlText = (EditText) findViewById(R.id.url_field);

@@ -22,7 +22,7 @@ public class TestAlarmsDriverActivity extends Activity implements IReportBack {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c09_alarm);
+		setContentView(R.layout.c05_alarm);
 		alarmTester = new AlarmIntentPrimacyTester(this, this);
 	}
 

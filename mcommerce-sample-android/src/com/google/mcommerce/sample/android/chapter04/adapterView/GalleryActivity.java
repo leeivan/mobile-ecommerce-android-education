@@ -20,7 +20,7 @@ public class GalleryActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_gallery);
+		setContentView(R.layout.c04_gallery);
 
 		Gallery gallery = (Gallery) findViewById(R.id.gallery);
 
@@ -96,7 +96,7 @@ public class GalleryActivity extends Activity {
 					+ ((convertView == null) ? "null" : "being recycled"));
 
 			if (convertView == null) {
-				convertView = mInflater.inflate(R.layout.c05_gridimage, null);
+				convertView = mInflater.inflate(R.layout.c04_gridimage, null);
 				convertViewCounter++;
 				Log.v(TAG, convertViewCounter
 						+ " convertViews have been created");

@@ -15,7 +15,7 @@ public class FrameLayoutActivity01 extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_frame);
+		setContentView(R.layout.c03_frame);
 
 		one = (ImageView) findViewById(R.id.oneImgView);
 		two = (ImageView) findViewById(R.id.twoImgView);

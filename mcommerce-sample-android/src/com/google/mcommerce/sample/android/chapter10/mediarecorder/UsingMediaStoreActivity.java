@@ -16,7 +16,7 @@ public class UsingMediaStoreActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.c11_media_using_media_store_layout);
+		setContentView(R.layout.c10_media_using_media_store_layout);
 
 		Button btn = (Button) findViewById(R.id.recordBtn);
 		btn.setOnClickListener(new OnClickListener() {

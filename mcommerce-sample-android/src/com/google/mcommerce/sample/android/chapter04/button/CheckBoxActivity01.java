@@ -14,7 +14,7 @@ public class CheckBoxActivity01 extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_checkbox_01);
+		setContentView(R.layout.c04_checkbox_01);
 
 		// No handling in here for the Chicken checkbox
 

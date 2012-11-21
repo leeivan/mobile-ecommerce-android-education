@@ -13,7 +13,7 @@ public class GridViewActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_gridview);
+		setContentView(R.layout.c04_gridview);
 
 		GridView gv = (GridView) findViewById(R.id.gridview);
 

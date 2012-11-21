@@ -14,7 +14,7 @@ public class MapViewDemoActivity extends MapActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.c10_mapview);
+		setContentView(R.layout.c09_mapview);
 
 		mapView = (MapView) findViewById(R.id.mapview);
 	}

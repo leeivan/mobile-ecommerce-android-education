@@ -18,7 +18,7 @@ public class NotificationMainActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c09_activity_main);
+		setContentView(R.layout.c05_activity_main);
 	}
 
 	@Override

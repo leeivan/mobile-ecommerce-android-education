@@ -14,7 +14,7 @@ public class RadioGroupActivity01 extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_radiogroup);
+		setContentView(R.layout.c04_radiogroup);
 
 		RadioGroup radGrp = (RadioGroup) findViewById(R.id.radGrp);
 

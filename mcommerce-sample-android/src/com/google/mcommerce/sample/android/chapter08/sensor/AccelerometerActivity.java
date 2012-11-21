@@ -22,7 +22,7 @@ public class AccelerometerActivity extends Activity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_sensor_accelerometer);
+		setContentView(R.layout.c08_sensor_accelerometer);
 
 		mgr = (SensorManager) this.getSystemService(SENSOR_SERVICE);
 

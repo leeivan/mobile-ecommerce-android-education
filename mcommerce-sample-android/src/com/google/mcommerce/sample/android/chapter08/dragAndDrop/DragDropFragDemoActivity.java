@@ -12,6 +12,6 @@ public class DragDropFragDemoActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_drag_drop_demo);
+		setContentView(R.layout.c08_drag_drop_demo);
 	}
 }

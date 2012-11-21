@@ -22,7 +22,7 @@ public class EditTextSearchActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_edittext_search);
+		setContentView(R.layout.c04_edittext_search);
 		editText = (EditText) findViewById(R.id.edit_text);
 		editText.setOnEditorActionListener(new OnEditorActionListener() {
 			public boolean onEditorAction(TextView v, int actionId,

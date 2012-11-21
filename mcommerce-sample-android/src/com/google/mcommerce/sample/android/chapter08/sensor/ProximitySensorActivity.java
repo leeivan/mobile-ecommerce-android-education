@@ -20,7 +20,7 @@ public class ProximitySensorActivity extends Activity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_sensor_proximity_layout);
+		setContentView(R.layout.c08_sensor_proximity_layout);
 
 		mgr = (SensorManager) this.getSystemService(SENSOR_SERVICE);
 

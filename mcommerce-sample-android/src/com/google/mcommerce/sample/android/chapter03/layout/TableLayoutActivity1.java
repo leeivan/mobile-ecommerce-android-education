@@ -10,6 +10,6 @@ public class TableLayoutActivity1 extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_table1);
+		setContentView(R.layout.c03_table1);
 	}
 }

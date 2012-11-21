@@ -23,7 +23,7 @@ public class GravityActivity extends Activity implements SensorEventListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_sensor_gravity);
+		setContentView(R.layout.c08_sensor_gravity);
 
 		mgr = (SensorManager) this.getSystemService(SENSOR_SERVICE);
 

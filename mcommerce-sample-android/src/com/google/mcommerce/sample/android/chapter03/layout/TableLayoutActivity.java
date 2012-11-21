@@ -10,6 +10,6 @@ public class TableLayoutActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c04_table_layout);
+		setContentView(R.layout.c03_table_layout);
 	}
 }

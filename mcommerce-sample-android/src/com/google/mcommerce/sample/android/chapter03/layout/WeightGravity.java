@@ -10,6 +10,6 @@ public class WeightGravity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_weight);
+		setContentView(R.layout.c03_weight);
 	}
 }

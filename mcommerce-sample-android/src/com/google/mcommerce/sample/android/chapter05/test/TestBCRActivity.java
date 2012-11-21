@@ -17,7 +17,7 @@ public class TestBCRActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c09_main);
+		setContentView(R.layout.c05_main);
 	}
 
 	@Override

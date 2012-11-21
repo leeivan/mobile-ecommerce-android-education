@@ -20,7 +20,7 @@ public class BindingServiceActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c09_bind_service_layout);
+		setContentView(R.layout.c05_bind_service_layout);
 	}
 
 	@Override

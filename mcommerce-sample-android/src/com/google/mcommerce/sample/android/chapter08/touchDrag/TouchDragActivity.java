@@ -12,7 +12,7 @@ public class TouchDragActivity extends Activity {
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_drag_touch_demo);
+		setContentView(R.layout.c08_drag_touch_demo);
 
 		counterLayout = (LinearLayout) findViewById(R.id.counters);
 	}

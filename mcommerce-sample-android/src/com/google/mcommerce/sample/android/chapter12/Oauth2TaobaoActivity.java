@@ -20,7 +20,7 @@ public class Oauth2TaobaoActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c08_login_oauth_view);
+		setContentView(R.layout.c12_login_oauth_view);
 		mWebView = (WebView) findViewById(R.id.web_view);
 		mWebView.getSettings().setJavaScriptEnabled(true);
 		// 页面缩放设置

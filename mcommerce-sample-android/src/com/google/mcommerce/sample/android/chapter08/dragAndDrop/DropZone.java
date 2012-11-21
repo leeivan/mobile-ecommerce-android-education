@@ -24,7 +24,7 @@ public class DropZone extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle icicle) {
 		View v = inflater
-				.inflate(R.layout.c12_drag_drop_zone, container, false);
+				.inflate(R.layout.c08_drag_drop_zone, container, false);
 
 		dropMessage = (TextView) v.findViewById(R.id.dropmessage);
 

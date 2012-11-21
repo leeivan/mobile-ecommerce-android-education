@@ -23,7 +23,7 @@ public class ListViewActivity3 extends ListActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_list);
+		setContentView(R.layout.c04_list);
 
 		lv = getListView();
 

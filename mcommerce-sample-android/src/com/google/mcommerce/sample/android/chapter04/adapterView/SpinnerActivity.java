@@ -12,7 +12,7 @@ public class SpinnerActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_spinner);
+		setContentView(R.layout.c04_spinner);
 
 		Spinner spinner = (Spinner) findViewById(R.id.spinner);
 

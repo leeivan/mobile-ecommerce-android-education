@@ -17,7 +17,7 @@ public class TouchDemo02Activity extends Activity implements OnTouchListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_touch_demo02_layout);
+		setContentView(R.layout.c08_touch_demo02_layout);
 
 		RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.layout1);
 		layout1.setOnTouchListener(this);

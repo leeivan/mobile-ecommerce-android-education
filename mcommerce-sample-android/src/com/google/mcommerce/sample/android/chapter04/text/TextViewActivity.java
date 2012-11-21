@@ -14,7 +14,7 @@ public class TextViewActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_textview);// 设置内容显示的xml布局文件
+		setContentView(R.layout.c04_textview);// 设置内容显示的xml布局文件
 		TextView textView = (TextView) findViewById(R.id.textView);// 取得我们的TextView组件
 		textView.setTextColor(Color.RED);// 设置成红色
 		textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24f);// 设置成24sp

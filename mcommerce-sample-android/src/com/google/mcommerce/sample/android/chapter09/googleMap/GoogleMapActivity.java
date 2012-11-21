@@ -15,7 +15,7 @@ public class GoogleMapActivity extends MapActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_map_google_layout);
+		setContentView(R.layout.c09_map_google_layout);
 		initMapView();
 		initMyLocation();
 	}

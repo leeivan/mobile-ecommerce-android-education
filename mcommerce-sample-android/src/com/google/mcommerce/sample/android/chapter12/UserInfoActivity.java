@@ -20,7 +20,7 @@ public class UserInfoActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c08_user_info_layout);
+		setContentView(R.layout.c12_user_info_layout);
 		TaobaoClient client = new DefaultTaobaoClient(AppConstants.URL,
 				AppConstants.APP_KEY, AppConstants.SECRET);
 		UserGetRequest req = new UserGetRequest();

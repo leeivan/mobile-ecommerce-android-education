@@ -55,6 +55,7 @@
     <string name="multi_user_dom">使用DOM解析</string>
     <string name="multi_user_pull">使用PULL解析</string>
     <string name="multi_user_sax">使用SAX解析</string>
+    <!-- 目录章节chapter04 -->
     <string name="textView">Chapter04/Wiget/TextView</string>
     <string name="textView_web">Chapter04/Wiget/TextView_Web</string>
     <string name="linear_layout">Chapter04/Layout/LinearLayout</string>
@@ -74,7 +75,16 @@
     <string name="spinner">Chapter04/Spinner</string>
     <string name="ImageView">Chapter04/ImageView</string>
     <string name="ListView">Chapter04/ListView</string>
+    <!-- 目录章节Chapter05 -->
+    <string name="service">Chapter05/Service</string>
+    <string name="alarm">Chapter05/Alarm</string>
+    <string name="test">Chapter05/test</string>
+    <string name="title_activity_main">Chapter05/Notification</string>
     <string name="alart_dialog">Chapter05/AlartDialog</string>
+    <string name="binding_service">Chapter05/BindingService</string>
+    <string name="messenger_service">Chapter05/MessengerService</string>
+    <string name="broadcast_receiver">Chapter05/BroadcastReceiver</string>
+    <!-- 目录章节Chapter06 -->
     <string name="progressbar1">Chapter06/Progress Bar/1. Incremental</string>
     <string name="progressbar2">Chapter06/Progress Bar/2. Smooth</string>
     <string name="AsynTask01">Chapter06/AsyncTask/Test01</string>
@@ -85,6 +95,7 @@
     <string name="Thread">Chapter06/Thread</string>
     <string name="processLifecycle">Chapter06/ProcessLifecycle</string>
     <string name="search_product_api">Chapter06/SearchProducts</string>
+    <!-- 目录章节Chapter07 -->
     <string name="preferences_default">Chapter07/Preferences/DefaultPreference</string>
     <string name="preferences_multi">Chapter07/Preferences/MultiPreference</string>
     <string name="preferences_demo">Chapter07/Preferences/DemoPreference</string>
@@ -93,6 +104,7 @@
     <string name="QuickContacts">Chapter07/Content Provider/QuickContacts</string>
     <string name="SQLite">Chapter07/SQLite</string>
     <string name="show_product">Chapter07/ShowProduct</string>
+    <!-- 目录章节Chapter08 -->
     <string name="multiTouch_motionEvent_demo01">Chapter08/MotionEvent/Demo1</string>
     <string name="multiTouch_motionEvent_demo02">Chapter08/MotionEvent/Demo2</string>
     <string name="multiTouch_motionEvent_intercept">Chapter08/MotionEvent/Intercept</string>
@@ -104,12 +116,6 @@
     <string name="multiTouch_multi_touch">Chapter08/MultiTouch</string>
     <string name="multiTouch_scale_detector">Chapter08/Gesture/ScaleDetector</string>
     <string name="multiTouch_gesture_revealer">Chapter08/Gesture/Revealer</string>
-    <string name="service">Chapter09/Service</string>
-    <string name="binding_service">Chapter09/BindingService</string>
-    <string name="messenger_service">Chapter09/MessengerService</string>
-    <string name="broadcast_receiver">Chapter09/BroadcastReceiver</string>
-    <string name="alarm">Chapter05/Alarm</string>
-    <string name="title_activity_main">Chapter05/Notification</string>
     <string name="sensor_list">Chapter08/Sensor/SensorList</string>
     <string name="sensor_light">Chapter08/Sensor/SensorLight</string>
     <string name="sensor_campass">Chapter08/Sensor/Campass</string>
@@ -118,10 +124,12 @@
     <string name="sensor_proximity">Chapter08/Sensor/Proximity</string>
     <string name="sensor_virltualJax">Chapter08/Sensor/VirtualJax</string>
     <string name="sensor_accelerometer">Chapter08/Sensor/Accelerometer</string>
+    <!-- 目录章节Chapter09 -->
     <string name="map_google_touch">Chapter09/GoogleMap/GoogleTouch</string>
     <string name="map_google">Chapter09/GoogleMap/GoogleMap</string>
     <string name="map_baidu">Chapter09/BaiduMap/BaiduMap</string>
     <string name="location">Chapter09/Location</string>
+    <!-- 目录章节Chapter10 -->
     <string name="media_audio_demo">Chapter10/Media/Audio/Demo</string>
     <string name="media_audio_soundPool">Chapter10/Media/Audio/Soundpool</string>
     <string name="media_audio_asyncPlayer">Chapter10/Media/Audio/AsyncPlayer</string>
@@ -133,11 +141,13 @@
     <string name="media_record_mediaStore">Chapter10/Record/MediaStore</string>
     <string name="media_record_captureImage">Chapter10/Record/CaptureImage</string>
     <string name="media_record_mediaScanner">Chapter10/Record/MediaScanner</string>
+    <!-- 目录章节Chapter11 -->
     <string name="parse_JSON">Chapter11/Parse/JSON</string>
     <string name="parse_XML">Chapter11/Parse/XML</string>
     <string name="http_get">Chapter11/HTTP/Get</string>
     <string name="taobao_api">Chapter11/TaoBaoAPITest</string>
     <string name="http_post">Chapter11/HTTP/Post</string>
+    <!-- 目录章节Chapter12 -->
     <string name="BrowerView">Chapter12/BrowerView</string>
     <string name="OauthTaobao">Chapter12/OaothTaobao</string>
     <string name="WebView">Chapter12/WebView</string>

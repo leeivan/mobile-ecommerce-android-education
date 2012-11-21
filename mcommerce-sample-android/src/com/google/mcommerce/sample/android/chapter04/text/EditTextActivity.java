@@ -11,7 +11,7 @@ public class EditTextActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_edittext);
+		setContentView(R.layout.c04_edittext);
 	}
 
 }

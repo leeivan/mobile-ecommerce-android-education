@@ -16,7 +16,7 @@ public class ActivityFirst extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_activity_first_layout);
+		setContentView(R.layout.c04_activity_first_layout);
 	}
 
 	public void onClick(View view) {

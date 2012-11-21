@@ -10,6 +10,6 @@ public class ButtonActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_buttons);
+		setContentView(R.layout.c04_buttons);
 	}
 }

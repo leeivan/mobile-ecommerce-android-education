@@ -19,7 +19,7 @@ public class MySendBroActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c09_simple_broadcast_receiver);
+		setContentView(R.layout.c05_simple_broadcast_receiver);
 		btn = (Button) findViewById(R.id.broadcast_receiver_button);
 		tv = (TextView) findViewById(R.id.broadcast_receriver_textView1);
 		tv.setText("id is:" + android.os.Process.myPid());

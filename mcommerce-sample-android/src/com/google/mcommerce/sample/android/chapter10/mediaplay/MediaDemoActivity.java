@@ -32,7 +32,7 @@ public class MediaDemoActivity extends Activity implements OnPreparedListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c11_media_demo);
+		setContentView(R.layout.c10_media_demo);
 	}
 
 	public void doClick(View view) {

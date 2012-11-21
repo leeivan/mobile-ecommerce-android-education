@@ -28,7 +28,7 @@ public class SampleMenusActivity extends Activity {
 		// tv.setText("Hello, Android. Say hello");
 		// setContentView(tv);
 
-		setContentView(R.layout.c05_menu_main);
+		setContentView(R.layout.c04_menu_main);
 
 		// Before calling this method make sure
 		// set the content view

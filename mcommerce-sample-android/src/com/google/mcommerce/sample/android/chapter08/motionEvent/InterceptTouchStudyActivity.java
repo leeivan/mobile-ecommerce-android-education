@@ -14,7 +14,7 @@ public class InterceptTouchStudyActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_layers_touch_pass_test);
+		setContentView(R.layout.c08_layers_touch_pass_test);
 	}
 
 }

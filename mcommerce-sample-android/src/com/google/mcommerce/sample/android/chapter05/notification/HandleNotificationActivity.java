@@ -10,6 +10,6 @@ public class HandleNotificationActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c09_handle_notification_activity);
+		setContentView(R.layout.c05_handle_notification_activity);
 	}
 }

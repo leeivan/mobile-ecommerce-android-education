@@ -18,7 +18,7 @@ public class MultiTouchActivity extends Activity implements OnTouchListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_multi_touch_layout);
+		setContentView(R.layout.c08_multi_touch_layout);
 
 		RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.layout1);
 		layout1.setOnTouchListener(this);

@@ -39,7 +39,7 @@ public class VirtualIJaxActivity extends Activity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_sensor_virtua_jax);
+		setContentView(R.layout.c08_sensor_virtua_jax);
 
 		preferred = (TextView) findViewById(R.id.preferred);
 		orientation = (TextView) findViewById(R.id.orientation);

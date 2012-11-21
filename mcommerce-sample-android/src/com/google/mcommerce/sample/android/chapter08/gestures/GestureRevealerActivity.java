@@ -23,7 +23,7 @@ public class GestureRevealerActivity extends Activity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_gesture_revealer_layout);
+		setContentView(R.layout.c08_gesture_revealer_layout);
 
 		gestureLib = GestureLibraries.fromRawResource(this,
 				R.raw.gestures_letters);

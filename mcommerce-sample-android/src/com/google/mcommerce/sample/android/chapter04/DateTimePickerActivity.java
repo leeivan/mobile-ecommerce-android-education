@@ -13,7 +13,7 @@ public class DateTimePickerActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_datetimepicker);
+		setContentView(R.layout.c04_datetimepicker);
 
 		TextView dateDefault = (TextView) findViewById(R.id.dateDefault);
 		TextView timeDefault = (TextView) findViewById(R.id.timeDefault);

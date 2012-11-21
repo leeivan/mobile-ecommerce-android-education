@@ -10,6 +10,6 @@ public class RelativeLayoutActivity01 extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_relative);
+		setContentView(R.layout.c03_relative);
 	}
 }

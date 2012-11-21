@@ -12,7 +12,7 @@ public class AudioEffectsControlActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c11_audio_effects_control_layout);
+		setContentView(R.layout.c10_audio_effects_control_layout);
 
 		Intent intent = new Intent(
 				AudioEffect.ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL);

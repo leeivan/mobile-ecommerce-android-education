@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter07;
+package com.google.mcommerce.sample.android.chapter06;
 
 import java.io.IOException;
 import java.io.InputStream;

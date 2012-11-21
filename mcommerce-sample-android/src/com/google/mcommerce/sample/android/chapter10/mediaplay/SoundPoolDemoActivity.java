@@ -31,7 +31,7 @@ public class SoundPoolDemoActivity extends Activity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c11_media_sound_pool_layout);
+		setContentView(R.layout.c10_media_sound_pool_layout);
 	}
 
 	@Override

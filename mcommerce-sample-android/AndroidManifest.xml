@@ -252,7 +252,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.ImageViewActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.ImageViewActivity01"
             android:label="@string/imageview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -395,7 +395,8 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android.chapter04.intent.ActivitySecondySecond" >
+        <activity 
+            android:name=".chapter04.intent.ActivitySecondySecond" >
             <intent-filter>
                 <action android:name="com.android.activity.MY_ACTION" />
 

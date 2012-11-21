@@ -15,7 +15,7 @@ public class ActivitySecond extends Activity {
 	@Override
 	public void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
-		setContentView(R.layout.c05_activity_second_layout);
+		setContentView(R.layout.c04_activity_second_layout);
 		Bundle extras = getIntent().getExtras();
 		if (extras == null) {
 			return;

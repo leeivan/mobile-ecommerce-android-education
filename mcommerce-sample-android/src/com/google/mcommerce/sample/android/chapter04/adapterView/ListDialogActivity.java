@@ -22,7 +22,7 @@ public class ListDialogActivity extends Activity implements OnClickListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_alart_dialog);
+		setContentView(R.layout.c04_alart_dialog);
 		Button btnList = (Button) findViewById(R.id.list);
 		Button btnSingleChoice = (Button) findViewById(R.id.singlechoice);
 		Button btnMultiChoice = (Button) findViewById(R.id.multichoice);

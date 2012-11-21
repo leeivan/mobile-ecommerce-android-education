@@ -24,7 +24,7 @@ public class MediaScannerActivity extends Activity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c11_media_scanner_layout);
+		setContentView(R.layout.c10_media_scanner_layout);
 
 		editText = (EditText) findViewById(R.id.fileName);
 	}

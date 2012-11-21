@@ -11,6 +11,6 @@ public class BasicViewActivity extends Activity
     public void onCreate(Bundle savedInstanceState) 
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.basic_view);
+        setContentView(R.layout.c04_basic_view);
     }
 }//eof-class

@@ -17,7 +17,7 @@ public class BaiduMapActivity extends MapActivity {
 	protected void onCreate(Bundle arg0) {
 		// TODO Auto-generated method stub
 		super.onCreate(arg0);
-		setContentView(R.layout.c10_map_baidu_layout);
+		setContentView(R.layout.c09_map_baidu_layout);
 		mBMapMan = new BMapManager(getApplication());
 		mBMapMan.init("98795B8ACBE49CB19819B5EE900D3A3A55CD3EFA", null);
 		super.initMapActivity(mBMapMan);

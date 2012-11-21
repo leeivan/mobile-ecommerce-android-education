@@ -37,7 +37,7 @@ public class RadioGroupActivity extends Activity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.c05_radio_group);
+		setContentView(R.layout.c04_radio_group);
 		mRadioGroup = (RadioGroup) findViewById(R.id.menu);
 
 		// test adding a radio button programmatically

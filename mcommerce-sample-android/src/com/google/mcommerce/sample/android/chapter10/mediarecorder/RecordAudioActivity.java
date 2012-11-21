@@ -20,7 +20,7 @@ public class RecordAudioActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c11_media_record_audio_layout);
+		setContentView(R.layout.c10_media_record_audio_layout);
 
 		OUTPUT_FILE = Environment.getExternalStorageDirectory()
 				+ "/recordaudio.3gpp";

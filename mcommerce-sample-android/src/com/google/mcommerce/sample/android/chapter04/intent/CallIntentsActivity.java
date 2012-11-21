@@ -20,7 +20,7 @@ public class CallIntentsActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_implicit_intent_layout);
+		setContentView(R.layout.c04_implicit_intent_layout);
 		mRadioGroup = (RadioGroup) findViewById(R.id.action);
 	}
 

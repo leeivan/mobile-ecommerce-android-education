@@ -38,7 +38,7 @@ public class AccelerometerRecordToFileActivity extends Activity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c10_sensor_accelerometer_record_file);
+		setContentView(R.layout.c08_sensor_accelerometer_record_file);
 
 		mMgr = (SensorManager) this.getSystemService(SENSOR_SERVICE);
 

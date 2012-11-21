@@ -15,7 +15,7 @@ public class TextViewActivity01 extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_textview);
+		setContentView(R.layout.c04_textview);
 
 		TextView tv = (TextView) findViewById(R.id.tv);
 		EditText et = (EditText) findViewById(R.id.et);

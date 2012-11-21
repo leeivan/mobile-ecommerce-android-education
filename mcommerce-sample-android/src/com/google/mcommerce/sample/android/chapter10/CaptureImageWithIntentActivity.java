@@ -21,7 +21,7 @@ public class CaptureImageWithIntentActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c11_capture_image_with_intent_layout);
+		setContentView(R.layout.c10_capture_image_with_intent_layout);
 
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 	}

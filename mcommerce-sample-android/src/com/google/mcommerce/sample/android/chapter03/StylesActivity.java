@@ -17,7 +17,7 @@ public class StylesActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_styles);
+		setContentView(R.layout.c03_styles);
 
 		TextView tv = (TextView) this.findViewById(R.id.tv);
 		tv.setAutoLinkMask(Linkify.ALL);

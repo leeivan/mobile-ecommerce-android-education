@@ -21,7 +21,7 @@ public class ScaleDetectorActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_scale_detector_layout);
+		setContentView(R.layout.c08_scale_detector_layout);
 
 		image = (ImageView) findViewById(R.id.image);
 		mScaleDetector = new ScaleGestureDetector(this, new ScaleListener());

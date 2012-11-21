@@ -14,7 +14,7 @@ public class VideoDemoActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		this.setContentView(R.layout.c11_media_video_demo_layout);
+		this.setContentView(R.layout.c10_media_video_demo_layout);
 
 		VideoView videoView = (VideoView) this.findViewById(R.id.videoView);
 		MediaController mc = new MediaController(this);

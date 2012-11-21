@@ -15,7 +15,7 @@ public class VelocityTrackerActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_touch_velocity_tracker);
+		setContentView(R.layout.c08_touch_velocity_tracker);
 	}
 
 	private VelocityTracker vTracker = null;

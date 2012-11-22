@@ -47,7 +47,7 @@ public class ControlsActivity extends ListActivity implements
 		try {
 			Intent intent = new Intent(
 					this,
-					Class.forName("com.google.mcommerce.sample.android.chapter05."
+					Class.forName("com.google.mcommerce.sample.android.chapter04."
 							+ activities[position]));
 			startActivity(intent);
 		} catch (Exception e) {

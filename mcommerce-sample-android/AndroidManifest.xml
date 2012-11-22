@@ -52,9 +52,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+                <activity
+            android:name=".chapter03.layout.TableLayoutActivity1"
+            android:label="@string/tablelayout1_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".chapter11.TaoBaoAPITestActivity"
-            android:label="@string/taobao_api" >
+            android:name=".chapter03.layout.TableLayoutActivity2"
+            android:label="@string/tablelayout2_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter03.layout.TableLayoutActivity3"
+            android:label="@string/tablelayout3_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter03.permission.CustPermMainActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -62,8 +89,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.parse.ParseJSONActivity"
-            android:label="@string/parse_JSON" >
+            android:name=".chapter03.permission.PrivActivity"
+            android:permission="chapter04.permission.STARTMYACTIVITY" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter03.layout.TableLayoutActivity"
+            android:label="@string/table_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -71,8 +105,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.parse.ParseXMLActivity"
-            android:label="@string/parse_XML" >
+            android:name=".chapter03.layout.AbsoluteLayoutActivity"
+            android:label="@string/absolute_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -80,8 +114,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.http.HttpGetDemo"
-            android:label="@string/http_get" >
+            android:name=".chapter03.layout.FrameLayoutActivity"
+            android:label="@string/frame_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -89,8 +123,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.http.HttpPostDemo"
-            android:label="@string/http_post" >
+            android:name=".chapter03.layout.RelativeLayoutActivity"
+            android:label="@string/relative_layout" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter03.layout.LinearLayoutActivity"
+            android:label="@string/linear_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -113,51 +156,7 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.TableLayoutActivity"
-            android:label="@string/table_layout" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.AbsoluteLayoutActivity"
-            android:label="@string/absolute_layout" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.FrameLayoutActivity"
-            android:label="@string/frame_layout" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.RelativeLayoutActivity"
-            android:label="@string/relative_layout" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.LinearLayoutActivity"
-            android:label="@string/linear_layout" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -172,22 +171,7 @@
         <activity
             android:name=".chapter04.menu.XMLMenusActivity"
             android:label="Test XML and PopupMenus" />
-        <activity
-            android:name=".chapter03.permission.CustPermMainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter03.permission.PrivActivity"
-            android:permission="chapter04.permission.STARTMYACTIVITY" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".chapter04.SimpleEventActivity"
             android:label="@string/simple_event" >
@@ -216,7 +200,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.ListViewActivity"
+            android:name=".chapter04.adapterView.ListViewActivity"
             android:label="@string/listview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -225,7 +209,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.ListViewActivity2"
+            android:name=".chapter04.adapterView.ListViewActivity2"
             android:label="@string/listview2_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -234,7 +218,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.ListViewActivity3"
+            android:name=".chapter04.adapterView.ListViewActivity3"
             android:label="@string/listview3_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -243,7 +227,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.ListViewActivity4"
+            android:name=".chapter04.adapterView.ListViewActivity4"
             android:label="@string/listview4_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -252,7 +236,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.ImageViewActivity01"
+            android:name=".chapter04.ImageViewActivity01"
             android:label="@string/imageview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -261,7 +245,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.GalleryActivity"
+            android:name=".chapter04.adapterView.GalleryActivity"
             android:label="@string/gallery_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -270,7 +254,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.GridViewCustomAdapter"
+            android:name=".chapter04.adapterView.GridViewCustomAdapter"
             android:label="@string/gridviewcustom_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -279,7 +263,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.GridViewActivity"
+            android:name=".chapter04.adapterView.GridViewActivity"
             android:label="@string/gridview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -297,7 +281,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.RadioGroupActivity"
+            android:name=".chapter04.button.RadioGroupActivity"
             android:label="@string/radio_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -306,7 +290,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.CheckBoxActivity"
+            android:name=".chapter04.button.CheckBoxActivity"
             android:label="@string/checkbox_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -315,35 +299,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.ButtonActivity"
+            android:name=".chapter04.button.ButtonActivity"
             android:label="@string/button_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.TableLayoutActivity1"
-            android:label="@string/tablelayout1_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.TableLayoutActivity2"
-            android:label="@string/tablelayout2_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.TableLayoutActivity3"
-            android:label="@string/tablelayout3_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -431,7 +388,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.button.RadioGroupActivity"
+            android:name=".chapter04.button.RadioGroupActivity01"
             android:label="@string/radioGroup" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -440,7 +397,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.button.CheckBoxActivity"
+            android:name=".chapter04.button.CheckBoxActivity01"
             android:label="@string/checkBox" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1019,6 +976,51 @@
         <activity
             android:name=".chapter10.mediaplay.MediaScannerActivity"
             android:label="@string/media_record_mediaScanner" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.TaoBaoAPITestActivity"
+            android:label="@string/taobao_api" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.parse.ParseJSONActivity"
+            android:label="@string/parse_JSON" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.parse.ParseXMLActivity"
+            android:label="@string/parse_XML" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.http.HttpGetDemo"
+            android:label="@string/http_get" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter11.http.HttpPostDemo"
+            android:label="@string/http_post" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

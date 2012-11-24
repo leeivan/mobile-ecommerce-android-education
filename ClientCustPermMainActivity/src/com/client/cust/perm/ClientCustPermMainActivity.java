@@ -1,11 +1,9 @@
-package com.google.mcommerce.sample.android.chapter03.permission;
+package com.client.cust.perm;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import com.google.mcommerce.sample.android.R;
 
 public class ClientCustPermMainActivity extends Activity {
 	@Override
@@ -16,7 +14,8 @@ public class ClientCustPermMainActivity extends Activity {
 
 	public void doClick(View view) {
 		Intent intent = new Intent();
-		intent.setClassName("com.cust.perm", "com.cust.perm.PrivActivity");
+		intent.setClassName("com.google.mcommerce.sample.android",
+				"com.google.mcommerce.sample.android.chapter03.permission.PrivActivity");
 		startActivity(intent);
 	}
 }

@@ -41,6 +41,12 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <permission
+        android:name="chapter03.permission.STARTMYACTIVITY"
+        android:description="@string/startMyActivityDesc"
+        android:label="Start My Activity"
+        android:protectionLevel="normal" />
+
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
@@ -77,22 +83,6 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter03.permission.CustPermMainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter03.permission.PrivActivity"
-            android:permission="chapter04.permission.STARTMYACTIVITY" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
@@ -138,6 +128,22 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter03.permission.CustPermMainActivity"
+            android:label="@string/permssion_cust" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter03.permission.PrivActivity"
+            android:permission="chapter03.permission.STARTMYACTIVITY" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
@@ -1174,11 +1180,5 @@
 
         <uses-library android:name="com.google.android.maps" />
     </application>
-
-    <permission
-        android:name="chapter04.permission.STARTMYACTIVITY"
-        android:description="@string/startMyActivityDesc"
-        android:label="Start My Activity"
-        android:protectionLevel="normal" />
 
 </manifest>

@@ -55,18 +55,25 @@
     <string name="multi_user_dom">使用DOM解析</string>
     <string name="multi_user_pull">使用PULL解析</string>
     <string name="multi_user_sax">使用SAX解析</string>
+    <!-- 目录章chapter03 -->
+    <string name="tablelayout1_name">Chapter03/Layout/Table Layout 1</string>
+    <string name="tablelayout2_name">Chapter03/Layout/Table Layout 2</string>
+    <string name="tablelayout3_name">Chapter03/Layout/Table Layout 3</string>
+    <string name="linear_layout">Chapter03/Layout/Linear Layout</string>
+    <string name="absolute_layout">Chapter03/Layout/Absolute Layout</string>
+    <string name="frame_layout">Chapter03/Layout/Frame Layout</string>
+    <string name="table_layout">Chapter03/Layout/Table Layout</string>
+    <string name="relative_layout">Chapter03/Layout/Relative Layout</string>
+    <string name="relativelayout_name">Chapter03/Layout/Relative Layout Demo</string>
+    <string name="permssion_cust">Chapter03/permission1</string>
+    <string name="permssion_cust_client">Chapter03/permission2</string>
     <!-- 目录章节chapter04 -->
     <string name="tablelayout1_name">Chapter03/layout/Table Layout 1</string>
     <string name="tablelayout2_name">Chapter03/layout/Table Layout 2</string>
     <string name="tablelayout3_name">Chapter03/layout/Table Layout 3</string>
     <string name="textView">Chapter04/Wiget/TextView</string>
     <string name="textView_web">Chapter04/Wiget/TextView_Web</string>
-    <string name="linear_layout">Chapter04/Layout/LinearLayout</string>
-    <string name="absolute_layout">Chapter04/Layout/AbsoluteLayout</string>
-    <string name="frame_layout">Chapter04/Layout/FrameLayout</string>
-    <string name="table_layout">Chapter04/Layout/TableLayout</string>
     <string name="wiget_menu">Chapter04/Wiget/Menu</string>
-    <string name="relative_layout">Chapter04/RelativeLayout</string>
     <string name="simple_event">Chapter04/SimpleEvent</string>
     <string name="common_control">Chapter04/CommonControl</string>
     <string name="IntentDataTransfer">Chapter04/Intent/DataTransfer</string>
@@ -200,7 +207,6 @@
     <string name="gridview_name">GridView Demo</string>
     <string name="gridviewcustom_name">GridView-Custom Adapter Demo</string>
     <string name="imageview_name">ImageView Demo</string>
-    <string name="relativelayout_name">Relative Layout Demo</string>
     <string name="listview_name">ListView Demo</string>
     <string name="listview2_name">ListView Demo 2</string>
     <string name="listview3_name">ListView Demo 3</string>

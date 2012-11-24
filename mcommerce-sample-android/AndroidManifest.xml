@@ -52,13 +52,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-                <activity
+        <activity
             android:name=".chapter03.layout.TableLayoutActivity1"
             android:label="@string/tablelayout1_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -67,7 +67,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -76,7 +76,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -156,7 +156,6 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="SampleForMCommerce" />
-
             </intent-filter>
         </activity>
         <activity
@@ -171,7 +170,6 @@
         <activity
             android:name=".chapter04.menu.XMLMenusActivity"
             android:label="Test XML and PopupMenus" />
-
         <activity
             android:name=".chapter04.SimpleEventActivity"
             android:label="@string/simple_event" >
@@ -352,8 +350,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity 
-            android:name=".chapter04.intent.ActivitySecondySecond" >
+        <activity android:name=".chapter04.intent.ActivitySecondySecond" >
             <intent-filter>
                 <action android:name="com.android.activity.MY_ACTION" />
 

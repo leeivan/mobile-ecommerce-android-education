@@ -179,7 +179,7 @@ public class SampleMenusActivity extends Activity {
 	// creating the menus.
 	private void loadXMLMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater(); // from activity
-		inflater.inflate(R.menu.c05_my_menu, menu);
+		inflater.inflate(R.menu.c04_my_menu, menu);
 	}
 
 	private TextView getTextView() {

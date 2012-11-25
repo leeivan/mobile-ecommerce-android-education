@@ -131,21 +131,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.permission.CustPermMainActivity"
-            android:label="@string/permssion_cust" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".chapter03.permission.PrivActivity"
             android:permission="chapter03.permission.STARTMYACTIVITY" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <!-- chapter04 -->
         <activity
             android:name=".chapter04.text.TextViewActivity"
             android:label="@string/textView" >
@@ -156,8 +148,35 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter04.text.TextViewActivity01"
+            android:label="@string/textview_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter04.text.TextViewWebActivity"
             android:label="@string/textView_web" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.text.EditTextActivity"
+            android:label="@string/editText" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.text.EditTextSearchActivity"
+            android:label="@string/editText_search" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -312,15 +331,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.TextViewActivity"
-            android:label="@string/textview_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".chapter04.SpinnerActivity"
             android:label="@string/spinner_name" >
             <intent-filter>
@@ -366,24 +376,6 @@
         <activity
             android:name=".chapter04.intent.CallIntentsActivity"
             android:label="@string/implicitIntent" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.text.EditTextActivity"
-            android:label="@string/editText" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.text.EditTextSearchActivity"
-            android:label="@string/editText_search" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

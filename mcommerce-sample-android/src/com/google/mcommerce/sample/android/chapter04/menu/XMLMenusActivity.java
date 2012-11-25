@@ -24,7 +24,7 @@ public class XMLMenusActivity extends Activity {
 		// tv.setText("Hello, Android. Say hello");
 		// setContentView(tv);
 
-		setContentView(R.layout.main);
+		setContentView(R.layout.c04_menu_main);
 
 		// Before calling this method make sure
 		// set the content view
@@ -50,7 +50,7 @@ public class XMLMenusActivity extends Activity {
 
 	private void loadXMLMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater(); // from activity
-		inflater.inflate(R.menu.c05_my_menu, menu);
+		inflater.inflate(R.menu.c04_my_menu, menu);
 	}
 
 	private TextView getTextView() {

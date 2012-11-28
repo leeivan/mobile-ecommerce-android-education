@@ -29,6 +29,7 @@ public class NotificationMainActivity extends Activity {
 
 	public void sendBasicNotification(View view) {
 		Notification notification = new Notification.Builder(this)
+				.setTicker("Sample Notification")
 				.setContentTitle("Basic Notification")
 				.setContentText("Basic Notification, used earlier")
 				.setSmallIcon(R.drawable.ic_launcher_share).build();
@@ -42,8 +43,8 @@ public class NotificationMainActivity extends Activity {
 				+ "where you will see three different kind of notification. "
 				+ "you can even put the very long string here.";
 
-		NotificationManager notificationManager = getNotificationManager();
 		PendingIntent pi = getPendingIntent();
+		NotificationManager notificationManager = getNotificationManager();
 		Builder builder = new Notification.Builder(this);
 		builder.setContentTitle("Big text Notofication")
 				.setContentText("Big text Notification")

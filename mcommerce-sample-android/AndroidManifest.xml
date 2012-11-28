@@ -222,7 +222,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -232,7 +232,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -243,7 +243,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -253,27 +253,27 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".app.ActionBarSettingsActionProviderActivity"
+            android:name=".chapter04.actionBar.ActionBarSettingsActionProviderActivity"
             android:enabled="@bool/atLeastIceCreamSandwich"
             android:label="@string/action_bar_settings_action_provider" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".app.ActionBarShareActionProviderActivity"
+            android:name=".chapter04.actionBar.ActionBarShareActionProviderActivity"
             android:enabled="@bool/atLeastIceCreamSandwich"
             android:label="@string/action_bar_share_action_provider" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.SAMPLE_CODE" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -803,7 +803,7 @@
         </receiver>
 
         <activity
-            android:name="chapter05.NotificationMainActivity"
+            android:name=".chapter05.notification.NotificationMainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -811,7 +811,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name="chapter05.HandleNotificationActivity" >
+        <activity android:name=".chapter05.notification.HandleNotificationActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>

@@ -131,24 +131,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.permission.ClientCustPermMainActivity"
-            android:label="@string/permssion_cust_client" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter03.permission.CustPermMainActivity"
-            android:label="@string/permssion_cust" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".chapter03.permission.PrivActivity"
             android:permission="chapter03.permission.STARTMYACTIVITY" >
             <intent-filter>

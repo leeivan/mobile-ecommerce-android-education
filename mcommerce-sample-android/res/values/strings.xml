@@ -68,9 +68,9 @@
     <string name="permssion_cust">Chapter03/permission1</string>
     <string name="permssion_cust_client">Chapter03/permission2</string>
     <!-- 目录章节chapter04 -->
-    <string name="textView">Chapter04/Wiget/TextView</string>
-    <string name="textView_web">Chapter04/Wiget/TextView_Web</string>
-    <string name="wiget_menu">Chapter04/Wiget/Menu</string>
+    <string name="textView">Chapter04/Text/TextView</string>
+    <string name="textView_web">Chapter04/Text/TextView_Web</string>
+    <string name="wiget_menu">Chapter04/Menu</string>
     <string name="simple_event">Chapter04/SimpleEvent</string>
     <string name="common_control">Chapter04/CommonControl</string>
     <string name="IntentDataTransfer">Chapter04/Intent/DataTransfer</string>
@@ -81,13 +81,13 @@
     <string name="checkBox">Chapter04/CheckBox</string>
     <string name="spinner">Chapter04/Spinner</string>
     <string name="ImageView">Chapter04/ImageView</string>
-    <string name="ListView">Chapter04/ListView</string>
+    <string name="ListView">Chapter04/AdapterView/ListView</string>
+    <string name="alart_dialog">Chapter04/AdapterView/AlartDialog</string>
     <!-- 目录章节Chapter05 -->
     <string name="service">Chapter05/Service</string>
     <string name="alarm">Chapter05/Alarm</string>
     <string name="test">Chapter05/test</string>
     <string name="title_activity_main">Chapter05/Notification</string>
-    <string name="alart_dialog">Chapter05/AlartDialog</string>
     <string name="binding_service">Chapter05/BindingService</string>
     <string name="messenger_service">Chapter05/MessengerService</string>
     <string name="broadcast_receiver">Chapter05/BroadcastReceiver</string>

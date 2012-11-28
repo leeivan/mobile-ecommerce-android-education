@@ -12,16 +12,12 @@ public class PrivActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		LinearLayout view = new LinearLayout(this);
-
 		view.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
 				LayoutParams.WRAP_CONTENT));
 		view.setOrientation(LinearLayout.HORIZONTAL);
-
 		TextView nameLbl = new TextView(this);
-
 		nameLbl.setText("Hello from PrivActivity");
 		view.addView(nameLbl);
-
 		setContentView(view);
 
 	}

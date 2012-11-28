@@ -137,9 +137,19 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <!-- chapter04 -->
         <activity
             android:name=".chapter04.text.TextViewActivity"
             android:label="@string/textView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.text.TextViewActivity01"
+            android:label="@string/textview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -153,6 +163,117 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.text.EditTextActivity"
+            android:label="@string/editText" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.text.EditTextSearchActivity"
+            android:label="@string/editText_search" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.actionBar.TabNavigationActionBarActivity"
+            android:label="@string/actionBar_tab" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.actionBar.ListNavigationActionBarActivity"
+            android:label="Action Bar Demonstration: ListNav" >
+        </activity>
+        <activity
+            android:name=".chapter04.actionBar.DropdownListNavigationActionBarActivity"
+            android:label="Action Bar Demonstration: DropdownNav" >
+        </activity>
+        <activity
+            android:name=".chapter04.actionBar.StandardNavigationActionBarActivity"
+            android:label="Action Bar Demonstration: StandardNav" >
+        </activity>
+        <activity
+            android:name=".chapter04.actionBar.SearchResultsActivity"
+            android:label="Search Results" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".chapter04.actionBar.ActionBarMechanics"
+            android:enabled="@bool/atLeastHoneycomb"
+            android:label="@string/action_bar_mechanics" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.actionBar.ActionBarUsage"
+            android:enabled="@bool/atLeastHoneycomb"
+            android:label="@string/action_bar_usage" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.actionBar.ActionBarDisplayOptions"
+            android:enabled="@bool/atLeastHoneycomb"
+            android:label="@string/action_bar_display_options"
+            android:logo="@drawable/apidemo_androidlogo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter04.actionBar.ActionBarTabs"
+            android:enabled="@bool/atLeastHoneycomb"
+            android:label="@string/action_bar_tabs" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ActionBarSettingsActionProviderActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="@string/action_bar_settings_action_provider" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ActionBarShareActionProviderActivity"
+            android:enabled="@bool/atLeastIceCreamSandwich"
+            android:label="@string/action_bar_share_action_provider" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
             </intent-filter>
         </activity>
         <activity
@@ -303,15 +424,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.TextViewActivity"
-            android:label="@string/textview_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".chapter04.SpinnerActivity"
             android:label="@string/spinner_name" >
             <intent-filter>
@@ -357,24 +469,6 @@
         <activity
             android:name=".chapter04.intent.CallIntentsActivity"
             android:label="@string/implicitIntent" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.text.EditTextActivity"
-            android:label="@string/editText" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.text.EditTextSearchActivity"
-            android:label="@string/editText_search" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

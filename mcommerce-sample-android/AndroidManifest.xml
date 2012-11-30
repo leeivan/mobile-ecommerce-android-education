@@ -139,6 +139,15 @@
         </activity>
         <!-- chapter04 -->
         <activity
+            android:name=".chapter04.SimpleEventActivity"
+            android:label="@string/simple_event" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter04.text.TextViewActivity"
             android:label="@string/textView" >
             <intent-filter>
@@ -183,6 +192,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <!-- ActionBar Sample Start -->
         <activity
             android:name=".chapter04.actionBar.TabNavigationActionBarActivity"
             android:label="@string/actionBar_tab" >
@@ -276,6 +286,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <!-- Menu Sample -->
         <activity
             android:name=".chapter04.menu.SampleMenusActivity"
             android:label="@string/wiget_menu" >
@@ -288,27 +299,10 @@
         <activity
             android:name=".chapter04.menu.XMLMenusActivity"
             android:label="Test XML and PopupMenus" />
+        <!-- AdapterView Sample -->
         <activity
-            android:name=".chapter04.SimpleEventActivity"
-            android:label="@string/simple_event" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.ListDialogActivity"
+            android:name=".chapter04.adapterView.ListDialogActivity"
             android:label="@string/alart_dialog" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.ControlsActivity"
-            android:label="@string/common_control" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -321,7 +315,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -330,7 +324,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -339,7 +333,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -348,7 +342,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -357,7 +351,16 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".chapter04.ImageViewActivity"
+            android:label="@string/ImageView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -366,7 +369,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -375,7 +378,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -384,7 +387,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -393,7 +396,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -402,7 +405,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -411,7 +414,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -420,16 +423,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.SpinnerActivity"
-            android:label="@string/spinner_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -438,7 +432,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -447,7 +441,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
         <activity
@@ -494,8 +488,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.SpinnerActivity"
-            android:label="@string/spinner" >
+            android:name=".chapter04.adapterView.SpinnerActivity"
+            android:label="@string/spinner_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -597,15 +591,6 @@
             android:name=".chapter06.SearchProductsAPIActivity"
             android:label="@string/search_product_api"
             android:process="com.taobao.mcommerce.sample" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter07.ImageViewActivity"
-            android:label="@string/ImageView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

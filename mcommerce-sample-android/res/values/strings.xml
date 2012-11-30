@@ -261,5 +261,6 @@
     <string name="create_xml_pull">使用PULL创建XML</string>
     <string name="slabel">Search Label</string>
     <string name="shint">Search Hint</string>
+    <string name="tecent_weibo">Chapter15/Weibo/Tecent</string>
 
 </resources>

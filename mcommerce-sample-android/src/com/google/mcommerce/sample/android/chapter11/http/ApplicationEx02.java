@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter11;
+package com.google.mcommerce.sample.android.chapter11.http;
 
 import org.apache.http.HttpVersion;
 import org.apache.http.client.HttpClient;
@@ -18,7 +18,7 @@ import org.apache.http.protocol.HTTP;
 
 import android.app.Application;
 
-public class ApplicationEx01 extends Application {
+public class ApplicationEx02 extends Application {
 	private HttpClient httpClient;
 
 	@Override

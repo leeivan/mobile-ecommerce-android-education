@@ -391,6 +391,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter04.adapterView.SimpleListViewActivity"
+            android:label="@string/ListView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter04.DateTimePickerActivity"
             android:label="@string/datetimepicker_name" >
             <intent-filter>
@@ -498,47 +507,6 @@
         </activity>
         <!-- Chapter05 Notification and Broadcast -->
         <activity
-            android:name=".chapter05.StartServiceActivity"
-            android:label="@string/service" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-
-        <service android:name=".chapter05.HelloIntentService" >
-        </service>
-        <service android:name=".chapter05.HelloService" >
-        </service>
-
-        <activity
-            android:name=".chapter05.BindingServiceActivity"
-            android:label="@string/binding_service" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-
-        <service android:name=".chapter05.LocalService" >
-        </service>
-
-        <activity
-            android:name=".chapter05.MessengerServiceActivity"
-            android:label="@string/messenger_service" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-
-        <service android:name=".chapter05.MessengerService" >
-        </service>
-
-        <activity
             android:name=".chapter05.broadcastReceiver.MySendBroActivity"
             android:label="@string/broadcast_receiver" >
             <intent-filter>
@@ -619,6 +587,48 @@
         </receiver>
         <!-- Chapter06 MultiTask -->
         <activity
+            android:name=".chapter06.service.StartServiceActivity"
+            android:label="@string/service" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".chapter06.service.HelloIntentService" >
+        </service>
+        <service android:name=".chapter06.service.HelloService" >
+        </service>
+        <service android:name=".chapter06.service.BackgroundService" >
+        </service>
+
+        <activity
+            android:name=".chapter06.service.BindingServiceActivity"
+            android:label="@string/binding_service" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".chapter06.service.LocalService" >
+        </service>
+
+        <activity
+            android:name=".chapter06.service.MessengerServiceActivity"
+            android:label="@string/messenger_service" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".chapter06.service.MessengerService" >
+        </service>
+        <activity
             android:name=".chapter06.ProgressBar1"
             android:label="@string/progressbar1" >
             <intent-filter>
@@ -630,6 +640,15 @@
         <activity
             android:name=".chapter06.ProgressBar2"
             android:label="@string/progressbar2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter06.download.DownloadManagerActivity"
+            android:label="@string/download" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -684,15 +703,6 @@
         <activity
             android:name=".chapter06.ThreadActivity"
             android:label="@string/Thread" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter06.SimpleListViewActivity"
-            android:label="@string/ListView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

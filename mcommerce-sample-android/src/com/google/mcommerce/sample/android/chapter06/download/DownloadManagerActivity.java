@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter06;
+package com.google.mcommerce.sample.android.chapter06.download;
 
 import android.app.Activity;
 import android.app.DownloadManager;

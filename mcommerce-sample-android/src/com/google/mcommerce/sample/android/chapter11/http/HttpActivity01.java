@@ -1,6 +1,5 @@
-package com.google.mcommerce.sample.android.chapter11;
+package com.google.mcommerce.sample.android.chapter11.http;
 
-// This file is HttpActivity.java
 import java.io.IOException;
 
 import org.apache.http.client.HttpClient;
@@ -13,17 +12,16 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.google.mcommerce.sample.android.R;
-
-public class HttpActivity02 extends Activity {
+public class HttpActivity01 extends Activity {
+	private ApplicationEx01 app;
 	private HttpClient httpClient;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
 
-		httpClient = HttpSingleton.getHttpClient();
+		app = (ApplicationEx01) this.getApplication();
+		httpClient = app.getHttpClient();
 		getHttpContent();
 	}
 

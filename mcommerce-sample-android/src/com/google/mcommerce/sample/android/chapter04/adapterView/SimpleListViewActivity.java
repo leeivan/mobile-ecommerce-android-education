@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter06;
+package com.google.mcommerce.sample.android.chapter04.adapterView;
 
 import java.util.ArrayList;
 import java.util.HashMap;

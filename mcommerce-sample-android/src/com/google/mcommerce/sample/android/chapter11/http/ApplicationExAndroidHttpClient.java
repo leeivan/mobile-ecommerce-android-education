@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter11;
+package com.google.mcommerce.sample.android.chapter11.http;
 
 import org.apache.http.conn.ClientConnectionManager;
 import org.apache.http.conn.scheme.SchemeRegistry;

@@ -354,7 +354,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-         <activity
+        <activity
             android:name=".chapter04.ImageViewActivity"
             android:label="@string/ImageView" >
             <intent-filter>
@@ -496,6 +496,128 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <!-- Chapter05 Notification and Broadcast -->
+        <activity
+            android:name=".chapter05.StartServiceActivity"
+            android:label="@string/service" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".chapter05.HelloIntentService" >
+        </service>
+        <service android:name=".chapter05.HelloService" >
+        </service>
+
+        <activity
+            android:name=".chapter05.BindingServiceActivity"
+            android:label="@string/binding_service" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".chapter05.LocalService" >
+        </service>
+
+        <activity
+            android:name=".chapter05.MessengerServiceActivity"
+            android:label="@string/messenger_service" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".chapter05.MessengerService" >
+        </service>
+
+        <activity
+            android:name=".chapter05.broadcastReceiver.MySendBroActivity"
+            android:label="@string/broadcast_receiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".chapter05.broadcastReceiver.MyBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.mcommerce.sample.android.chapter05.mybroadcast" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".chapter05.notification.NotificationMainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter05.notification.HandleNotificationActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter05.alarm.TestAlarmsDriverActivity"
+            android:label="@string/alarm" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".chapter05.alarm.TestReceiver" >
+            <intent-filter>
+                <action android:name="com.ai.android.intents.testbc" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".chapter05.alarm.TestReceiver2" >
+            <intent-filter>
+                <action android:name="com.ai.android.intents.testbc" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".chapter05.broadcastReceiver.TestBCRActivity"
+            android:label="@string/broadcast" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".chapter05.broadcastReceiver.TestReceiver" >
+            <intent-filter>
+                <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".chapter05.broadcastReceiver.TestTimeDelayReceiver" >
+            <intent-filter>
+                <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".chapter05.broadcastReceiver.TestReceiver2" >
+            <intent-filter>
+                <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
+            </intent-filter>
+        </receiver>
+        <!-- Chapter06 MultiTask -->
         <activity
             android:name=".chapter06.ProgressBar1"
             android:label="@string/progressbar1" >
@@ -727,127 +849,6 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".chapter05.StartServiceActivity"
-            android:label="@string/service" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-
-        <service android:name=".chapter05.HelloIntentService" >
-        </service>
-        <service android:name=".chapter05.HelloService" >
-        </service>
-
-        <activity
-            android:name=".chapter05.BindingServiceActivity"
-            android:label="@string/binding_service" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-
-        <service android:name=".chapter09.LocalService" >
-        </service>
-
-        <activity
-            android:name=".chapter05.MessengerServiceActivity"
-            android:label="@string/messenger_service" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-
-        <service android:name=".chapter05.MessengerService" >
-        </service>
-
-        <activity
-            android:name=".chapter05.MySendBroActivity"
-            android:label="@string/broadcast_receiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-
-        <receiver
-            android:name=".chapter05.MyBroadcastReceiver"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name=".chapter09.mybroadcast" >
-                </action>
-            </intent-filter>
-        </receiver>
-
-        <activity
-            android:name=".chapter05.notification.NotificationMainActivity"
-            android:label="@string/title_activity_main" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".chapter05.notification.HandleNotificationActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter05.alarm.TestAlarmsDriverActivity"
-            android:label="@string/alarm" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-
-        <receiver android:name=".chapter05.alarm.TestReceiver" >
-            <intent-filter>
-                <action android:name="com.ai.android.intents.testbc" />
-            </intent-filter>
-        </receiver>
-        <receiver android:name=".chapter05.alarm.TestReceiver2" >
-            <intent-filter>
-                <action android:name="com.ai.android.intents.testbc" />
-            </intent-filter>
-        </receiver>
-
-        <activity
-            android:name=".chapter05.test.TestBCRActivity"
-            android:label="@string/test" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-
-        <receiver android:name=".chapter05.test.TestReceiver" >
-            <intent-filter>
-                <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
-            </intent-filter>
-        </receiver>
-        <receiver android:name=".chapter05.test.TestTimeDelayReceiver" >
-            <intent-filter>
-                <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
-            </intent-filter>
-        </receiver>
-        <receiver android:name=".chapter05.test.TestReceiver2" >
-            <intent-filter>
-                <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
-            </intent-filter>
-        </receiver>
-
         <activity
             android:name=".chapter09.LocationActivity"
             android:label="@string/location" >
@@ -1256,6 +1257,11 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.tencent.weibo.webview.OAuthV2AuthorizeWebView"
+            android:label="@string/app_name" >
+        </activity>
+
         <uses-library android:name="com.google.android.maps" />
     </application>
 

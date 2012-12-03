@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+	<Button
+		android:id="@+id/btnGetUsrInfo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/btnGetUsrInfo"
+		/>
+	
+	<Button
+        android:id="@+id/btnSendMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSendMsg"
+        />
+	
+	<Button
+        android:id="@+id/btnSendMsgWithPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSendMsgWithPic"
+        />
+	
+	<TextView
+        android:id="@+id/textResponse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textResponse" 
+        />
+</LinearLayout>

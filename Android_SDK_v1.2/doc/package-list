@@ -1,0 +1,8 @@
+com.tencent.weibo.api
+com.tencent.weibo.beans
+com.tencent.weibo.constants
+com.tencent.weibo.exceptions
+com.tencent.weibo.oauthv1
+com.tencent.weibo.oauthv2
+com.tencent.weibo.utils
+com.tencent.weibo.webview

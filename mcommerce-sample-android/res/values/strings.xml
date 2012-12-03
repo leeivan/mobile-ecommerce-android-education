@@ -135,11 +135,11 @@
     <!-- 目录章节Chapter05 -->
     <string name="service">Chapter05/Service</string>
     <string name="alarm">Chapter05/Alarm</string>
-    <string name="test">Chapter05/test</string>
+    <string name="broadcast">Chapter05/BroadCastReceiver/01</string>
+    <string name="broadcast_receiver">Chapter05/BroadCastReceiver/02</string>
     <string name="title_activity_main">Chapter05/Notification</string>
     <string name="binding_service">Chapter05/BindingService</string>
     <string name="messenger_service">Chapter05/MessengerService</string>
-    <string name="broadcast_receiver">Chapter05/BroadcastReceiver</string>
     <!-- 目录章节Chapter06 -->
     <string name="progressbar1">Chapter06/Progress Bar/1. Incremental</string>
     <string name="progressbar2">Chapter06/Progress Bar/2. Smooth</string>

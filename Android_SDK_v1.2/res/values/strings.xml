@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="textIntro">请选择授权方式：</string>
+    <string name="app_name">Qweibosdk4android</string>
+
+    <string name="btnOAuthV1">OAuthV1授权（webview）</string>
+    <string name="btnOAuthV1Helper">OAuthV1授权（Helper）</string>
+    <string name="btnOAuthV2ImplicitGrant">OAuthV2ImplicitGrant授权（webview）</string>
+    
+    <string name="btnRequest">获取Request_token</string>
+    <string name="btnAuthorize">用WebView请求用户授权</string>
+    <string name="btnAccess">获取Access_token</string>
+    <string name="btnAPItest">微博API测试</string>
+    <string name="textRequest">获取到的Request_token：</string>
+    <string name="textVerifier">验证码：</string>
+    <string name="textAccess">获取到的Access_token：</string>
+    
+    
+    <string name="btnGetUsrInfo">获取用户信息</string>
+    <string name="btnSendMsg">发送文字微博</string>
+    <string name="btnSendMsgWithPic">发送带图的文字微博</string>
+    <string name="textResponse">返回信息：</string>
+    
+    
+    <string name="btnImplicitGrant">使用ImplicitGrant方式授权</string>
+    
+</resources>

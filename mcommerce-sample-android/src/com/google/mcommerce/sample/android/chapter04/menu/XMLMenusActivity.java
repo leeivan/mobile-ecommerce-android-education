@@ -80,7 +80,7 @@ public class XMLMenusActivity extends Activity {
 		// popup.getMenuInflater().inflate(
 		// R.menu.popup_menu, popup.getMenu());
 		// Or in api 14
-		popup.inflate(R.menu.c05_popup_menu);
+		popup.inflate(R.menu.c04_popup_menu);
 		popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
 			public boolean onMenuItemClick(MenuItem item) {
 				appendMenuItemText(item);

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+		android:id="@+id/btnRequest"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/btnRequest"
+		/>
+    
+    <TextView
+        android:id="@+id/textRequest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textRequest" 
+        />
+    
+    <Button
+		android:id="@+id/btnAuthorize"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/btnAuthorize"
+		/>
+    
+    <TextView
+        android:id="@+id/textVerifier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textVerifier" 
+        />
+    
+    <Button
+		android:id="@+id/btnAccess"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/btnAccess"
+		/>
+    
+    <TextView
+        android:id="@+id/textAccess"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textAccess" 
+        />
+    
+    <Button
+		android:id="@+id/btnAPItest"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/btnAPItest"
+		/>
+
+</LinearLayout>

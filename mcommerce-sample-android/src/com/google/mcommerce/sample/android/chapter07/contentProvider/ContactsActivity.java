@@ -269,7 +269,6 @@ public class ContactsActivity extends ListActivity implements OnClickListener,
 		// } else {
 		baseUri = Contacts.CONTENT_URI;
 		// }
-
 		// Now create and return a CursorLoader that will take care of
 		// creating a Cursor for the data being displayed.
 		String select = "((" + Contacts.DISPLAY_NAME + " NOTNULL) AND ("

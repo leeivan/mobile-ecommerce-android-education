@@ -151,7 +151,7 @@
     <string name="Thread">Chapter06/Thread</string>
     <string name="processLifecycle">Chapter06/ProcessLifecycle</string>
     <string name="search_product_api">Chapter06/SearchProducts</string>
-    <string name="download">Chapter06/DownloadManager</string>
+    <string name="download02">Chapter06/Download/DownloadManager</string>
     <!-- 目录章节Chapter07 -->
     <string name="preferences_default">Chapter07/Preferences/DefaultPreference</string>
     <string name="preferences_multi">Chapter07/Preferences/MultiPreference</string>

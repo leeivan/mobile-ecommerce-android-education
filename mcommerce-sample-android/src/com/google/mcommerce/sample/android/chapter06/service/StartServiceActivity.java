@@ -21,7 +21,7 @@ public class StartServiceActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_started_service_layout);
+		setContentView(R.layout.c06_started_service_layout);
 		System.out.println("hooooooo");
 
 		button1 = (Button) findViewById(R.id.service_button1);

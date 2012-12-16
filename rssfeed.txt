@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ 
+<rss version="2.0">
+<channel>
+<title>developerWorks : Build your own feed  : Tutorials for XML, Java technology, Rational, Linux, Open source and WebSphere</title> 
+<link>http://www.ibm.com/developerworks/index.html</link>
+<description>The latest content from IBM developerWorks</description>
+<pubDate>Wed, 05 Mar 2008 12:27:10 EST</pubDate>
+<language>en-us</language>
+<copyright>Copyright 2004 IBM Corporation.</copyright>
+<image>
+<title>IBM developerWorks</title>
+<url>http://www.ibm.com/developerworks/i/homepage.jpg</url>
+<link>http://www.ibm.com/developerworks/index.html</link>
+</image>
+
+	            <item>
+	               <title><![CDATA[LPI exam 301 prep, Topic 303: Configuration]]></title> 
+	               <description><![CDATA[In this tutorial, Sean Walberg helps you prepare to take the Linux
+      Professional Institute Senior Level Linux Professional (LPIC-3) exam. In this third
+      in a series of six tutorials, Sean walks you through configuring a Lightweight
+      Directory Access Protocol (LDAP) server, including access control, security, and
+      performance. By the end of this tutorial, you'll know about LDAP server
+      configuration.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/l-dw-linux-lpic3303-i.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Tue, 04 Mar 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Increase productivity in Java database development with new IBM pureQuery tools, Part 4: Tour Data Studio and pureQuery for Informix databases]]></title> 
+	               <description><![CDATA[Take a complete tour of Data Studio and pureQuery using Informix databases. 
+      Learn everything you ever wanted to know about working with your database and
+      building database applications in Data Studio.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/dm-dw-dm-0802surange-i.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Thu, 28 Feb 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Using CAPTCHA to protect your WebSphere Commerce application]]></title> 
+	               <description><![CDATA[Computer automated attacks on your Web site is costly and most sites today do little 
+      to protect against these assaults. Adding a CAPTCHA to your site will steer away most computer 
+      automated browsing in sections of your site you want to protect, such as user registration or  
+      tell-a-friend emailing. This tutorial describes how to integrate two CAPTCHA solutions into your existing 
+      WebSphere Commerce application to protect your Web site against computer automated attacks.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/websphere/library/tutorials/0802_deluca/0802_deluca.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Wed, 27 Feb 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Create your own information space with Ajax and del.icio.us]]></title> 
+	               <description><![CDATA[del.icio.us is a social bookmarking Web site that allows users to create and
+      share browser-independent bookmarks, accessible directly over the Internet, in ways
+      your browser won't allow. The traditional hierarchical organization of browser bookmarks is overhauled, allowing users to instead associate each and every bookmark with any number of descriptive tags. Imagine a single page where you and your friends can surf the Web and have your del.icio.us tags, links, and functions handy, or a single page where you can save the site you're browsing directly into your del.icio.us account, along with comments and chosen tags. This tutorial shows you how to use Ajax to build just such a page using a PHP script as the server-side proxy.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/wa-dw-wa-aj-space.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Tue, 26 Feb 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Develop Android applications with Eclipse]]></title> 
+	               <description><![CDATA[Android is Google's oft-discussed mobile, wireless, computer, and communications
+  platform. You can  take advantage of the powerful Eclipse environment to build Android
+  applications using the Android  Eclipse plug-in. This tutorial introduces Android
+  application development with the Eclipse  plug-in, otherwise known as Android
+  Development Tools. The tutorial provides an introduction to  Android development with a
+  quick introduction to the platform,  a tour of Android Development Tools, and includes
+  the construction of two  example applications. ]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/os-dw-os-eclipse-android.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Tue, 26 Feb 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Build Web services with transport-level security using Rational
+	  Application Developer V7, Part 3: Configure HTTPS]]></title> 
+	               <description><![CDATA[Part 1 and Part 2 of this three-part tutorial series showed you how to
+      develop Web services and clients, and configure HTTP basic authentication. In this
+      final installment, you create a self-signed certificate, keystore, trust store, and
+      Secure Sockets Layer (SSL) configuration using the IBM WebSphere Administrative
+      Console. Then you configure HTTPS for your Web services and Web services client, and
+      test HTTPS Web services from both a Java EE client and a stand-alone Java client.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/ws-dw-ws-radsecurity3.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Thu, 21 Feb 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Using Rational Developer for System z Version 7.1 to work with COBOL programs]]></title> 
+	               <description><![CDATA[This tutorial shows traditional application developers how to use IBM Rational Developer for System z to significantly increase their productivity and efficiency when creating and maintaining traditional mainframe applications. You download and then use example code, which uses CICS, VSAM, and DB2, in a variety of typical development scenarios including syntax checking and compiling. The techniques are illustrated using COBOL applications; however, similar steps can be used by PL/I programmers.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/websphere/library/tutorials/0802_barosa/0802_barosa.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Wed, 20 Feb 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Building your own memory manager for C/C++ projects]]></title> 
+	               <description><![CDATA[   Performance optimization of code is serious business. It's fairly common to see a 
+    piece of functionally correct software written in C or C++ that takes way 
+    too much memory, time, or, in the worst case, both. As a developer, one of the most 
+    powerful tools that C/C++ arms you with to improve processing time and prevent 
+    memory corruption is the control over how memory is allocated or deallocated in your 
+    code. This tutorial demystifies memory management concepts by telling you how to 
+    create your very own memory manager for specific situations. ]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/au-dw-au-memorymanager-i.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Tue, 19 Feb 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Database applications made easy with WebSphere Application Server Community Edition, DB2 Express-C and Eclipse]]></title> 
+	               <description><![CDATA[IBM WebSphere Application Server Community Edition provides excellent support for JDBC-enabled databases through a J2CA framework, making it easy for your application to access a backend database. This tutorial describes how you can easily develop a simple database application for WebSphere Application Server Community Edition V2.0 using the Eclipse development environment with IBM DB2 Express-C, and also illustrates how to integrate and use these three free software products together.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/websphere/library/tutorials/0802_krishnasamy/0802_krishnasamy.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Wed, 13 Feb 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Build Web services with transport-level security using Rational
+	  Application Developer V7, Part 2: Configure HTTP basic authentication]]></title> 
+	               <description><![CDATA[Part 1 of this tutorial series gave you step-by-step instructions for
+      building a Web service for a simple calculator application. You generated Web services and tested
+      two different types of Web services clients -- a Java Platform, Enterprise Edition
+      (Java EE) client and a stand-alone Java client -- and handled user-defined
+      exceptions in Web services. This second installment in the three-part series shows
+      you how to configure HTTP basic authentication for your Web services and Web
+      services client, and monitor the HTTP basic authentication information using the
+      TCP/IP monitor.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/ws-dw-ws-radsecurity2.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Thu, 07 Feb 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Hello World: WebSphere Service Registry and Repository]]></title> 
+	               <description><![CDATA[Manage, govern, and share services across your organization by
+      using WebSphere Service Registry and Repository. Follow the hands-on
+      exercises to learn how to navigate the Web interface to publish, find, reuse, and update services. ]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/wes-dw-wes-hellowsrr.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Thu, 07 Feb 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Use the IBM Information Server to transform legacy data into information services
+		]]></title> 
+	               <description><![CDATA[Learn how to create and deploy information Sservices to access
+		legacy databases without writing any code. 
+		The generated Web services are created using the IBM Information 
+		Server components including WebSphere DataStage, WebSphere 
+		Federation Server, WebSphere Information Services Director, 
+		and WebSphere Transformation Extender for DataStage. 
+		In this example, the information services are delivered using a 
+		standard government XML model (GJXDM).
+      ]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/dm-dw-dm-0802leung-i.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Thu, 07 Feb 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Extend WebSphere Portal with OmniFind Enterprise Edition search solution]]></title> 
+	               <description><![CDATA[Learn how to implement IBM OmniFind Enterprise Edition as a search engine with
+		  IBM WebSphere Portal.  This tutorial introduces the two products, describes the
+		  advantages of using them together, and details how to integrate them.  You'll examine the architecture, see how to install the products, and walk step-by-step  through an integration scenario.
+      ]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/dm-dw-dm-0801wanchoo-i.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Thu, 31 Jan 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Extending WebSphere Extended Deployment 6.1 functions to previous WebSphere deployments]]></title> 
+	               <description><![CDATA[This tutorial describes how to emulate your entire legacy configuration and extend new functions, such as HTTP traffic shaping, centralized management facilities, and application versioning by using only a single license of WebSphere Extended Deployment (XD) version 6.1. This technique lets you avoid an upgrade of your entire older cell in order to use new product features.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/websphere/library/tutorials/0801_sandmann/0801_sandmann.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Wed, 30 Jan 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Getting started with JavaServer Faces 1.2, Part 2: JSF life cycle, conversion, validation, and phase listeners]]></title> 
+	               <description><![CDATA[This tutorial series covers how to get started with
+      Java Server Faces (JSF) technology, a server-side framework that offers a
+      component-based approach to Web user-interface development.
+      Part 1 gets you started with a JSF 1.2 overview and a basic application. This sequel gives
+      you a firm grasp of JSF's more-advanced features: custom validators, converters, and
+      phase listeners. Along the way you'll gain an understanding of the JSF application
+      life cycle. ]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/j-dw-java-jsf2-i.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Tue, 29 Jan 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Execute business processes with Eclipse]]></title> 
+	               <description><![CDATA[Everyone -- from consultants and analysts to architects and engineers -- has
+  ideas. But implementing a  new idea can be challenging, requiring knowledge of an
+  unfamiliar development language or hiring costly  developers. What if there was a way to
+  create an executable business  process using a graphical editor that can ultimately be
+  executed on an  appropriate engine? Well, there is. Using the Eclipse STP BPMN Modeler,
+  you can graphically create a  business model represented in XML that can be converted to
+  an executable using  Eclipse ATL that will ultimately deploy on Apache ODE.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/os-dw-os-eclipse-stpatlode.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Tue, 29 Jan 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Demystifying the automation of custom controls: Part 2. A step-by-step example of using IBM Rational Functional Tester to automate custom controls]]></title> 
+	               <description><![CDATA[This tutorial applies the concepts that were covered in the first part of this two-part series to a real-world example.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/r-dw-rt-rftcc.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Tue, 22 Jan 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Cook up Web sites fast with CakePHP, Part 1: Adding related information and services]]></title> 
+	               <description><![CDATA[CakePHP is a stable production-ready, rapid-development aid for building Web
+  sites in PHP. This &quot;Cook up  Web sites fast with CakePHP&quot; series shows you how to build
+  an  online product catalog using CakePHP.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/os-dw-os-php-cake1.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Tue, 22 Jan 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Build Web services with transport-level security using Rational
+	  Application Developer V7, Part 1: Build Web services and Web services clients]]></title> 
+	               <description><![CDATA[Build secure Web services with transport-level security using IBM Rational
+      Application Developer V7 and IBM WebSphere Application Server V6.1. Follow this
+      three-part series for step-by-step instructions about how to develop Web services
+      and clients, configure HTTP basic authentication, and
+      configure HTTP over SSL (HTTPS). This first
+      part of the series walks you through building a Web service for a simple calculator
+      application. You generate and test two different types of Web services clients: a
+      Java Platform, Enterprise Edition (Java EE) client and a stand-alone Java client.
+      You also handle user-defined exceptions in Web services.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/ws-dw-ws-radsecurity1.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Thu, 17 Jan 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+	            <item>
+	               <title><![CDATA[Create dynamic Firefox user interfaces]]></title> 
+	               <description><![CDATA[When you create browser-based applications that display XML data feeds, you
+      often need to code the data-retrieval mechanism and the user interface. Mozilla
+      Firefox provides an infrastructure that frees you from these tasks, so you can concentrate on your application's functionality. Learn how to use Asynchronous JavaScript + XML (Ajax) to download XML data from a Web server, and discover how you can use Extensible Stylesheet Language Transformations (XSLT) to transform it dynamically into Firefox user-interface elements expressed in XML User Interface Language (XUL). You can apply these techniques to any application that uses XML data sources.]]></description> 
+	               <link><![CDATA[http://www.ibm.com/developerworks/edu/x-dw-x-ajaxxul.html?ca=drs-]]></link>
+	               <category>Tutorials</category>
+	               <pubDate>Tue, 15 Jan 2008 12:00:00 EST</pubDate>
+	            </item>
+	
+</channel>
+</rss>
+

@@ -133,14 +133,14 @@
     <string name="styles_name">Chapter04/Styles Demo</string>
     <string name="weightgrav_name">Chapter04/Weight Gravity Demo</string>
     <!-- 目录章节Chapter05 -->
-    <string name="service">Chapter05/Service</string>
     <string name="alarm">Chapter05/Alarm</string>
     <string name="broadcast">Chapter05/BroadCastReceiver/01</string>
     <string name="broadcast_receiver">Chapter05/BroadCastReceiver/02</string>
     <string name="title_activity_main">Chapter05/Notification</string>
-    <string name="binding_service">Chapter05/BindingService</string>
-    <string name="messenger_service">Chapter05/MessengerService</string>
     <!-- 目录章节Chapter06 -->
+    <string name="service">Chapter06/Service/Started</string>
+    <string name="binding_service">Chapter06/Service/BindingService</string>
+    <string name="messenger_service">Chapter06/Service/MessengerService</string>
     <string name="progressbar1">Chapter06/Progress Bar/1. Incremental</string>
     <string name="progressbar2">Chapter06/Progress Bar/2. Smooth</string>
     <string name="AsynTask01">Chapter06/AsyncTask/Test01</string>
@@ -199,19 +199,23 @@
     <string name="media_record_captureImage">Chapter10/Record/CaptureImage</string>
     <string name="media_record_mediaScanner">Chapter10/Record/MediaScanner</string>
     <!-- 目录章节Chapter11 -->
-    <string name="parse_JSON">Chapter11/Parse/JSON</string>
-    <string name="parse_XML">Chapter11/Parse/XML</string>
-    <string name="http_get">Chapter11/HTTP/Get</string>
-    <string name="http_post">Chapter11/HTTP/Post</string>
-    <string name="taobao_api">Chapter11/TaoBaoAPITest</string>
+    <string name="BrowerView">Chapter11/BrowerView</string>
+    <string name="WebView">Chapter11/WebView</string>
     <!-- 目录章节Chapter12 -->
-    <string name="BrowerView">Chapter12/BrowerView</string>
-    <string name="OauthTaobao">Chapter12/OaothTaobao</string>
-    <string name="WebView">Chapter12/WebView</string>
+    <string name="parse_JSON">Chapter12/Parse/JSON</string>
+    <string name="parse_XML">Chapter12/Parse/XML</string>
+    <string name="http_get">Chapter12/HTTP/Get</string>
+    <string name="http_post">Chapter12/HTTP/Post</string>
+    <string name="http_singleton">Chapter12/HTTP/Singleton</string>
+    <!-- 目录章节Chapter13 -->
     <string name="animation_frame">Chapter13/Frame</string>
     <string name="animation_layout">Chapter13/Layout</string>
     <string name="animation_property">Chapter13/Property</string>
     <string name="animation_view">Chapter13/View</string>
+    <!-- 目录章节Chapter14 -->
+    <string name="taobao_api">Chapter14/TaoBaoAPITest</string>
+    <string name="OauthTaobao">Chapter14/OaothTaobao</string>
+    <string name="tecent_weibo">Chapter14/Weibo/Tecent</string>
     <string name="prefTitle">My Preferences</string>
     <string name="prefSummary">Set Flight Option Preferences</string>
     <string name="flight_sort_option_default_value">1</string>
@@ -220,7 +224,6 @@
     <string name="listTitle">Flight Options</string>
     <string name="selected_flight_sort_option">selected_flight_sort_option</string>
     <string name="menu_prefs_title">Settings</string>
-    <string name="multiTouch_gesture_revealer">Chapter12/Gesture/Revealer</string>
     <string name="prefTitle">My Preferences</string>
     <string name="prefSummary">Set Flight Option Preferences</string>
     <string name="flight_sort_option_default_value">1</string>
@@ -261,6 +264,5 @@
     <string name="create_xml_pull">使用PULL创建XML</string>
     <string name="slabel">Search Label</string>
     <string name="shint">Search Hint</string>
-    <string name="tecent_weibo">Chapter15/Weibo/Tecent</string>
 
 </resources>

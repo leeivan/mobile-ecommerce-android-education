@@ -647,7 +647,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter06.download.DownloadManagerActivity"
+            android:name=".download.DownloadManagerActivity"
             android:label="@string/download02" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -729,6 +729,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <!-- Chapter07 -->
         <activity
             android:name=".chapter07.preferences.SharedPreferencesActivity"
             android:label="@string/SharedPreferences" >
@@ -827,9 +828,10 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <!-- Chapter08 -->
         <activity
-            android:name=".chapter12.BrowserViewActivity"
-            android:label="@string/BrowerView" >
+            android:name=".chapter08.motionEvent.TouchDemo01Activity"
+            android:label="@string/multiTouch_motionEvent_demo01" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -837,31 +839,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter12.Oauth2TaobaoActivity"
-            android:label="@string/OauthTaobao" >
+            android:name=".chapter08.motionEvent.TouchDemo02Activity"
+            android:label="@string/multiTouch_motionEvent_demo02" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter12.UserInfoActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
+        <!-- Chapter12 -->
         <activity
-            android:name=".chapter12.WebViewActivity"
-            android:label="@string/WebView" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter09.LocationActivity"
-            android:label="@string/location" >
+            android:name=".chapter08.motionEvent.InterceptTouchStudyActivity"
+            android:label="@string/multiTouch_motionEvent_intercept" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -869,8 +858,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter09.googleMap.GoogleMapActivity"
-            android:label="@string/map_google" >
+            android:name=".chapter08.motionEvent.Test01"
+            android:label="@string/multiTouch_motionEvent_test01" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -878,8 +867,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter09.googleMap.MapViewWithTouchActivity"
-            android:label="@string/map_google_touch" >
+            android:name=".chapter08.motionEvent.Test02"
+            android:label="@string/multiTouch_motionEvent_test02" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -887,8 +876,53 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter09.baiduMap.BaiduMapActivity"
-            android:label="@string/map_baidu" >
+            android:name=".chapter08.motionEvent.VelocityTrackerActivity"
+            android:label="@string/multiTouch_motionEvent_velocityTracker" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter08.multiTouch.MultiTouchActivity"
+            android:label="@string/multiTouch_multi_touch" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter08.dragAndDrop.DragDropFragDemoActivity"
+            android:label="@string/multiTouch_drag_drop_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter08.touchDrag.TouchDragActivity"
+            android:label="@string/multiTouch_drag_touch_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter08.gestures.ScaleDetectorActivity"
+            android:label="@string/multiTouch_scale_detector" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter08.gestures.GestureRevealerActivity"
+            android:label="@string/multiTouch_gesture_revealer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -967,6 +1001,46 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+
+        <!-- Chapter09 -->
+
+        <activity
+            android:name=".chapter09.LocationActivity"
+            android:label="@string/location" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter09.googleMap.GoogleMapActivity"
+            android:label="@string/map_google" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter09.googleMap.MapViewWithTouchActivity"
+            android:label="@string/map_google_touch" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter09.baiduMap.BaiduMapActivity"
+            android:label="@string/map_baidu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <!-- Chapter10 -->
         <activity
             android:name=".chapter10.mediaplay.MediaDemoActivity"
             android:label="@string/media_audio_demo" >
@@ -1066,9 +1140,10 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <!-- Chapter11 -->
         <activity
-            android:name=".chapter11.TaoBaoAPITestActivity"
-            android:label="@string/taobao_api" >
+            android:name=".chapter11.BrowserViewActivity"
+            android:label="@string/BrowerView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -1076,7 +1151,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.parse.ParseJSONActivity"
+            android:name=".chapter11.WebViewActivity"
+            android:label="@string/WebView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <!-- Chapter12 -->
+        <activity
+            android:name=".chapter12.parse.ParseJSONActivity"
             android:label="@string/parse_JSON" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1085,7 +1170,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.parse.ParseXMLActivity"
+            android:name=".chapter12.parse.ParseXMLActivity"
             android:label="@string/parse_XML" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1094,7 +1179,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.http.HttpGetDemo"
+            android:name=".chapter12.http.HttpGetDemo"
             android:label="@string/http_get" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1103,7 +1188,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.http.HttpPostDemo"
+            android:name=".chapter12.http.HttpActivity"
+            android:label="@string/http_singleton" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter12.http.HttpPostDemo"
             android:label="@string/http_post" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1111,105 +1205,8 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".chapter12.motionEvent.TouchDemo01Activity"
-            android:label="@string/multiTouch_motionEvent_demo01" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter12.motionEvent.TouchDemo02Activity"
-            android:label="@string/multiTouch_motionEvent_demo02" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter12.motionEvent.InterceptTouchStudyActivity"
-            android:label="@string/multiTouch_motionEvent_intercept" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter12.motionEvent.Test01"
-            android:label="@string/multiTouch_motionEvent_test01" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter12.motionEvent.Test02"
-            android:label="@string/multiTouch_motionEvent_test02" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter12.motionEvent.VelocityTrackerActivity"
-            android:label="@string/multiTouch_motionEvent_velocityTracker" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter12.multiTouch.MultiTouchActivity"
-            android:label="@string/multiTouch_multi_touch" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter12.dragAndDrop.DragDropFragDemoActivity"
-            android:label="@string/multiTouch_drag_drop_demo" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter12.touchDrag.TouchDragActivity"
-            android:label="@string/multiTouch_drag_touch_demo" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter12.gestures.ScaleDetectorActivity"
-            android:label="@string/multiTouch_scale_detector" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter12.gestures.GestureRevealerActivity"
-            android:label="@string/multiTouch_gesture_revealer" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
+        <!-- Chapter13 -->
         <activity
             android:name=".chapter13.frame.MainActivity"
             android:label="@string/animation_frame" >
@@ -1258,8 +1255,32 @@
             android:name=".chapter13.view.ViewAnimationActivity"
             android:label="View Animation Test Activity" >
         </activity>
+        <!-- Chapter14 -->
         <activity
-            android:name=".chapter15.weibo.TecentWeiboActivity"
+            android:name=".chapter14.taobao.Oauth2TaobaoActivity"
+            android:label="@string/OauthTaobao" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter14.taobao.UserInfoActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter14.taobao.TaoBaoAPITestActivity"
+            android:label="@string/taobao_api" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter14.weibo.TecentWeiboActivity"
             android:label="@string/tecent_weibo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

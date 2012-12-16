@@ -11,6 +11,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.StrictMode;
 
 import com.google.mcommerce.sample.android.R;
 
@@ -20,7 +21,9 @@ public class HttpGetDemo extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.c11_simple_http_layout);
-
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+				.permitAll().build();
+		StrictMode.setThreadPolicy(policy);
 		BufferedReader in = null;
 		try {
 			HttpClient client = new DefaultHttpClient();

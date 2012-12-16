@@ -202,8 +202,8 @@
     <string name="parse_JSON">Chapter11/Parse/JSON</string>
     <string name="parse_XML">Chapter11/Parse/XML</string>
     <string name="http_get">Chapter11/HTTP/Get</string>
-    <string name="taobao_api">Chapter11/TaoBaoAPITest</string>
     <string name="http_post">Chapter11/HTTP/Post</string>
+    <string name="taobao_api">Chapter11/TaoBaoAPITest</string>
     <!-- 目录章节Chapter12 -->
     <string name="BrowerView">Chapter12/BrowerView</string>
     <string name="OauthTaobao">Chapter12/OaothTaobao</string>

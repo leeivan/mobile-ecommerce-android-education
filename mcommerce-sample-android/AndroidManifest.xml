@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.google.mcommerce.sample.android"
-    android:installLocation="preferExternal"
+    android:installLocation="auto"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -30,8 +30,6 @@
     <uses-permission android:name="android.permission.INTERNET" >
     </uses-permission>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
-    </uses-permission>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
     </uses-permission>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
@@ -40,6 +38,7 @@
     </uses-permission>
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
 
     <permission
         android:name="chapter03.permission.STARTMYACTIVITY"
@@ -628,7 +627,8 @@
 
         <service android:name=".chapter06.service.MessengerService" >
         </service>
-        <activity
+
+        <activity
             android:name=".chapter06.ProgressBar1"
             android:label="@string/progressbar1" >
             <intent-filter>
@@ -647,8 +647,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.download.DownloadManagerActivity"
-            android:label="@string/download" >
+            android:name="com.google.mcommerce.sample.android.chapter06.download.DownloadManagerActivity"
+            android:label="@string/download02" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

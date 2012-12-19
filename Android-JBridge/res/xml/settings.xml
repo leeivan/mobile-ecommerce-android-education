@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="@string/server_address_default"
+        android:dialogMessage="@string/server_msg"
+        android:dialogTitle="@string/server_address"
+        android:enabled="true"
+        android:key="webserver"
+        android:selectable="true"
+        android:summary="@string/server_msg"
+        android:title="@string/server_address" >
+    </EditTextPreference>
+
+</PreferenceScreen>

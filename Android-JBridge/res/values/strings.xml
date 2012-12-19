@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android JBridge</string>
+    <string name="products_label">Products</string>
+    <string name="register_label">Register</string>
+    <string name="about_label">About</string>
+    <string name="about_title">About Android-JBridge</string>
+    <string name="about_text"><b>Android JBridge</b> by Majid Khosravi.</string>
+    <string name="exit_label">Exit</string>
+    <string name="products_title">Products</string>
+    <string name="item_height">80dip</string>
+    <string name="buy">Buy Now</string>
+    <string name="addproduct_label">Add Product</string>
+    <string name="product_name">Name:</string>
+    <string name="product_price">Price:</string>
+    <string name="product_picture">Picture:</string>
+    <string name="product_quantity">Quantity:</string>
+    <string name="quantity_dialog_text">Enter product quantity</string>
+    <string name="product_description">Description:</string>
+    <string name="delproduct_label">Delete Product</string>
+    <string name="settings_label">Settings</string>
+    <string name="settings_title">Android-JBridge Settings</string>
+    <string name="server_address">Web server address</string>
+    <string name="server_address_default">http://10.0.2.2:8080</string>
+    <string name="server_msg">Enter the web server address</string>
+</resources>

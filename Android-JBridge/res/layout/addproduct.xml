@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/linearLayout1" android:orientation="vertical" android:background="@color/background" android:gravity="center">
+   				<TextView android:id="@+id/textView1" android:layout_height="wrap_content" android:text="@string/addproduct_label" android:textColor="@color/item_text" android:layout_gravity="center" android:layout_width="wrap_content" android:textSize="18dip" android:textStyle="bold"></TextView>
+
+   	<ScrollView android:id="@+id/scrollView1" android:layout_width="fill_parent" android:padding="5dip" android:layout_height="wrap_content">
+   		<TableLayout android:layout_width="fill_parent" android:id="@+id/tableLayout1" android:layout_height="match_parent">
+   			<TableRow android:id="@+id/tableRow1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+   				<TextView android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_height="wrap_content" android:text="@string/product_name" android:textColor="@color/item_text" android:textSize="16dip"></TextView>
+   				<EditText android:layout_height="wrap_content" android:layout_width="200dip" android:text="" android:id="@+id/txtName"></EditText>
+   			</TableRow>
+   			<TableRow android:id="@+id/tableRow1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+   				<TextView android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_height="wrap_content" android:textColor="@color/item_text" android:textSize="16dip" android:text="@string/product_price"></TextView>
+   				<EditText android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtPrice" android:numeric="decimal"></EditText>
+   			</TableRow>
+   			<TableRow android:id="@+id/tableRow1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+   				<TextView android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_height="wrap_content" android:textColor="@color/item_text" android:textSize="16dip" android:text="@string/product_picture"></TextView>
+   				<EditText android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtPicture"></EditText>
+   			</TableRow>
+   			<TableRow android:id="@+id/tableRow1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+   				<TextView android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_height="wrap_content" android:textColor="@color/item_text" android:textSize="16dip" android:text="@string/product_quantity"></TextView>
+   				<EditText android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtQuantity" android:numeric="integer"></EditText>
+   			</TableRow>
+   			<TableRow android:id="@+id/tableRow1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+   				<TextView android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_height="wrap_content" android:textColor="@color/item_text" android:textSize="16dip" android:text="@string/product_description"></TextView>
+   				<EditText android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtDescription"></EditText>
+   			</TableRow>  			   			   			   			
+   		</TableLayout>
+</ScrollView>
+   		<Button android:id="@+id/btnAddProduct" android:text="@string/addproduct_label" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+</LinearLayout>

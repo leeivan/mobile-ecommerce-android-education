@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/linearLayout1" android:orientation="vertical" android:background="@color/background">
+<ScrollView android:id="@+id/scrollView4" android:layout_width="match_parent" android:layout_height="wrap_content">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1" android:orientation="vertical">
+
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:text="TextView"
+			android:gravity="center" android:textSize="20dip" android:textStyle="bold"
+			android:textColor="@color/item_text" android:id="@+id/txtName"></TextView>
+		<ImageView android:src="@drawable/icon"
+			android:layout_gravity="center" android:id="@+id/imgProduct" android:layout_width="match_parent" android:layout_height="200dip" android:padding="3dip"></ImageView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:text="TextView"
+			android:gravity="center" android:textColor="@color/item_price"
+			android:textSize="16dip" android:textStyle="bold" android:id="@+id/txtPrice"></TextView>
+		<TextView android:textColor="@color/item_text"
+			android:layout_height="wrap_content" android:text="TextView" android:textSize="16dip" android:id="@+id/txtDescription" android:layout_width="match_parent" android:padding="20dip"></TextView>
+		<Button android:gravity="center|center_vertical|fill_horizontal|center_horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="@string/buy" android:id="@+id/btnBuy"></Button>
+		<Button android:gravity="center|center_vertical|fill_horizontal|center_horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="@string/delproduct_label" android:id="@+id/btnDel"></Button>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

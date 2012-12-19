@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+<color name="background">#FFCC66</color>
+<color name="item_price">#FF0000</color>
+<color name="item_text">#0000FF</color>
+<color name="item_background">#FFCC00</color>
+<color name="item_background_even">#FFFFFF</color>
+
+</resources>

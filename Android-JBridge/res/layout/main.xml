@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:background="@color/background"
+	android:orientation="horizontal"
+	android:layout_height="fill_parent"
+	android:padding="30dip">
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:layout_gravity="center">
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="center" 
+    android:gravity="center" 
+    android:textSize="24sp" 
+    android:text="@string/app_name" 
+    android:textStyle="bold" 
+    android:layout_marginBottom="20dip" android:textColor="@color/item_text"/>
+<Button android:layout_height="wrap_content" android:text="@string/addproduct_label" android:layout_width="match_parent" android:id="@+id/btnAddProduct"></Button>
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/products_button" android:text="@string/products_label"></Button>
+    <Button android:text="@string/settings_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/setting_button"></Button>
+    <Button android:text="@string/about_label" android:id="@+id/about_button" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+    <Button android:text="@string/exit_label" android:id="@+id/exit_button" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+
+</LinearLayout>
+</LinearLayout>

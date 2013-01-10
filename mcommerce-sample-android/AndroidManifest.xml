@@ -16,6 +16,16 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="16" />
 
+    <permission
+        android:name="com.google.mcommerce.sample.android.chapter09.googleMap.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.google.mcommerce.sample.android.chapter09.googleMap.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -47,8 +57,13 @@
         android:protectionLevel="normal" />
 
     <application
+        android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyApHhblu41XqX7BjMS3O_RBFKmp3ADc8vQ" />
+        
         <activity android:name=".SampleForMCommerce" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1005,8 +1020,17 @@
         <!-- Chapter09 -->
 
         <activity
-            android:name=".chapter09.LocationActivity"
+            android:name=".chapter09.location.LocationActivity"
             android:label="@string/location" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter09.location.GeocodingDemoActivity"
+            android:label="@string/Geocoding" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

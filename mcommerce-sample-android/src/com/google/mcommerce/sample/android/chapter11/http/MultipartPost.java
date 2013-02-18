@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12.http;
+package com.google.mcommerce.sample.android.chapter11.http;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

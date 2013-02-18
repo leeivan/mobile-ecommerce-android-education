@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12.xml;
+package com.google.mcommerce.sample.android.chapter11.xml;
 
 public class ViewState {
 

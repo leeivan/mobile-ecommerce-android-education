@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12.xml;
+package com.google.mcommerce.sample.android.chapter11.xml;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -18,7 +18,7 @@ public class CreateXMLActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_create_xml_layout);
+		setContentView(R.layout.c11_create_xml_layout);
 		btn_createXML = (Button) findViewById(R.id.button01);
 		btn_createXML.setOnClickListener(new OnClickListener() {
 

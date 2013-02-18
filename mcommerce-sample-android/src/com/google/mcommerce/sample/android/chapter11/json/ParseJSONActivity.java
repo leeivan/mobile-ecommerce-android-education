@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12.json;
+package com.google.mcommerce.sample.android.chapter11.json;
 
 import java.util.ArrayList;
 
@@ -12,8 +12,8 @@ import android.util.Log;
 import android.widget.TextView;
 
 import com.google.mcommerce.sample.android.R;
-import com.google.mcommerce.sample.android.chapter12.entity.User;
-import com.google.mcommerce.sample.android.chapter12.xml.XMLUtil;
+import com.google.mcommerce.sample.android.chapter11.entity.User;
+import com.google.mcommerce.sample.android.chapter11.xml.XMLUtil;
 
 public class ParseJSONActivity extends Activity {
 
@@ -27,7 +27,7 @@ public class ParseJSONActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_parse_json_layout);
+		setContentView(R.layout.c11_parse_json_layout);
 		textViewSingleCity = (TextView) findViewById(R.id.textView1);
 		textViewSingleNick = (TextView) findViewById(R.id.textView4);
 		textViewMultiCity = (TextView) findViewById(R.id.textView6);

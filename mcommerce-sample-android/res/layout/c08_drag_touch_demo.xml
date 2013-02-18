@@ -38,7 +38,7 @@
       android:padding="10dp" />
   </LinearLayout>
 
-  <com.google.mcommerce.sample.android.chapter12.touchDrag.Dot
+  <com.google.mcommerce.sample.android.chapter08.touchDrag.Dot
     android:id="@+id/dot"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" />

@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12.xml;
+package com.google.mcommerce.sample.android.chapter11.xml;
 
 import java.util.ArrayList;
 
@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.mcommerce.sample.android.R;
-import com.google.mcommerce.sample.android.chapter12.entity.User;
+import com.google.mcommerce.sample.android.chapter11.entity.User;
 
 public class ParseXMLActivity extends Activity {
 
@@ -31,7 +31,7 @@ public class ParseXMLActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_parse_xml_layout);
+		setContentView(R.layout.c11_parse_xml_layout);
 		textViewSingleCity = (TextView) findViewById(R.id.textView1);
 		textViewSingleNick = (TextView) findViewById(R.id.textView4);
 		textViewMultiCity = (TextView) findViewById(R.id.textView6);

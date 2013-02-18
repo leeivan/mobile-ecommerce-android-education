@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12.xml;
+package com.google.mcommerce.sample.android.chapter11.xml;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -35,7 +35,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import android.util.Log;
 import android.util.Xml;
 
-import com.google.mcommerce.sample.android.chapter12.entity.User;
+import com.google.mcommerce.sample.android.chapter11.entity.User;
 
 public class XMLUtil {
 	private static final String TAG = "UserUtil";

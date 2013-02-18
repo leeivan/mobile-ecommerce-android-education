@@ -1,13 +1,18 @@
-package com.google.mcommerce.sample.android.chapter12.http;
+package com.google.mcommerce.sample.android.chapter11.http;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -15,19 +20,29 @@ import android.os.StrictMode;
 
 import com.google.mcommerce.sample.android.R;
 
-public class HttpGetDemo extends Activity {
+public class HttpPostDemo extends Activity {
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c12_simple_http_layout);
+		setContentView(R.layout.c11_simple_http_layout);
 		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
 				.permitAll().build();
 		StrictMode.setThreadPolicy(policy);
 		BufferedReader in = null;
 		try {
 			HttpClient client = new DefaultHttpClient();
-			HttpGet request = new HttpGet("http://code.google.com/android/");
+			HttpPost request = new HttpPost(
+					"http://mysomewebsite.com/services/doSomething.do");
+			List<NameValuePair> postParameters = new ArrayList<NameValuePair>();
+			postParameters.add(new BasicNameValuePair("first",
+					"param value one"));
+			postParameters.add(new BasicNameValuePair("issuenum", "10317"));
+			postParameters.add(new BasicNameValuePair("username", "dave"));
+			UrlEncodedFormEntity formEntity = new UrlEncodedFormEntity(
+					postParameters);
+
+			request.setEntity(formEntity);
 			HttpResponse response = client.execute(request);
 			in = new BufferedReader(new InputStreamReader(response.getEntity()
 					.getContent()));
@@ -40,11 +55,10 @@ public class HttpGetDemo extends Activity {
 			}
 			in.close();
 
-			String page = sb.toString();
-			System.out.println(page);
+			String result = sb.toString();
+			System.out.println(result);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			// Do something about exceptions
 		} finally {
 			if (in != null) {
 				try {

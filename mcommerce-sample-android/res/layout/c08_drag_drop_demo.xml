@@ -9,13 +9,13 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        class="com.google.mcommerce.sample.android.chapter12.dragAndDrop.Palette" />
+        class="com.google.mcommerce.sample.android.chapter08.dragAndDrop.Palette" />
 
     <fragment
         android:id="@+id/dropzone"
         android:layout_width="0px"
         android:layout_height="match_parent"
         android:layout_weight="2"
-        class="com.google.mcommerce.sample.android.chapter12.dragAndDrop.DropZone" />
+        class="com.google.mcommerce.sample.android.chapter08.dragAndDrop.DropZone" />
 
 </LinearLayout>

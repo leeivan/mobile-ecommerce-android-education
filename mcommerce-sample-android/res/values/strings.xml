@@ -200,14 +200,14 @@
     <string name="media_record_captureImage">Chapter10/Record/CaptureImage</string>
     <string name="media_record_mediaScanner">Chapter10/Record/MediaScanner</string>
     <!-- 目录章节Chapter11 -->
-    <string name="BrowerView">Chapter11/BrowerView</string>
-    <string name="WebView">Chapter11/WebView</string>
+    <string name="parse_JSON">Chapter11/Parse/JSON</string>
+    <string name="parse_XML">Chapter11/Parse/XML</string>
+    <string name="http_get">Chapter11/HTTP/Get</string>
+    <string name="http_post">Chapter11/HTTP/Post</string>
+    <string name="http_singleton">Chapter11/HTTP/Singleton</string>
     <!-- 目录章节Chapter12 -->
-    <string name="parse_JSON">Chapter12/Parse/JSON</string>
-    <string name="parse_XML">Chapter12/Parse/XML</string>
-    <string name="http_get">Chapter12/HTTP/Get</string>
-    <string name="http_post">Chapter12/HTTP/Post</string>
-    <string name="http_singleton">Chapter12/HTTP/Singleton</string>
+    <string name="BrowerView">Chapter12/BrowerView</string>
+    <string name="WebView">Chapter12/WebView</string>
     <!-- 目录章节Chapter13 -->
     <string name="animation_frame">Chapter13/Frame</string>
     <string name="animation_layout">Chapter13/Layout</string>

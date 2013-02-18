@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12.http;
+package com.google.mcommerce.sample.android.chapter11.http;
 
 // This file is HttpActivity.java
 import java.io.IOException;

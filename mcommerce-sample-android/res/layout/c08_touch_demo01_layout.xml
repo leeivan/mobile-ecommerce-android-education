@@ -13,14 +13,14 @@
         android:orientation="vertical"
         android:tag="trueLayoutTop" >
 
-        <com.google.mcommerce.sample.android.chapter12.motionEvent.TrueButton01
+        <com.google.mcommerce.sample.android.chapter08.motionEvent.TrueButton01
             android:id="@+id/trueBtn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:tag="trueBtnTop"
             android:text="returns true" />
 
-        <com.google.mcommerce.sample.android.chapter12.motionEvent.FalseButton01
+        <com.google.mcommerce.sample.android.chapter08.motionEvent.FalseButton01
             android:id="@+id/falseBtn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,14 +38,14 @@
         android:orientation="vertical"
         android:tag="falseLayoutBottom" >
 
-        <com.google.mcommerce.sample.android.chapter12.motionEvent.TrueButton01
+        <com.google.mcommerce.sample.android.chapter08.motionEvent.TrueButton01
             android:id="@+id/trueBtn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:tag="trueBtnBottom"
             android:text="returns true" />
 
-        <com.google.mcommerce.sample.android.chapter12.motionEvent.FalseButton01
+        <com.google.mcommerce.sample.android.chapter08.motionEvent.FalseButton01
             android:id="@+id/falseBtn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

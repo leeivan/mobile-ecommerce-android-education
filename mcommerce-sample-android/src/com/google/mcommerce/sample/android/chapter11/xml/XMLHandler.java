@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12.xml;
+package com.google.mcommerce.sample.android.chapter11.xml;
 
 import java.util.ArrayList;
 
@@ -6,7 +6,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import com.google.mcommerce.sample.android.chapter12.entity.User;
+import com.google.mcommerce.sample.android.chapter11.entity.User;
 
 public class XMLHandler extends DefaultHandler {
 

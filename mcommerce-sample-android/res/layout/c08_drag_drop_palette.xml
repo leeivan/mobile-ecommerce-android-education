@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.google.mcommerce.sample.android.chapter12.dragAndDrop.Dot
+    <com.google.mcommerce.sample.android.chapter08.dragAndDrop.Dot
         android:id="@+id/dot1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         dot:radius="20dp"
         dot:color="#ff1111ff" />
 
-    <com.google.mcommerce.sample.android.chapter12.dragAndDrop.Dot
+    <com.google.mcommerce.sample.android.chapter08.dragAndDrop.Dot
         android:id="@+id/dot2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

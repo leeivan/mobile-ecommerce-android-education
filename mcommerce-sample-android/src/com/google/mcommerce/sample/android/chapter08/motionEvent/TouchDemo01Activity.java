@@ -63,8 +63,8 @@ public class TouchDemo01Activity extends Activity implements OnTouchListener {
 			result.append(">>> Touch has left the view <<<\n");
 		}
 		result.append("Edge flags: ").append(event.getEdgeFlags()).append("\n");
-		result.append("Pressure: ").append(event.getPressure()).append("   ");
-		result.append("Size: ").append(event.getSize()).append("\n");
+		result.append("Pressure: ").append(event.getPressure(0)).append("   ");
+		result.append("Size: ").append(event.getSize(0)).append("\n");
 		result.append("Down time: ").append(event.getDownTime()).append("ms\n");
 		result.append("Event time: ").append(event.getEventTime()).append("ms");
 		result.append("  Elapsed: ").append(

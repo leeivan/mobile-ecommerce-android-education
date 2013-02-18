@@ -63,7 +63,7 @@
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyApHhblu41XqX7BjMS3O_RBFKmp3ADc8vQ" />
-        
+
         <activity android:name=".SampleForMCommerce" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1166,26 +1166,7 @@
         </activity>
         <!-- Chapter11 -->
         <activity
-            android:name=".chapter11.BrowserViewActivity"
-            android:label="@string/BrowerView" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter11.WebViewActivity"
-            android:label="@string/WebView" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <!-- Chapter12 -->
-        <activity
-            android:name=".chapter12.parse.ParseJSONActivity"
+            android:name=".chapter11.parse.ParseJSONActivity"
             android:label="@string/parse_JSON" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1194,7 +1175,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter12.parse.ParseXMLActivity"
+            android:name=".chapter11.parse.ParseXMLActivity"
             android:label="@string/parse_XML" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1203,7 +1184,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter12.http.HttpGetDemo"
+            android:name=".chapter11.http.HttpGetDemo"
             android:label="@string/http_get" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1212,7 +1193,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter12.http.HttpActivity"
+            android:name=".chapter11.http.HttpActivity"
             android:label="@string/http_singleton" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1221,7 +1202,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter12.http.HttpPostDemo"
+            android:name=".chapter11.http.HttpPostDemo"
             android:label="@string/http_post" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1229,7 +1210,25 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
+        <!-- Chapter12 -->
+        <activity
+            android:name=".chapter12.BrowserViewActivity"
+            android:label="@string/BrowerView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chapter12.WebViewActivity"
+            android:label="@string/WebView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
         <!-- Chapter13 -->
         <activity
             android:name=".chapter13.frame.MainActivity"

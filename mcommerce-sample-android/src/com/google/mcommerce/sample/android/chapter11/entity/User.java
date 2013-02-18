@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter12.entity;
+package com.google.mcommerce.sample.android.chapter11.entity;
 
 
 public class User {

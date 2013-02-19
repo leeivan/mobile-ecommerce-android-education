@@ -25,7 +25,6 @@ public class RootView extends LinearLayout {
 		case MotionEvent.ACTION_DOWN:
 			Log.d(TAG, "onInterceptTouchEvent-------->ACTION_DOWN");
 			break;
-
 		case MotionEvent.ACTION_MOVE:
 			Log.d(TAG, "onInterceptTouchEvent-------->ACTION_MOVE");
 			break;

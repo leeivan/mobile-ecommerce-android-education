@@ -12,12 +12,12 @@ import android.widget.RelativeLayout;
 
 import com.google.mcommerce.sample.android.R;
 
-public class TouchDemo02Activity extends Activity implements OnTouchListener {
+public class OnTouchListenerOnTouchEventActivity extends Activity implements OnTouchListener {
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c08_touch_demo02_layout);
+		setContentView(R.layout.c08_motion_event_04_layout);
 
 		RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.layout1);
 		layout1.setOnTouchListener(this);
@@ -38,7 +38,7 @@ public class TouchDemo02Activity extends Activity implements OnTouchListener {
 		String myTag = v.getTag().toString();
 		Log.v(myTag, "-----------------------------");
 		Log.v(myTag, "Got view " + myTag + " in onTouch");
-		Log.v(myTag, describeEvent(v, event));
+		Log.v(myTag, MotionEventLogUitl.describeEvent(v, event));
 		if ("true".equals(myTag.substring(0, 4))) {
 			Log.v(myTag, "and I'm returning true");
 			return true;
@@ -46,25 +46,5 @@ public class TouchDemo02Activity extends Activity implements OnTouchListener {
 			Log.v(myTag, "and I'm returning false");
 			return false;
 		}
-	}
-
-	protected static String describeEvent(View view, MotionEvent event) {
-		StringBuilder result = new StringBuilder(300);
-		result.append("Action: ").append(event.getAction()).append("\n");
-		result.append("Location: ").append(event.getX()).append(" x ")
-				.append(event.getY()).append("\n");
-		if (event.getX() < 0 || event.getX() > view.getWidth()
-				|| event.getY() < 0 || event.getY() > view.getHeight()) {
-			result.append(">>> Touch has left the view <<<\n");
-		}
-		result.append("Edge flags: ").append(event.getEdgeFlags()).append("\n");
-		result.append("Pressure: ").append(event.getPressure()).append("   ");
-		result.append("Size: ").append(event.getSize()).append("\n");
-		result.append("Down time: ").append(event.getDownTime()).append("ms\n");
-		result.append("Event time: ").append(event.getEventTime()).append("ms");
-		result.append("  Elapsed: ").append(
-				event.getEventTime() - event.getDownTime());
-		result.append(" ms\n");
-		return result.toString();
 	}
 }

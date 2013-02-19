@@ -20,7 +20,7 @@ public abstract class BooleanButton extends Button {
 	public boolean onTouchEvent(MotionEvent event) {
 		String myTag = this.getTag().toString();
 		Log.v(myTag, "-----------------------------------");
-		Log.v(myTag, TouchDemo01Activity.describeEvent(this, event));
+		Log.v(myTag, MotionEventLogUitl.describeEvent(this, event));
 		Log.v(myTag,
 				"super onTouchEvent() returns " + super.onTouchEvent(event));
 		Log.v(myTag, "and I'm returning " + myValue());

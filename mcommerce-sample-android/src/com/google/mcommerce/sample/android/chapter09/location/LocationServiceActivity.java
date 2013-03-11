@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter09;
+package com.google.mcommerce.sample.android.chapter09.location;
 
 import java.util.List;
 
@@ -9,11 +9,12 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.location.LocationProvider;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.google.mcommerce.sample.android.R;
 
-public class LocationActivity extends Activity implements LocationListener {
+public class LocationServiceActivity extends Activity implements LocationListener {
 
 	private static final String[] A = { "n/a", "fine", "coarse" };
 	private static final String[] P = { "n/a", "low", "medium", "high" };
@@ -31,9 +32,11 @@ public class LocationActivity extends Activity implements LocationListener {
 
 		mgr = (LocationManager) getSystemService(LOCATION_SERVICE);
 		output = (TextView) findViewById(R.id.location_text);
-
+		Log.d("LocationService", "test1");
 		log("Location providers:");
+		Log.d("LocationService", "test2");
 		dumpProviders();
+		Log.d("LocationService", "test3");
 
 		Criteria criteria = new Criteria();
 		best = mgr.getBestProvider(criteria, true);
@@ -81,13 +84,16 @@ public class LocationActivity extends Activity implements LocationListener {
 
 	private void dumpProviders() {
 		List<String> providers = mgr.getAllProviders();
+		Log.d("LocationService", "test4");
 		for (String provider : providers) {
 			dumpProvider(provider);
 		}
 	}
 
 	private void dumpProvider(String provider) {
+		Log.d("LocationService", "test5");
 		LocationProvider info = mgr.getProvider(provider);
+		Log.d("LocationService", info.getName());
 		StringBuilder builder = new StringBuilder();
 		builder.append("LocationProvider[").append("name=")
 				.append(info.getName()).append(",enabled=")
@@ -103,6 +109,7 @@ public class LocationActivity extends Activity implements LocationListener {
 				.append(",supportsBearing=").append(info.supportsBearing())
 				.append(",supportsSpeed=").append(info.supportsSpeed())
 				.append("]");
+		Log.d("LocationService", builder.toString());
 		log(builder.toString());
 	}
 

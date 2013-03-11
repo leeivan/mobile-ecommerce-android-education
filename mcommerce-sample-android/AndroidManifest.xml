@@ -845,7 +845,7 @@
         </activity>
         <!-- Chapter08 -->
         <activity
-            android:name=".chapter08.motionEvent.TouchDemo01Activity"
+            android:name="com.google.mcommerce.sample.android.chapter08.motionEvent.OnTouchListenerOnTouchEventActivity"
             android:label="@string/multiTouch_motionEvent_demo01" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -853,16 +853,6 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".chapter08.motionEvent.TouchDemo02Activity"
-            android:label="@string/multiTouch_motionEvent_demo02" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <!-- Chapter12 -->
         <activity
             android:name=".chapter08.motionEvent.InterceptTouchStudyActivity"
             android:label="@string/multiTouch_motionEvent_intercept" >
@@ -1020,8 +1010,8 @@
         <!-- Chapter09 -->
 
         <activity
-            android:name=".chapter09.location.LocationActivity"
-            android:label="@string/location" >
+            android:name=".chapter09.location.LocationServiceActivity"
+            android:label="@string/location_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -1029,6 +1019,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter09.location.GPSSettingsActivity"
+            android:label="@string/location_gps_settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>       
+<!--         <activity
             android:name=".chapter09.location.GeocodingDemoActivity"
             android:label="@string/Geocoding" >
             <intent-filter>
@@ -1036,7 +1035,7 @@
 
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
-        </activity>
+        </activity> -->
         <activity
             android:name=".chapter09.googleMap.GoogleMapActivity"
             android:label="@string/map_google" >

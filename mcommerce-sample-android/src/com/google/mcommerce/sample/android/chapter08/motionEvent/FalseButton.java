@@ -4,9 +4,9 @@ package com.google.mcommerce.sample.android.chapter08.motionEvent;
 import android.content.Context;
 import android.util.AttributeSet;
 
-public class FalseButton01 extends BooleanButton {
+public class FalseButton extends BooleanButton {
 
-	public FalseButton01(Context context, AttributeSet attrs) {
+	public FalseButton(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
 }

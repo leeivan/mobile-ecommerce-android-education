@@ -38,6 +38,7 @@ public class LightSensorActivity extends Activity implements
 		super.onPause();
 	}
 
+	@Override
 	public void onAccuracyChanged(Sensor sensor, int accuracy) {
 		msg.insert(0, sensor.getName()
 				+ " accuracy changed: "
@@ -48,6 +49,7 @@ public class LightSensorActivity extends Activity implements
 		text.invalidate();
 	}
 
+	@Override
 	public void onSensorChanged(SensorEvent event) {
 		msg.insert(0, "Got a sensor event: " + event.values[0]
 				+ " SI lux units\n");

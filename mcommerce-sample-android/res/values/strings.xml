@@ -185,8 +185,9 @@
     <string name="map_google_touch">Chapter09/GoogleMap/GoogleTouch</string>
     <string name="map_google">Chapter09/GoogleMap/GoogleMap</string>
     <string name="map_baidu">Chapter09/BaiduMap/BaiduMap</string>
-    <string name="location">Chapter09/Location</string>
-    <string name="Geocoding">Chapter09/Location/Geocoding</string>
+    <string name="location_service">Chapter09/Location/service</string>
+    <string name="location_gps_settings">Chapter09/Location/GPSSettings</string>
+    <!-- <string name="Geocoding">Chapter09/Location/Geocoding</string> -->
     <!-- 目录章节Chapter10 -->
     <string name="media_audio_demo">Chapter10/Media/Audio/Demo</string>
     <string name="media_audio_soundPool">Chapter10/Media/Audio/Soundpool</string>

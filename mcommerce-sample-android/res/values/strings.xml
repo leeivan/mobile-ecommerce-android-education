@@ -60,6 +60,7 @@
     <string name="tablelayout2_name">Chapter03/Layout/Table Layout 2</string>
     <string name="tablelayout3_name">Chapter03/Layout/Table Layout 3</string>
     <string name="linear_layout">Chapter03/Layout/Linear Layout</string>
+    <string name="multiple_screen_1">Chapter03/multiple screen/density independence</string>
     <string name="absolute_layout">Chapter03/Layout/Absolute Layout</string>
     <string name="frame_layout">Chapter03/Layout/Frame Layout</string>
     <string name="table_layout">Chapter03/Layout/Table Layout</string>

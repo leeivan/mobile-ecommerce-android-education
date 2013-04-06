@@ -145,6 +145,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".chapter03.multiplescreen.DensityIndependence"
+            android:label="@string/multiple_screen_1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".chapter03.permission.PrivActivity"
             android:permission="chapter03.permission.STARTMYACTIVITY" >
             <intent-filter>
@@ -1026,8 +1035,9 @@
 
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
-        </activity>       
-<!--         <activity
+        </activity>
+        <!--
+             <activity
             android:name=".chapter09.location.GeocodingDemoActivity"
             android:label="@string/Geocoding" >
             <intent-filter>
@@ -1035,7 +1045,8 @@
 
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
-        </activity> -->
+        </activity>
+        -->
         <activity
             android:name=".chapter09.googleMap.GoogleMapActivity"
             android:label="@string/map_google" >

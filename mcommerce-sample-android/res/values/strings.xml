@@ -60,7 +60,11 @@
     <string name="tablelayout2_name">Chapter03/Layout/Table Layout 2</string>
     <string name="tablelayout3_name">Chapter03/Layout/Table Layout 3</string>
     <string name="linear_layout">Chapter03/Layout/Linear Layout</string>
+    <string name="weightgrav_name">Chapter03/Layout/Weight Gravity</string>
+    <string name="layout_gravity">Chapter03/Layout/Layout Gravity</string>
+    <string name="padding_margin">Chapter03/Layout/Padding Margin</string>
     <string name="multiple_screen_1">Chapter03/multiple screen/density independence</string>
+    <string name="DevelopingUIWithCoding">Chapter03/Developing UI/Coding</string>
     <string name="absolute_layout">Chapter03/Layout/Absolute Layout</string>
     <string name="frame_layout">Chapter03/Layout/Frame Layout</string>
     <string name="table_layout">Chapter03/Layout/Table Layout</string>
@@ -69,6 +73,7 @@
     <string name="tablelayout3_name">Chapter03/Layout/Table Layout 3</string>
     <string name="relative_layout">Chapter03/Layout/Relative Layout</string>
     <string name="relativelayout_name">Chapter03/Layout/Relative Layout Demo</string>
+    <string name="styles_name">Chapter03/Styles Demo</string>
     <!-- 目录章节chapter04 -->
     <string name="textView">Chapter04/Text/TextView</string>
     <string name="textview_name">Chapter04/Text/TextView Demo</string>
@@ -131,8 +136,6 @@
     <string name="listview5_name">Chapter04/AdapterView/ListView Demo 5</string>
     <string name="datetimepicker_name">Chapter04/Date/Time Picker Demo</string>
     <string name="frame_name">Frame Layout Demo</string>
-    <string name="styles_name">Chapter04/Styles Demo</string>
-    <string name="weightgrav_name">Chapter04/Weight Gravity Demo</string>
     <!-- 目录章节Chapter05 -->
     <string name="alarm">Chapter05/Alarm</string>
     <string name="broadcast">Chapter05/BroadCastReceiver/01</string>
@@ -350,5 +353,7 @@
     <string name="zoom_gestures">Zoom Gestures</string>
     <string name="zoom_in">+</string>
     <string name="zoom_out">-</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

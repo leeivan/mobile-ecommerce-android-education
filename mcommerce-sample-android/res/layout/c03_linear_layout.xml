@@ -15,16 +15,18 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:background="#aa0000"
-            android:gravity="center_horizontal"
-            android:text="red" />
+            android:gravity="top|left"
+            android:text="red" 
+            android:textSize="10pt"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:background="#00aa00"
-            android:gravity="center_horizontal"
-            android:text="green" />
+            android:gravity="bottom|right"
+            android:text="green" 
+            android:textSize="10pt"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -32,15 +34,17 @@
             android:layout_weight="1"
             android:background="#0000aa"
             android:gravity="center_horizontal"
-            android:text="blue" />
+            android:text="blue" 
+            android:textSize="10pt"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:background="#aaaa00"
-            android:gravity="center_horizontal"
-            android:text="yellow" />
+            android:gravity="center"
+            android:text="yellow" 
+            android:textSize="10pt"/>
     </LinearLayout>
 
     <LinearLayout

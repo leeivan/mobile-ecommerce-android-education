@@ -64,7 +64,7 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyApHhblu41XqX7BjMS3O_RBFKmp3ADc8vQ" />
 
-        <activity android:name=".SampleForMCommerce" >
+        <activity android:name="com.google.mcommerce.sample.android.SampleForMCommerce" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -73,7 +73,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.layout.TableLayoutActivity1"
+            android:name="com.google.mcommerce.sample.android.chapter03.layout.TableLayoutActivity1"
             android:label="@string/tablelayout1_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -82,7 +82,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.layout.TableLayoutActivity2"
+            android:name="com.google.mcommerce.sample.android.chapter03.layout.TableLayoutActivity2"
             android:label="@string/tablelayout2_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -91,7 +91,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.layout.TableLayoutActivity3"
+            android:name="com.google.mcommerce.sample.android.chapter03.layout.TableLayoutActivity3"
             android:label="@string/tablelayout3_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -100,7 +100,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.layout.TableLayoutActivity"
+            android:name="com.google.mcommerce.sample.android.chapter03.layout.TableLayoutActivity"
             android:label="@string/table_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -109,7 +109,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.layout.AbsoluteLayoutActivity"
+            android:name="com.google.mcommerce.sample.android.chapter03.layout.AbsoluteLayoutActivity"
             android:label="@string/absolute_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -118,7 +118,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.layout.FrameLayoutActivity"
+            android:name="com.google.mcommerce.sample.android.chapter03.layout.FrameLayoutActivity"
             android:label="@string/frame_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -127,7 +127,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.layout.RelativeLayoutActivity"
+            android:name="com.google.mcommerce.sample.android.chapter03.layout.RelativeLayoutActivity"
             android:label="@string/relative_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -136,7 +136,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.layout.LinearLayoutActivity"
+            android:name="com.google.mcommerce.sample.android.chapter03.layout.LinearLayoutActivity"
             android:label="@string/linear_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -145,7 +145,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.multiplescreen.DensityIndependence"
+            android:name="com.google.mcommerce.sample.android.chapter03.layout.LayoutGravity"
+            android:label="@string/layout_gravity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.mcommerce.sample.android.chapter03.multiplescreen.DensityIndependence"
             android:label="@string/multiple_screen_1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -154,7 +163,43 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter03.permission.PrivActivity"
+            android:name="com.google.mcommerce.sample.android.chapter03.ui.DevelopingUIWithCoding"
+            android:label="@string/DevelopingUIWithCoding" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.mcommerce.sample.android.chapter03.StylesActivity"
+            android:label="@string/styles_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.mcommerce.sample.android.chapter03.layout.Weight"
+            android:label="@string/weightgrav_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.mcommerce.sample.android.chapter03.layout.PaddingMargin"
+            android:label="@string/padding_margin" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.mcommerce.sample.android.chapter03.permission.PrivActivity"
             android:permission="chapter03.permission.STARTMYACTIVITY" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -162,7 +207,7 @@
         </activity>
         <!-- chapter04 -->
         <activity
-            android:name=".chapter04.SimpleEventActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.SimpleEventActivity"
             android:label="@string/simple_event" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -171,7 +216,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.text.TextViewActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.text.TextViewActivity"
             android:label="@string/textView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -180,7 +225,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.text.TextViewActivity01"
+            android:name="com.google.mcommerce.sample.android.chapter04.text.TextViewActivity01"
             android:label="@string/textview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -189,7 +234,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.text.TextViewWebActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.text.TextViewWebActivity"
             android:label="@string/textView_web" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -198,7 +243,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.text.EditTextActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.text.EditTextActivity"
             android:label="@string/editText" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -207,7 +252,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.text.EditTextSearchActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.text.EditTextSearchActivity"
             android:label="@string/editText_search" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -217,7 +262,7 @@
         </activity>
         <!-- ActionBar Sample Start -->
         <activity
-            android:name=".chapter04.actionBar.TabNavigationActionBarActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.actionBar.TabNavigationActionBarActivity"
             android:label="@string/actionBar_tab" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -226,19 +271,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.actionBar.ListNavigationActionBarActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.actionBar.ListNavigationActionBarActivity"
             android:label="Action Bar Demonstration: ListNav" >
         </activity>
         <activity
-            android:name=".chapter04.actionBar.DropdownListNavigationActionBarActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.actionBar.DropdownListNavigationActionBarActivity"
             android:label="Action Bar Demonstration: DropdownNav" >
         </activity>
         <activity
-            android:name=".chapter04.actionBar.StandardNavigationActionBarActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.actionBar.StandardNavigationActionBarActivity"
             android:label="Action Bar Demonstration: StandardNav" >
         </activity>
         <activity
-            android:name=".chapter04.actionBar.SearchResultsActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.actionBar.SearchResultsActivity"
             android:label="Search Results" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -249,7 +294,7 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name=".chapter04.actionBar.ActionBarMechanics"
+            android:name="com.google.mcommerce.sample.android.chapter04.actionBar.ActionBarMechanics"
             android:enabled="@bool/atLeastHoneycomb"
             android:label="@string/action_bar_mechanics" >
             <intent-filter>
@@ -259,7 +304,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.actionBar.ActionBarUsage"
+            android:name="com.google.mcommerce.sample.android.chapter04.actionBar.ActionBarUsage"
             android:enabled="@bool/atLeastHoneycomb"
             android:label="@string/action_bar_usage" >
             <intent-filter>
@@ -269,7 +314,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.actionBar.ActionBarDisplayOptions"
+            android:name="com.google.mcommerce.sample.android.chapter04.actionBar.ActionBarDisplayOptions"
             android:enabled="@bool/atLeastHoneycomb"
             android:label="@string/action_bar_display_options"
             android:logo="@drawable/apidemo_androidlogo" >
@@ -280,7 +325,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.actionBar.ActionBarTabs"
+            android:name="com.google.mcommerce.sample.android.chapter04.actionBar.ActionBarTabs"
             android:enabled="@bool/atLeastHoneycomb"
             android:label="@string/action_bar_tabs" >
             <intent-filter>
@@ -290,7 +335,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.actionBar.ActionBarSettingsActionProviderActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.actionBar.ActionBarSettingsActionProviderActivity"
             android:enabled="@bool/atLeastIceCreamSandwich"
             android:label="@string/action_bar_settings_action_provider" >
             <intent-filter>
@@ -300,7 +345,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.actionBar.ActionBarShareActionProviderActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.actionBar.ActionBarShareActionProviderActivity"
             android:enabled="@bool/atLeastIceCreamSandwich"
             android:label="@string/action_bar_share_action_provider" >
             <intent-filter>
@@ -311,7 +356,7 @@
         </activity>
         <!-- Menu Sample -->
         <activity
-            android:name=".chapter04.menu.SampleMenusActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.menu.SampleMenusActivity"
             android:label="@string/wiget_menu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -320,11 +365,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.menu.XMLMenusActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.menu.XMLMenusActivity"
             android:label="Test XML and PopupMenus" />
         <!-- AdapterView Sample -->
         <activity
-            android:name=".chapter04.adapterView.ListDialogActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.adapterView.ListDialogActivity"
             android:label="@string/alart_dialog" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -333,7 +378,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.adapterView.ListViewActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.adapterView.ListViewActivity"
             android:label="@string/listview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -342,7 +387,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.adapterView.ListViewActivity2"
+            android:name="com.google.mcommerce.sample.android.chapter04.adapterView.ListViewActivity2"
             android:label="@string/listview2_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -351,7 +396,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.adapterView.ListViewActivity3"
+            android:name="com.google.mcommerce.sample.android.chapter04.adapterView.ListViewActivity3"
             android:label="@string/listview3_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -360,7 +405,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.adapterView.ListViewActivity4"
+            android:name="com.google.mcommerce.sample.android.chapter04.adapterView.ListViewActivity4"
             android:label="@string/listview4_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -369,7 +414,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.ImageViewActivity01"
+            android:name="com.google.mcommerce.sample.android.chapter04.ImageViewActivity01"
             android:label="@string/imageview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -378,7 +423,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.ImageViewActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.ImageViewActivity"
             android:label="@string/ImageView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -387,7 +432,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.adapterView.GalleryActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.adapterView.GalleryActivity"
             android:label="@string/gallery_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -396,7 +441,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.adapterView.GridViewCustomAdapter"
+            android:name="com.google.mcommerce.sample.android.chapter04.adapterView.GridViewCustomAdapter"
             android:label="@string/gridviewcustom_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -405,7 +450,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.adapterView.GridViewActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.adapterView.GridViewActivity"
             android:label="@string/gridview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -414,7 +459,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.adapterView.SimpleListViewActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.adapterView.SimpleListViewActivity"
             android:label="@string/ListView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -423,7 +468,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.DateTimePickerActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.DateTimePickerActivity"
             android:label="@string/datetimepicker_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -432,7 +477,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.button.RadioGroupActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.button.RadioGroupActivity"
             android:label="@string/radio_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -441,7 +486,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.button.CheckBoxActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.button.CheckBoxActivity"
             android:label="@string/checkbox_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -450,7 +495,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.button.ButtonActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.button.ButtonActivity"
             android:label="@string/button_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -459,25 +504,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.StylesActivity"
-            android:label="@string/styles_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.WeightGravity"
-            android:label="@string/weightgrav_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".chapter04.intent.ActivityFirst"
+            android:name="com.google.mcommerce.sample.android.chapter04.intent.ActivityFirst"
             android:label="@string/IntentDataTransfer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -485,7 +512,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter04.intent.ActivitySecondySecond" >
+        <activity android:name="com.google.mcommerce.sample.android.chapter04.intent.ActivitySecondySecond" >
             <intent-filter>
                 <action android:name="com.android.activity.MY_ACTION" />
 
@@ -493,7 +520,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.intent.CallIntentsActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.intent.CallIntentsActivity"
             android:label="@string/implicitIntent" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -502,7 +529,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.button.RadioGroupActivity01"
+            android:name="com.google.mcommerce.sample.android.chapter04.button.RadioGroupActivity01"
             android:label="@string/radioGroup" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -511,7 +538,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.button.CheckBoxActivity01"
+            android:name="com.google.mcommerce.sample.android.chapter04.button.CheckBoxActivity01"
             android:label="@string/checkBox" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -520,7 +547,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter04.adapterView.SpinnerActivity"
+            android:name="com.google.mcommerce.sample.android.chapter04.adapterView.SpinnerActivity"
             android:label="@string/spinner_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -530,7 +557,7 @@
         </activity>
         <!-- Chapter05 Notification and Broadcast -->
         <activity
-            android:name=".chapter05.broadcastReceiver.MySendBroActivity"
+            android:name="com.google.mcommerce.sample.android.chapter05.broadcastReceiver.MySendBroActivity"
             android:label="@string/broadcast_receiver" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -540,7 +567,7 @@
         </activity>
 
         <receiver
-            android:name=".chapter05.broadcastReceiver.MyBroadcastReceiver"
+            android:name="com.google.mcommerce.sample.android.chapter05.broadcastReceiver.MyBroadcastReceiver"
             android:exported="true" >
             <intent-filter>
                 <action android:name="com.google.mcommerce.sample.android.chapter05.mybroadcast" >
@@ -549,7 +576,7 @@
         </receiver>
 
         <activity
-            android:name=".chapter05.notification.NotificationMainActivity"
+            android:name="com.google.mcommerce.sample.android.chapter05.notification.NotificationMainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -557,13 +584,13 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter05.notification.HandleNotificationActivity" >
+        <activity android:name="com.google.mcommerce.sample.android.chapter05.notification.HandleNotificationActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter05.alarm.TestAlarmsDriverActivity"
+            android:name="com.google.mcommerce.sample.android.chapter05.alarm.TestAlarmsDriverActivity"
             android:label="@string/alarm" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -572,19 +599,19 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".chapter05.alarm.TestReceiver" >
+        <receiver android:name="com.google.mcommerce.sample.android.chapter05.alarm.TestReceiver" >
             <intent-filter>
                 <action android:name="com.ai.android.intents.testbc" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".chapter05.alarm.TestReceiver2" >
+        <receiver android:name="com.google.mcommerce.sample.android.chapter05.alarm.TestReceiver2" >
             <intent-filter>
                 <action android:name="com.ai.android.intents.testbc" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:name=".chapter05.broadcastReceiver.TestBCRActivity"
+            android:name="com.google.mcommerce.sample.android.chapter05.broadcastReceiver.TestBCRActivity"
             android:label="@string/broadcast" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -593,24 +620,24 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".chapter05.broadcastReceiver.TestReceiver" >
+        <receiver android:name="com.google.mcommerce.sample.android.chapter05.broadcastReceiver.TestReceiver" >
             <intent-filter>
                 <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".chapter05.broadcastReceiver.TestTimeDelayReceiver" >
+        <receiver android:name="com.google.mcommerce.sample.android.chapter05.broadcastReceiver.TestTimeDelayReceiver" >
             <intent-filter>
                 <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".chapter05.broadcastReceiver.TestReceiver2" >
+        <receiver android:name="com.google.mcommerce.sample.android.chapter05.broadcastReceiver.TestReceiver2" >
             <intent-filter>
                 <action android:name="com.google.mcommerce.sample.android.chapter09.test" />
             </intent-filter>
         </receiver>
         <!-- Chapter06 MultiTask -->
         <activity
-            android:name=".chapter06.service.StartServiceActivity"
+            android:name="com.google.mcommerce.sample.android.chapter06.service.StartServiceActivity"
             android:label="@string/service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -619,15 +646,15 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".chapter06.service.HelloIntentService" >
+        <service android:name="com.google.mcommerce.sample.android.chapter06.service.HelloIntentService" >
         </service>
-        <service android:name=".chapter06.service.HelloService" >
+        <service android:name="com.google.mcommerce.sample.android.chapter06.service.HelloService" >
         </service>
-        <service android:name=".chapter06.service.BackgroundService" >
+        <service android:name="com.google.mcommerce.sample.android.chapter06.service.BackgroundService" >
         </service>
 
         <activity
-            android:name=".chapter06.service.BindingServiceActivity"
+            android:name="com.google.mcommerce.sample.android.chapter06.service.BindingServiceActivity"
             android:label="@string/binding_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -636,11 +663,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".chapter06.service.LocalService" >
+        <service android:name="com.google.mcommerce.sample.android.chapter06.service.LocalService" >
         </service>
 
         <activity
-            android:name=".chapter06.service.MessengerServiceActivity"
+            android:name="com.google.mcommerce.sample.android.chapter06.service.MessengerServiceActivity"
             android:label="@string/messenger_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -649,11 +676,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".chapter06.service.MessengerService" >
+        <service android:name="com.google.mcommerce.sample.android.chapter06.service.MessengerService" >
         </service>
 
         <activity
-            android:name=".chapter06.ProgressBar1"
+            android:name="com.google.mcommerce.sample.android.chapter06.ProgressBar1"
             android:label="@string/progressbar1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -662,7 +689,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.ProgressBar2"
+            android:name="com.google.mcommerce.sample.android.chapter06.ProgressBar2"
             android:label="@string/progressbar2" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -671,7 +698,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".download.DownloadManagerActivity"
+            android:name="com.google.mcommerce.sample.android.download.DownloadManagerActivity"
             android:label="@string/download02" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -680,7 +707,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.asyncTask.AsyncTaskActivity"
+            android:name="com.google.mcommerce.sample.android.chapter06.asyncTask.AsyncTaskActivity"
             android:label="@string/AsynTask01" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -689,7 +716,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.asyncTask.TestAsyncTaskDriverActivity"
+            android:name="com.google.mcommerce.sample.android.chapter06.asyncTask.TestAsyncTaskDriverActivity"
             android:label="@string/AsynTask02" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -698,7 +725,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.asyncTask.DownloadAsyncTaskForRotateActivity"
+            android:name="com.google.mcommerce.sample.android.chapter06.asyncTask.DownloadAsyncTaskForRotateActivity"
             android:label="@string/AsynTask_Download" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -707,7 +734,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.handler.HandlerActivity"
+            android:name="com.google.mcommerce.sample.android.chapter06.handler.HandlerActivity"
             android:label="@string/Handler" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -716,7 +743,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.handler.TestHandlersDriverActivity"
+            android:name="com.google.mcommerce.sample.android.chapter06.handler.TestHandlersDriverActivity"
             android:label="@string/TestHandlersDriver" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -725,7 +752,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.ThreadActivity"
+            android:name="com.google.mcommerce.sample.android.chapter06.ThreadActivity"
             android:label="@string/Thread" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -734,7 +761,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.ProcessLifecycleActivity"
+            android:name="com.google.mcommerce.sample.android.chapter06.ProcessLifecycleActivity"
             android:label="@string/processLifecycle"
             android:process="com.taobao.mcommerce.sample" >
             <intent-filter>
@@ -744,7 +771,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter06.SearchProductsAPIActivity"
+            android:name="com.google.mcommerce.sample.android.chapter06.SearchProductsAPIActivity"
             android:label="@string/search_product_api"
             android:process="com.taobao.mcommerce.sample" >
             <intent-filter>
@@ -755,7 +782,7 @@
         </activity>
         <!-- Chapter07 -->
         <activity
-            android:name=".chapter07.preferences.SharedPreferencesActivity"
+            android:name="com.google.mcommerce.sample.android.chapter07.preferences.SharedPreferencesActivity"
             android:label="@string/SharedPreferences" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -763,13 +790,13 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter07.preferences.SharedPreferencesGetter" >
+        <activity android:name="com.google.mcommerce.sample.android.chapter07.preferences.SharedPreferencesGetter" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter07.preferences.PreferencesWithDefaultsActivity"
+            android:name="com.google.mcommerce.sample.android.chapter07.preferences.PreferencesWithDefaultsActivity"
             android:label="@string/preferences_default" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -777,7 +804,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter07.preferences.FlightPreferenceSingle" >
+        <activity android:name="com.google.mcommerce.sample.android.chapter07.preferences.FlightPreferenceSingle" >
             <intent-filter>
                 <action android:name="com.google.mcommerce.sample.android.intent.action.FlightPreferences" />
 
@@ -785,7 +812,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter07.preferences.PreferencesMultiActivity"
+            android:name="com.google.mcommerce.sample.android.chapter07.preferences.PreferencesMultiActivity"
             android:label="@string/preferences_multi" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -793,7 +820,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter07.preferences.FlightPreferenceMulti" >
+        <activity android:name="com.google.mcommerce.sample.android.chapter07.preferences.FlightPreferenceMulti" >
             <intent-filter>
                 <action android:name="com.google.mcommerce.sample.android.intent.action.FlightPreferences" />
 
@@ -801,7 +828,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter07.preferences.PreferencesDemoActivity"
+            android:name="com.google.mcommerce.sample.android.chapter07.preferences.PreferencesDemoActivity"
             android:label="@string/preferences_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -809,7 +836,7 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter07.preferences.MainPreferenceActivity" >
+        <activity android:name="com.google.mcommerce.sample.android.chapter07.preferences.MainPreferenceActivity" >
             <intent-filter>
                 <action android:name="com.google.mcommerce.sample.android.intent.action.MainPreferences" />
 
@@ -817,7 +844,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter07.contentProvider.UserDictionaryActivity"
+            android:name="com.google.mcommerce.sample.android.chapter07.contentProvider.UserDictionaryActivity"
             android:label="@string/UserDictionaryProvider" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -826,7 +853,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter07.contentProvider.ContactsActivity"
+            android:name="com.google.mcommerce.sample.android.chapter07.contentProvider.ContactsActivity"
             android:label="@string/QuickContacts" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -835,7 +862,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter07.SQLiteActivity"
+            android:name="com.google.mcommerce.sample.android.chapter07.SQLiteActivity"
             android:label="@string/SQLite" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -844,7 +871,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter07.ShowProductImageActivity"
+            android:name="com.google.mcommerce.sample.android.chapter07.ShowProductImageActivity"
             android:label="@string/show_product" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -863,7 +890,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.motionEvent.InterceptTouchStudyActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.motionEvent.InterceptTouchStudyActivity"
             android:label="@string/multiTouch_motionEvent_intercept" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -872,7 +899,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.motionEvent.Test01"
+            android:name="com.google.mcommerce.sample.android.chapter08.motionEvent.Test01"
             android:label="@string/multiTouch_motionEvent_test01" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -881,7 +908,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.motionEvent.Test02"
+            android:name="com.google.mcommerce.sample.android.chapter08.motionEvent.Test02"
             android:label="@string/multiTouch_motionEvent_test02" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -890,7 +917,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.motionEvent.VelocityTrackerActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.motionEvent.VelocityTrackerActivity"
             android:label="@string/multiTouch_motionEvent_velocityTracker" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -899,7 +926,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.multiTouch.MultiTouchActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.multiTouch.MultiTouchActivity"
             android:label="@string/multiTouch_multi_touch" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -908,7 +935,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.dragAndDrop.DragDropFragDemoActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.dragAndDrop.DragDropFragDemoActivity"
             android:label="@string/multiTouch_drag_drop_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -917,7 +944,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.touchDrag.TouchDragActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.touchDrag.TouchDragActivity"
             android:label="@string/multiTouch_drag_touch_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -926,7 +953,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.gestures.ScaleDetectorActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.gestures.ScaleDetectorActivity"
             android:label="@string/multiTouch_scale_detector" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -935,7 +962,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.gestures.GestureRevealerActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.gestures.GestureRevealerActivity"
             android:label="@string/multiTouch_gesture_revealer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -944,7 +971,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.sensor.SensorListActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.sensor.SensorListActivity"
             android:label="@string/sensor_list" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -953,7 +980,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.sensor.LightSensorActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.sensor.LightSensorActivity"
             android:label="@string/sensor_light" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -962,7 +989,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.sensor.CampassSensorActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.sensor.CampassSensorActivity"
             android:label="@string/sensor_campass" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -971,7 +998,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.sensor.GravityActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.sensor.GravityActivity"
             android:label="@string/sensor_gravity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -980,7 +1007,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.sensor.GyroscopeActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.sensor.GyroscopeActivity"
             android:label="@string/sensor_gyroscope" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -989,7 +1016,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.sensor.ProximitySensorActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.sensor.ProximitySensorActivity"
             android:label="@string/sensor_proximity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -998,7 +1025,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.sensor.AccelerometerActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.sensor.AccelerometerActivity"
             android:label="@string/sensor_accelerometer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1007,7 +1034,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter08.sensor.VirtualIJaxActivity"
+            android:name="com.google.mcommerce.sample.android.chapter08.sensor.VirtualIJaxActivity"
             android:label="@string/sensor_virltualJax" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1019,7 +1046,7 @@
         <!-- Chapter09 -->
 
         <activity
-            android:name=".chapter09.location.LocationServiceActivity"
+            android:name="com.google.mcommerce.sample.android.chapter09.location.LocationServiceActivity"
             android:label="@string/location_service" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1028,7 +1055,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter09.location.GPSSettingsActivity"
+            android:name="com.google.mcommerce.sample.android.chapter09.location.GPSSettingsActivity"
             android:label="@string/location_gps_settings" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1045,10 +1072,10 @@
 
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
-        </activity>
+        </activity>
         -->
         <activity
-            android:name=".chapter09.googleMap.GoogleMapActivity"
+            android:name="com.google.mcommerce.sample.android.chapter09.googleMap.GoogleMapActivity"
             android:label="@string/map_google" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1057,7 +1084,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter09.googleMap.MapViewWithTouchActivity"
+            android:name="com.google.mcommerce.sample.android.chapter09.googleMap.MapViewWithTouchActivity"
             android:label="@string/map_google_touch" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1066,7 +1093,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter09.baiduMap.BaiduMapActivity"
+            android:name="com.google.mcommerce.sample.android.chapter09.baiduMap.BaiduMapActivity"
             android:label="@string/map_baidu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1076,7 +1103,7 @@
         </activity>
         <!-- Chapter10 -->
         <activity
-            android:name=".chapter10.mediaplay.MediaDemoActivity"
+            android:name="com.google.mcommerce.sample.android.chapter10.mediaplay.MediaDemoActivity"
             android:label="@string/media_audio_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1085,7 +1112,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.mediaplay.SoundPoolDemoActivity"
+            android:name="com.google.mcommerce.sample.android.chapter10.mediaplay.SoundPoolDemoActivity"
             android:label="@string/media_audio_soundPool" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1094,7 +1121,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.mediaplay.AsyncPlayerActivity"
+            android:name="com.google.mcommerce.sample.android.chapter10.mediaplay.AsyncPlayerActivity"
             android:label="@string/media_audio_asyncPlayer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1103,7 +1130,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.mediaplay.VideoDemoActivity"
+            android:name="com.google.mcommerce.sample.android.chapter10.mediaplay.VideoDemoActivity"
             android:label="@string/media_video_demo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1112,7 +1139,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.mediarecorder.RecordAudioActivity"
+            android:name="com.google.mcommerce.sample.android.chapter10.mediarecorder.RecordAudioActivity"
             android:label="@string/media_record_audio" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1121,7 +1148,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.mediarecorder.AudioRecordActivity"
+            android:name="com.google.mcommerce.sample.android.chapter10.mediarecorder.AudioRecordActivity"
             android:label="@string/media_record_audioRecord" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1130,7 +1157,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.mediarecorder.AudioRecordWithCallbacksActivity"
+            android:name="com.google.mcommerce.sample.android.chapter10.mediarecorder.AudioRecordWithCallbacksActivity"
             android:label="@string/media_record_audioRecordWithCallback" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1139,7 +1166,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.mediarecorder.RecordVideoActivity"
+            android:name="com.google.mcommerce.sample.android.chapter10.mediarecorder.RecordVideoActivity"
             android:label="@string/media_record_video" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1148,7 +1175,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.mediarecorder.UsingMediaStoreActivity"
+            android:name="com.google.mcommerce.sample.android.chapter10.mediarecorder.UsingMediaStoreActivity"
             android:label="@string/media_record_mediaStore" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1157,7 +1184,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.CaptureImageWithIntentActivity"
+            android:name="com.google.mcommerce.sample.android.chapter10.CaptureImageWithIntentActivity"
             android:label="@string/media_record_captureImage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1166,7 +1193,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter10.mediaplay.MediaScannerActivity"
+            android:name="com.google.mcommerce.sample.android.chapter10.mediaplay.MediaScannerActivity"
             android:label="@string/media_record_mediaScanner" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1176,7 +1203,7 @@
         </activity>
         <!-- Chapter11 -->
         <activity
-            android:name=".chapter11.parse.ParseJSONActivity"
+            android:name="com.google.mcommerce.sample.android.chapter11.parse.ParseJSONActivity"
             android:label="@string/parse_JSON" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1185,7 +1212,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.parse.ParseXMLActivity"
+            android:name="com.google.mcommerce.sample.android.chapter11.parse.ParseXMLActivity"
             android:label="@string/parse_XML" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1194,7 +1221,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.http.HttpGetDemo"
+            android:name="com.google.mcommerce.sample.android.chapter11.http.HttpGetDemo"
             android:label="@string/http_get" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1203,7 +1230,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.http.HttpActivity"
+            android:name="com.google.mcommerce.sample.android.chapter11.http.HttpActivity"
             android:label="@string/http_singleton" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1212,7 +1239,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter11.http.HttpPostDemo"
+            android:name="com.google.mcommerce.sample.android.chapter11.http.HttpPostDemo"
             android:label="@string/http_post" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1222,7 +1249,7 @@
         </activity>
         <!-- Chapter12 -->
         <activity
-            android:name=".chapter12.BrowserViewActivity"
+            android:name="com.google.mcommerce.sample.android.chapter12.BrowserViewActivity"
             android:label="@string/BrowerView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1231,7 +1258,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter12.WebViewActivity"
+            android:name="com.google.mcommerce.sample.android.chapter12.WebViewActivity"
             android:label="@string/WebView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1241,7 +1268,7 @@
         </activity>
         <!-- Chapter13 -->
         <activity
-            android:name=".chapter13.frame.MainActivity"
+            android:name="com.google.mcommerce.sample.android.chapter13.frame.MainActivity"
             android:label="@string/animation_frame" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1250,11 +1277,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter13.frame.FrameAnimationActivity"
+            android:name="com.google.mcommerce.sample.android.chapter13.frame.FrameAnimationActivity"
             android:label="Frame Animation Test" >
         </activity>
         <activity
-            android:name=".chapter13.layout.MainActivity"
+            android:name="com.google.mcommerce.sample.android.chapter13.layout.MainActivity"
             android:label="@string/animation_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1263,11 +1290,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter13.layout.LayoutAnimationActivity"
+            android:name="com.google.mcommerce.sample.android.chapter13.layout.LayoutAnimationActivity"
             android:label="Layout Animation Test" >
         </activity>
         <activity
-            android:name=".chapter13.property.TestPropertyAnimationActivity"
+            android:name="com.google.mcommerce.sample.android.chapter13.property.TestPropertyAnimationActivity"
             android:label="@string/animation_property" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1276,7 +1303,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter13.view.MainActivity"
+            android:name="com.google.mcommerce.sample.android.chapter13.view.MainActivity"
             android:label="@string/animation_view" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1285,12 +1312,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter13.view.ViewAnimationActivity"
+            android:name="com.google.mcommerce.sample.android.chapter13.view.ViewAnimationActivity"
             android:label="View Animation Test Activity" >
         </activity>
         <!-- Chapter14 -->
         <activity
-            android:name=".chapter14.taobao.Oauth2TaobaoActivity"
+            android:name="com.google.mcommerce.sample.android.chapter14.taobao.Oauth2TaobaoActivity"
             android:label="@string/OauthTaobao" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1298,13 +1325,13 @@
                 <category android:name="SampleForMCommerce" />
             </intent-filter>
         </activity>
-        <activity android:name=".chapter14.taobao.UserInfoActivity" >
+        <activity android:name="com.google.mcommerce.sample.android.chapter14.taobao.UserInfoActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter14.taobao.TaoBaoAPITestActivity"
+            android:name="com.google.mcommerce.sample.android.chapter14.taobao.TaoBaoAPITestActivity"
             android:label="@string/taobao_api" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1313,7 +1340,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chapter14.weibo.TecentWeiboActivity"
+            android:name="com.google.mcommerce.sample.android.chapter14.weibo.TecentWeiboActivity"
             android:label="@string/tecent_weibo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -1327,6 +1354,7 @@
         </activity>
 
         <uses-library android:name="com.google.android.maps" />
+
     </application>
 
 </manifest>

@@ -1,8 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">09-menu-actionBar</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">ActionBar Demo</string>
     <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">ActionBar Demo</string>
+    <string name="frag1">Fragment 1</string>
+    <string name="frag2">Fragment 2</string>
+
+    <string-array name="spinner_data">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+    </string-array>
+        <string name="search">Search</string>
 
 </resources>

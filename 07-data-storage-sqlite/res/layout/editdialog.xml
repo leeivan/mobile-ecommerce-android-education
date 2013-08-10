@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  >
+  <TableRow>
+  <TextView
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:text="Name: "
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/txtDelName"
+  />
+  </TableRow>
+  <TableRow>
+  <TextView
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:text="Age: "
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/txtDelAge"
+  />
+ 
+  </TableRow>
+  <TableRow>
+   <Spinner
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/spinDiagDept"
+  android:layout_span="2"
+  />
+  </TableRow>
+  <TableRow>
+  
+  </TableRow>
+</TableLayout>

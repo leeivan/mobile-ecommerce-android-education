@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">03-interface-design</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 目录章chapter03 -->
+    <string name="italics"><i>Italics</i></string>
+    <string name="hello_mobile_world">hello mobile world</string>
+    <string name="linear_layout">Chapter03/Layout/Linear Layout</string>
+    <string name="weightgrav_name">Chapter03/Layout/Weight Gravity</string>
+    <string name="layout_gravity">Chapter03/Layout/Layout Gravity</string>
+    <string name="padding_margin">Chapter03/Layout/Padding Margin</string>
+    <string name="multiple_screen_1">Chapter03/multiple screen/density independence</string>
+    <string name="DevelopingUIWithCoding">Chapter03/Developing UI/Coding</string>
+    <string name="absolute_layout">Chapter03/Layout/Absolute Layout</string>
+    <string name="frame_layout">Chapter03/Layout/Frame Layout</string>
+    <string name="table_layout">Chapter03/Layout/Table Layout</string>
+    <string name="tablelayout1_name">Chapter03/Layout/Table Layout 1</string>
+    <string name="tablelayout2_name">Chapter03/Layout/Table Layout 2</string>
+    <string name="tablelayout3_name">Chapter03/Layout/Table Layout 3</string>
+    <string name="relative_layout">Chapter03/Layout/Relative Layout</string>
+    <string name="relativelayout_name">Chapter03/Layout/Relative Layout Demo</string>
+    <string name="styles_name">Chapter03/Styles Demo</string>
+
+</resources>

@@ -1,4 +1,4 @@
-package com.pinecone.technology.mcommerce.learing.android.chaptor03;
+package com.pinecone.technology.mcommerce.learning.android.chapter03;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -9,6 +9,8 @@ import android.text.style.StyleSpan;
 import android.text.util.Linkify;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.pinecone.technology.mcommerce.learning.android.chapter03.R;
 
 
 public class StylesActivity extends Activity {

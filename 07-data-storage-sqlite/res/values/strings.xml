@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">07-data-storage-sqlite</string>
+    <string name="add_employee">add employee</string>
+    <string name="list_employee">list employee</string>
+</resources>

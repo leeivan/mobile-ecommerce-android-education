@@ -1,4 +1,4 @@
-package com.pinecone.technology.mcommerce.learing.android.chaptor03.permission;
+package com.pinecone.technology.mcommerce.learning.android.chapter03.permission;
 
 import android.app.Activity;
 import android.os.Bundle;

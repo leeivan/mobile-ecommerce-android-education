@@ -1,4 +1,4 @@
-package com.pinecone.technology.mcommerce.learing.android.chaptor03.layout;
+package com.pinecone.technology.mcommerce.learning.android.chapter03.layout;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 
-import com.pinecone.technology.mcommerce.learing.android.chaptor03.R;
+import com.pinecone.technology.mcommerce.learning.android.chapter03.R;
 
 public class FrameLayoutActivity01 extends Activity {
 	private ImageView one = null;

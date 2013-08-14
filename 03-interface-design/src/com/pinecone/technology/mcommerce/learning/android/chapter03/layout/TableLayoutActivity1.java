@@ -1,9 +1,9 @@
-package com.pinecone.technology.mcommerce.learing.android.chaptor03.layout;
+package com.pinecone.technology.mcommerce.learning.android.chapter03.layout;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.pinecone.technology.mcommerce.learing.android.chaptor03.R;
+import com.pinecone.technology.mcommerce.learning.android.chapter03.R;
 
 public class TableLayoutActivity1 extends Activity {
 	/** Called when the activity is first created. */

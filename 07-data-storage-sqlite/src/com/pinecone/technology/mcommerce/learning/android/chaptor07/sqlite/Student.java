@@ -2,21 +2,21 @@ package com.pinecone.technology.mcommerce.learning.android.chaptor07.sqlite;
 
 import android.content.Context;
 
-public class Employee {
+public class Student {
 
 	int _id;
 	String _name;
 	int _age;
 	int _dept;
 
-	public Employee(String Name, int Age, int Dept) {
+	public Student(String Name, int Age, int Dept) {
 
 		this._name = Name;
 		this._age = Age;
 		this._dept = Dept;
 	}
 
-	public Employee(String Name, int Age) {
+	public Student(String Name, int Age) {
 		this._name = Name;
 		this._age = Age;
 	}

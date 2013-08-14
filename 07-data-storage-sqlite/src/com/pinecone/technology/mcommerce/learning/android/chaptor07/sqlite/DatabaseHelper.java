@@ -9,17 +9,17 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
 	static final String dbName = "demoDB";
-	static final String employeeTable = "Employees";
-	static final String colID = "EmployeeID";
-	static final String colName = "EmployeeName";
+	static final String studentTable = "Students";
+	static final String colID = "StdId";
+	static final String colName = "StdName";
 	static final String colAge = "Age";
-	static final String colDept = "Dept";
+	static final String colDept = "DeptId";
 
-	static final String deptTable = "Dept";
-	static final String colDeptID = "DeptID";
+	static final String deptTable = "Departments";
+	static final String colDeptID = "DeptId";
 	static final String colDeptName = "DeptName";
 
-	static final String viewEmps = "ViewEmps";
+	static final String viewStds = "ViewStds";
 
 	public DatabaseHelper(Context context) {
 		super(context, dbName, null, 33);
@@ -34,25 +34,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		db.execSQL("CREATE TABLE " + deptTable + " (" + colDeptID
 				+ " INTEGER PRIMARY KEY , " + colDeptName + " TEXT)");
 
-		db.execSQL("CREATE TABLE " + employeeTable + " (" + colID
+		db.execSQL("CREATE TABLE " + studentTable + " (" + colID
 				+ " INTEGER PRIMARY KEY AUTOINCREMENT, " + colName + " TEXT, "
 				+ colAge + " Integer, " + colDept
 				+ " INTEGER NOT NULL ,FOREIGN KEY (" + colDept
 				+ ") REFERENCES " + deptTable + " (" + colDeptID + "));");
 
-		db.execSQL("CREATE TRIGGER fk_empdept_deptid " + " BEFORE INSERT "
-				+ " ON " + employeeTable +
+		db.execSQL("CREATE TRIGGER fk_stddept_deptid " + " BEFORE INSERT "
+				+ " ON " + studentTable +
 
 				" FOR EACH ROW BEGIN" + " SELECT CASE WHEN ((SELECT "
 				+ colDeptID + " FROM " + deptTable + " WHERE " + colDeptID
 				+ "=new." + colDept + " ) IS NULL)"
 				+ " THEN RAISE (ABORT,'Foreign Key Violation') END;" + "  END;");
 
-		db.execSQL("CREATE VIEW " + viewEmps + " AS SELECT " + employeeTable
-				+ "." + colID + " AS _id," + " " + employeeTable + "."
-				+ colName + "," + " " + employeeTable + "." + colAge + ","
+		db.execSQL("CREATE VIEW " + viewStds + " AS SELECT " + studentTable
+				+ "." + colID + " AS _id," + " " + studentTable + "."
+				+ colName + "," + " " + studentTable + "." + colAge + ","
 				+ " " + deptTable + "." + colDeptName + "" + " FROM "
-				+ employeeTable + " JOIN " + deptTable + " ON " + employeeTable
+				+ studentTable + " JOIN " + deptTable + " ON " + studentTable
 				+ "." + colDept + " =" + deptTable + "." + colDeptID);
 		// Inserts pre-defined departments
 		InsertDepts(db);
@@ -63,17 +63,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		// TODO Auto-generated method stub
 
-		db.execSQL("DROP TABLE IF EXISTS " + employeeTable);
+		db.execSQL("DROP TABLE IF EXISTS " + studentTable);
 		db.execSQL("DROP TABLE IF EXISTS " + deptTable);
 
 		db.execSQL("DROP TRIGGER IF EXISTS dept_id_trigger");
 		db.execSQL("DROP TRIGGER IF EXISTS dept_id_trigger22");
 		db.execSQL("DROP TRIGGER IF EXISTS fk_empdept_deptid");
-		db.execSQL("DROP VIEW IF EXISTS " + viewEmps);
+		db.execSQL("DROP VIEW IF EXISTS " + viewStds);
 		onCreate(db);
 	}
 
-	void AddEmployee(Employee emp) {
+	void AddStudent(Student emp) {
 
 		SQLiteDatabase db = this.getWritableDatabase();
 
@@ -84,26 +84,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		cv.put(colDept, emp.getDept());
 		// cv.put(colDept,2);
 
-		db.insert(employeeTable, colName, cv);
+		db.insert(studentTable, colName, cv);
 		db.close();
 
 	}
 
 	int getEmployeeCount() {
 		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cur = db.rawQuery("Select * from " + employeeTable, null);
+		Cursor cur = db.rawQuery("Select * from " + studentTable, null);
 		int x = cur.getCount();
 		cur.close();
 		return x;
 	}
 
-	Cursor getAllEmployees() {
+	Cursor getAllStudents() {
 		SQLiteDatabase db = this.getWritableDatabase();
 
 		// Cursor cur=
-		// db.rawQuery("Select "+colID+" as _id , "+colName+", "+colAge+" from "+employeeTable,
+		// db.rawQuery("Select "+colID+" as _id , "+colName+", "+colAge+" from "+studentTable,
 		// new String [] {});
-		Cursor cur = db.rawQuery("SELECT * FROM " + viewEmps, null);
+		Cursor cur = db.rawQuery("SELECT * FROM " + viewStds, null);
 		return cur;
 
 	}
@@ -142,10 +142,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		return c.getString(index);
 	}
 
-	public Cursor getEmpByDept(String Dept) {
+	public Cursor getStdByDept(String Dept) {
 		SQLiteDatabase db = this.getReadableDatabase();
 		String[] columns = new String[] { "_id", colName, colAge, colDeptName };
-		Cursor c = db.query(viewEmps, columns, colDeptName + "=?",
+		Cursor c = db.query(viewStds, columns, colDeptName + "=?",
 				new String[] { Dept }, null, null, null);
 		return c;
 	}
@@ -163,20 +163,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 	}
 
-	public int UpdateEmp(Employee emp) {
+	public int UpdateStd(Student emp) {
 		SQLiteDatabase db = this.getWritableDatabase();
 		ContentValues cv = new ContentValues();
 		cv.put(colName, emp.getName());
 		cv.put(colAge, emp.getAge());
 		cv.put(colDept, emp.getDept());
-		return db.update(employeeTable, cv, colID + "=?",
+		return db.update(studentTable, cv, colID + "=?",
 				new String[] { String.valueOf(emp.getID()) });
 
 	}
 
-	public void DeleteEmp(Employee emp) {
+	public void DeleteStd(Student emp) {
 		SQLiteDatabase db = this.getWritableDatabase();
-		db.delete(employeeTable, colID + "=?",
+		db.delete(studentTable, colID + "=?",
 				new String[] { String.valueOf(emp.getID()) });
 		db.close();
 

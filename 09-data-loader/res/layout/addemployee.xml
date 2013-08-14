@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Name" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:autoText="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Age" />
+
+    <EditText
+        android:id="@+id/txtAge"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Dept" />
+
+    <Spinner
+        android:id="@+id/spinDept"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Employee" />
+
+    <TextView
+        android:id="@+id/txtEmps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of employees " />
+
+</LinearLayout>

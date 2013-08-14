@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:alignmentMode="alignBounds"
+    android:columnCount="1" >
+
+    <RadioGroup
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/RadioButton0"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/RadioButton0"
+            android:text="@string/radio_button_0" />
+
+        <RadioButton
+            android:id="@+id/RadioButton1"
+            android:text="@string/radio_button_1" />
+
+        <RadioButton
+            android:id="@+id/RadioButton2"
+            android:text="@string/radio_button_2" />
+
+        <RadioButton
+            android:id="@+id/RadioButton3"
+            android:text="@string/radio_button_3" />
+
+        <RadioButton
+            android:id="@+id/RadioButton4"
+            android:text="@string/radio_button_4" />
+
+        <RadioButton
+            android:id="@+id/RadioButton5"
+            android:text="@string/radio_button_5" />
+
+        <RadioButton
+            android:id="@+id/RadioButton6"
+            android:text="@string/radio_button_6" />
+
+        <RadioButton
+            android:id="@+id/RadioButton7"
+            android:text="@string/radio_button_7" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/trigger"
+        android:onClick="onClick"
+        android:text="Trigger Intent" >
+    </Button>
+
+</GridLayout>

@@ -1,0 +1,16 @@
+<com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center" >
+
+    <com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.MyTextView
+        android:layout_width="200dip"
+        android:layout_height="300dip"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:text="touch me" >
+    </com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.MyTextView>
+
+</com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.MyLinearLayout>

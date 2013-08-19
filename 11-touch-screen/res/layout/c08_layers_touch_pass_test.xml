@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.LayoutView1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.LayoutView2
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.MyTextView01
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="AB"
+            android:textColor="#0000FF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.LayoutView2>
+
+</com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.LayoutView1>

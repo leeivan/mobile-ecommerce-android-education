@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is res/layout/main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:tag="trueLayoutTop" >
+
+        <com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.TrueButton
+            android:id="@+id/trueBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="trueBtnTop"
+            android:text="returns true" />
+
+        <com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.FalseButton
+            android:id="@+id/falseBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trueBtn1"
+            android:tag="falseBtnTop"
+            android:text="returns false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FF00FF"
+        android:orientation="vertical"
+        android:tag="falseLayoutBottom" >
+
+        <com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.TrueButton
+            android:id="@+id/trueBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="trueBtnBottom"
+            android:text="returns true" />
+
+        <com.pinecone.technology.mcommerce.learning.android.chapter08.motionEvent.FalseButton
+            android:id="@+id/falseBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trueBtn2"
+            android:tag="falseBtnBottom"
+            android:text="returns false" />
+    </RelativeLayout>
+
+</LinearLayout>

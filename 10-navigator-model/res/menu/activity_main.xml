@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_load"
+        android:icon="@drawable/ic_action_refresh"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:title="Load"/>
+    <item
+        android:id="@+id/menu_share"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:showAsAction="ifRoom"
+        android:title="Share"/>
+    <item
+        android:id="@+id/item1"
+        android:showAsAction="ifRoom"
+        android:title="More entries...">
+    </item>
+
+</menu>
+

@@ -10,19 +10,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 	static final String dbName = "demoDB";
 	static final String studentTable = "Students";
-	static final String colID = "StdId";
+	static final String colID = "_id";
 	static final String colName = "StdName";
 	static final String colAge = "Age";
 	static final String colDept = "DeptId";
 
 	static final String deptTable = "Departments";
-	static final String colDeptID = "DeptId";
+	static final String colDeptID = "_id";
 	static final String colDeptName = "DeptName";
 
 	static final String viewStds = "ViewStds";
 
 	public DatabaseHelper(Context context) {
-		super(context, dbName, null, 33);
+		super(context, dbName, null, 55);
 
 		// TODO Auto-generated constructor stub
 	}
@@ -73,22 +73,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		onCreate(db);
 	}
 
-	public void addStudent(Student std) {
-
-		SQLiteDatabase db = this.getWritableDatabase();
-
-		ContentValues cv = new ContentValues();
-
-		cv.put(colName, std.getName());
-		cv.put(colAge, std.getAge());
-		cv.put(colDept, std.getDept());
-		// cv.put(colDept,2);
-
-		db.insert(studentTable, colName, cv);
-		db.close();
-
-	}
-
 	public int getStudentCount() {
 		SQLiteDatabase db = this.getWritableDatabase();
 		Cursor cur = db.rawQuery("Select * from " + studentTable, null);
@@ -127,8 +111,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		cv.put(colDeptID, 3);
 		cv.put(colDeptName, "班级三");
 		db.insert(deptTable, colDeptID, cv);
-		db.insert(deptTable, colDeptID, cv);
-
 	}
 
 	public String getDept(int id) {
@@ -160,25 +142,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		// new String []{Dept});
 		c.moveToFirst();
 		return c.getInt(c.getColumnIndex("_id"));
-
-	}
-
-	public int UpdateStd(Student std) {
-		SQLiteDatabase db = this.getWritableDatabase();
-		ContentValues cv = new ContentValues();
-		cv.put(colName, std.getName());
-		cv.put(colAge, std.getAge());
-		cv.put(colDept, std.getDept());
-		return db.update(studentTable, cv, colID + "=?",
-				new String[] { String.valueOf(std.getID()) });
-
-	}
-
-	public void deleteStd(Student std) {
-		SQLiteDatabase db = this.getWritableDatabase();
-		db.delete(studentTable, colID + "=?",
-				new String[] { String.valueOf(std.getID()) });
-		db.close();
 
 	}
 

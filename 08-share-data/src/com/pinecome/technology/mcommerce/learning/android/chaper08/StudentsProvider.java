@@ -21,19 +21,20 @@ public class StudentsProvider extends ContentProvider {
 	private static final String STUDENT_TABLE = "students";
 	private static final String DEPARTMENT_TABLE = "departments";
 
-	private static final int STUDENT = 1;
+	private static final int STUDENTS = 1;
 	private static final int STUDENT_ID = 2;
-	private static final int DEPARTMENT = 3;
+	private static final int DEPARTMENTS = 3;
 	private static final int DEPARTMENT_ID = 4;
 	private static final UriMatcher MATCHER;
+	private static final String TAG = "StudentsProvider";
 	private DatabaseHelper dbHelper = null;
 
 	static {
 		MATCHER = new UriMatcher(UriMatcher.NO_MATCH);
-		MATCHER.addURI(StudentsContract.AUTHORITY, "student", STUDENT);
-		MATCHER.addURI(StudentsContract.AUTHORITY, "student/#", STUDENT_ID);
-		MATCHER.addURI(StudentsContract.AUTHORITY, "department", DEPARTMENT);
-		MATCHER.addURI(StudentsContract.AUTHORITY, "department/#",
+		MATCHER.addURI(StudentsContract.AUTHORITY, "students", STUDENTS);
+		MATCHER.addURI(StudentsContract.AUTHORITY, "students/#", STUDENT_ID);
+		MATCHER.addURI(StudentsContract.AUTHORITY, "departments", DEPARTMENTS);
+		MATCHER.addURI(StudentsContract.AUTHORITY, "departments/#",
 				DEPARTMENT_ID);
 	}
 	private static HashMap<String, String> sStudentProjectionMap;
@@ -67,11 +68,11 @@ public class StudentsProvider extends ContentProvider {
 	public String getType(Uri url) {
 		final int match = MATCHER.match(url);
 		switch (match) {
-		case STUDENT:
+		case STUDENTS:
 			return StudentsContract.Student.CONTENT_TYPE;
 		case STUDENT_ID:
 			return StudentsContract.Student.CONTENT_ITEM_TYPE;
-		case DEPARTMENT:
+		case DEPARTMENTS:
 			return StudentsContract.Department.CONTENT_TYPE;
 		case DEPARTMENT_ID:
 			return StudentsContract.Department.CONTENT_ITEM_TYPE;
@@ -83,12 +84,12 @@ public class StudentsProvider extends ContentProvider {
 	@Override
 	public Cursor query(Uri url, String[] projection, String selection,
 			String[] selectionArgs, String sort) {
-		Log.d("Provider", "query");
+		Log.d(TAG, "query");
 		SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
 		Cursor c = null;
 		String orderBy = null;
 		switch (MATCHER.match(url)) {
-		case STUDENT:
+		case STUDENTS:
 			qb.setTables(STUDENT_TABLE);
 			qb.setProjectionMap(sStudentProjectionMap);
 			if (TextUtils.isEmpty(sort)) {
@@ -103,7 +104,7 @@ public class StudentsProvider extends ContentProvider {
 			qb.appendWhere(StudentsContract.Student._ID + "="
 					+ url.getPathSegments().get(1));
 			break;
-		case DEPARTMENT:
+		case DEPARTMENTS:
 			qb.setTables(DEPARTMENT_TABLE);
 			qb.setProjectionMap(sStudentProjectionMap);
 			if (TextUtils.isEmpty(sort)) {
@@ -128,7 +129,7 @@ public class StudentsProvider extends ContentProvider {
 
 	@Override
 	public Uri insert(Uri url, ContentValues initialValues) {
-		if (MATCHER.match(url) != STUDENT) {
+		if (MATCHER.match(url) != STUDENTS) {
 			throw new IllegalArgumentException("Unknown URI " + url);
 		}
 		if (initialValues.containsKey(StudentsContract.Student.NAME) == false) {
@@ -151,7 +152,7 @@ public class StudentsProvider extends ContentProvider {
 		SQLiteDatabase db = dbHelper.getWritableDatabase();
 		int count;
 		switch (MATCHER.match(url)) {
-		case STUDENT:
+		case STUDENTS:
 			count = db.delete(STUDENT_TABLE, where, whereArgs);
 			break;
 		case STUDENT_ID:
@@ -177,7 +178,7 @@ public class StudentsProvider extends ContentProvider {
 		SQLiteDatabase db = dbHelper.getWritableDatabase();
 		int count;
 		switch (MATCHER.match(url)) {
-		case STUDENT:
+		case STUDENTS:
 			count = db.update(STUDENT_TABLE, values, where, whereArgs);
 			break;
 

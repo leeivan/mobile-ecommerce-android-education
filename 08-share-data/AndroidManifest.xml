@@ -5,8 +5,17 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="17" />
+
+    <permission
+        android:name="com.pinecone.technology.studentprovider.read"
+        android:protectionLevel="dangerous" >
+    </permission>
+    <permission
+        android:name="com.pinecone.technology.studentprovider.write"
+        android:protectionLevel="dangerous" >
+    </permission>
 
     <application
         android:allowBackup="true"
@@ -15,7 +24,10 @@
         android:theme="@style/AppTheme" >
         <provider
             android:name=".StudentsProvider"
-            android:authorities="com.pinecone.technology.studentProvider" >
+            android:authorities="com.pinecone.technology.studentprovider"
+            android:exported="true"
+            android:readPermission="com.pinecone.technology.studentprovider.read"
+            android:writePermission="com.pinecone.technology.studentprovider.write" >
         </provider>
     </application>
 

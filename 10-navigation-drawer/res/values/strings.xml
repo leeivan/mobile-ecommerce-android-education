@@ -9,9 +9,11 @@
     <string name="hello_world">Hello world!</string>
 
     <string-array name="operating_systems">
-        <item>Android</item>
-        <item>iPhone</item>
-        <item>Windows Mobile</item>
+        <item>Google Android</item>
+        <item>Apple iPhone</item>
+        <item>Microsoft Windows Mobile</item>
+        <item>RIM BlackBerry</item>
+        <item>Linux</item>
     </string-array>
 
 </resources>

@@ -37,6 +37,12 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 				.setTabListener(this));
 		actionBar.addTab(actionBar.newTab().setText(R.string.title_section3)
 				.setTabListener(this));
+		actionBar.addTab(actionBar.newTab().setText(R.string.title_section3)
+				.setTabListener(this));
+		actionBar.addTab(actionBar.newTab().setText(R.string.title_section3)
+				.setTabListener(this));
+		actionBar.addTab(actionBar.newTab().setText(R.string.title_section3)
+				.setTabListener(this));
 	}
 
 	@Override

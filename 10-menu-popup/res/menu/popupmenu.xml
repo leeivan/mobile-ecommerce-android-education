@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/group_popupmenu" >
+        <item
+            android:id="@+id/menu1"
+            android:title="Popup menu item 1"/>
+        <item
+            android:id="@+id/menu2"
+            android:title="Popup menu item 2"/>
+        <item
+            android:id="@+id/menu3"
+            android:title="Popup menu item 3"/>
+    </group>
+
+</menu>

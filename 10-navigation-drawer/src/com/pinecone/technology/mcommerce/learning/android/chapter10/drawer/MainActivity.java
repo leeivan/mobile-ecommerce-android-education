@@ -27,8 +27,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		title = getActionBar().getTitle();
-		mOperaterSystems = getResources()
-				.getStringArray(R.array.operating_systems);
+		mOperaterSystems = getResources().getStringArray(
+				R.array.operating_systems);
 		System.out.println(mOperaterSystems.length);
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 		mDrawerList = (ListView) findViewById(R.id.left_drawer);
@@ -118,7 +118,8 @@ public class MainActivity extends Activity {
 		// position
 		Fragment fragment = new OpertingSystemFragment();
 		Bundle args = new Bundle();
-		args.putString(OpertingSystemFragment.ARG_OS, mOperaterSystems[position]);
+		args.putString(OpertingSystemFragment.ARG_OS,
+				mOperaterSystems[position]);
 		fragment.setArguments(args);
 
 		// Insert the fragment by replacing any existing fragment

@@ -14,12 +14,85 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.pinecone.technology.mcommerce.learning.android.chapter11.MainActivity"
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter11.SampleForMCommerce"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Chapter08 -->
+        <activity
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter11.motionEvent.OnTouchListenerOnTouchEventActivity"
+            android:label="@string/multiTouch_motionEvent_demo01" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_11" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter11.motionEvent.InterceptTouchActivity"
+            android:label="@string/multiTouch_motionEvent_intercept" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_11" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter11.motionEvent.VelocityTrackerActivity"
+            android:label="@string/multiTouch_motionEvent_velocityTracker" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_11" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter11.multiTouch.MultiTouchActivity"
+            android:label="@string/multiTouch_multi_touch" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_11" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter11.dragdrop.DragDropFragDemoActivity"
+            android:label="@string/multiTouch_drag_drop_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_11" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pinecone.techonolgy.mcommerce.learning.android.chapter11.touchDrag.TouchDragActivity"
+            android:label="@string/multiTouch_drag_touch_demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_11" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter11.gestures.ScaleDetectorActivity"
+            android:label="@string/multiTouch_scale_detector" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_11" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter11.gestures.GestureRevealerActivity"
+            android:label="@string/multiTouch_gesture_revealer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_11" />
             </intent-filter>
         </activity>
     </application>

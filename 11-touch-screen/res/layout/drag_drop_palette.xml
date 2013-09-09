@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This file is res/layout/palette.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:dot="http://schemas.android.com/apk/res/com.google.mcommerce.sample.android"
+    xmlns:dot="http://schemas.android.com/apk/res/com.pinecone.technology.mcommerce.learning.android.chapter11"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.pinecone.technology.mcommerce.learning.android.chapter08.dragAndDrop.Dot
+    <com.pinecone.technology.mcommerce.learning.android.chapter11.dragdrop.Dot
         android:id="@+id/dot1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         dot:radius="20dp"
         dot:color="#ff1111ff" />
 
-    <com.pinecone.technology.mcommerce.learning.android.chapter08.dragAndDrop.Dot
+    <com.pinecone.technology.mcommerce.learning.android.chapter11.dragdrop.Dot
         android:id="@+id/dot2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

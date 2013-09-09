@@ -1,4 +1,4 @@
-package com.pinecone.technology.mcommerce.learning.android.chapter08.dragAndDrop;
+package com.pinecone.technology.mcommerce.learning.android.chapter11.dragdrop;
 
 // This file is Dot.java
 

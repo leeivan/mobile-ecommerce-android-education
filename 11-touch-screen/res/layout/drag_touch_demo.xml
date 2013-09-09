@@ -38,7 +38,7 @@
       android:padding="10dp" />
   </LinearLayout>
 
-  <com.pinecone.technology.mcommerce.learning.android.chapter08.touchDrag.Dot
+  <com.pinecone.techonolgy.mcommerce.learning.android.chapter11.touchDrag.Dot
     android:id="@+id/dot"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" />

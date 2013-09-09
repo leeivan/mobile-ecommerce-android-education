@@ -6,5 +6,13 @@
     <string name="hello_world">Hello world!</string>
     <string name="hello">TODO</string>
     <string name="menu_settings">TODO</string>
+    <string name="multiTouch_motionEvent_demo01">MotionEvent/Demo1</string>
+    <string name="multiTouch_motionEvent_intercept">MotionEvent/Intercept</string>
+    <string name="multiTouch_motionEvent_velocityTracker">MotionEvent/VelocityTracker</string>
+    <string name="multiTouch_drag_drop_demo">DragDrop</string>
+    <string name="multiTouch_drag_touch_demo">TouchDrag</string>
+    <string name="multiTouch_multi_touch">MultiTouch</string>
+    <string name="multiTouch_scale_detector">Gesture/ScaleDetector</string>
+    <string name="multiTouch_gesture_revealer">Gesture/Revealer</string>
 
 </resources>

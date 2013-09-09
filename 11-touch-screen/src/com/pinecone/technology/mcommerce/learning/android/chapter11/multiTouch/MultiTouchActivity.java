@@ -1,4 +1,4 @@
-package com.pinecone.technology.mcommerce.learning.android.chapter08.multiTouch;
+package com.pinecone.technology.mcommerce.learning.android.chapter11.multiTouch;
 
 // This file is MainActivity.java
 import android.app.Activity;
@@ -18,7 +18,7 @@ public class MultiTouchActivity extends Activity implements OnTouchListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c08_multi_touch_layout);
+		setContentView(R.layout.multi_touch_layout);
 
 		RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.layout1);
 		layout1.setOnTouchListener(this);

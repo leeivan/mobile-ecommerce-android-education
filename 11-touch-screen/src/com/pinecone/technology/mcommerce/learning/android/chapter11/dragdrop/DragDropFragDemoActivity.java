@@ -1,4 +1,4 @@
-package com.pinecone.technology.mcommerce.learning.android.chapter08.dragAndDrop;
+package com.pinecone.technology.mcommerce.learning.android.chapter11.dragdrop;
 
 //This file is MainActivity.java
 
@@ -12,6 +12,6 @@ public class DragDropFragDemoActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c08_drag_drop_demo);
+		setContentView(R.layout.drag_drop_demo);
 	}
 }

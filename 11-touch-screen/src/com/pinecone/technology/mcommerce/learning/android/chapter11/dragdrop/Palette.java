@@ -1,4 +1,4 @@
-package com.pinecone.technology.mcommerce.learning.android.chapter08.dragAndDrop;
+package com.pinecone.technology.mcommerce.learning.android.chapter11.dragdrop;
 
 // This file is Palette.java
 import android.app.Fragment;
@@ -14,7 +14,7 @@ public class Palette extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle icicle) {
-		View v = inflater.inflate(R.layout.c08_drag_drop_palette, container,
+		View v = inflater.inflate(R.layout.drag_drop_palette, container,
 				false);
 		return v;
 	}

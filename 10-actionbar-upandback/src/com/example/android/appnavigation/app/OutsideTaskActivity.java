@@ -27,6 +27,7 @@ public class OutsideTaskActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.outside_task);
+        
     }
 
     public void onViewContent(View v) {

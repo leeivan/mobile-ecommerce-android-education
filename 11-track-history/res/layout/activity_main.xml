@@ -1,0 +1,10 @@
+<com.pinecone.technology.mcommerce.learning.android.chapter11.trackhistory.MyLayoutView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="200dip"
+    android:layout_gravity="center"
+    android:background="#ff0000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:tag="My Layout" >
+
+</com.pinecone.technology.mcommerce.learning.android.chapter11.trackhistory.MyLayoutView>

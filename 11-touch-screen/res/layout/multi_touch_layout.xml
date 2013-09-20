@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_weight="1"
     android:orientation="vertical"
-    android:tag="trueLayout" >
+    android:tag="multi_touch" >
 
     <TextView
         android:id="@+id/message"

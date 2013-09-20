@@ -21,23 +21,36 @@ import com.example.android.appnavigation.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ContentViewActivity extends Activity {
-    public static final String EXTRA_TEXT = "com.example.android.appnavigation.EXTRA_TEXT";
+	public static final String EXTRA_TEXT = "com.example.android.appnavigation.EXTRA_TEXT";
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_view);
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.content_view);
+		Intent intent = getIntent();
+		if (Intent.ACTION_VIEW.equals(intent.getAction())) {
+			TextView tv = (TextView) findViewById(R.id.status_text);
+			tv.setText("Viewing content from ACTION_VIEW");
+		} else if (intent.hasExtra(EXTRA_TEXT)) {
+			TextView tv = (TextView) findViewById(R.id.status_text);
+			tv.setText(intent.getStringExtra(EXTRA_TEXT));
+		}
+	}
 
-        Intent intent = getIntent();
-        if (Intent.ACTION_VIEW.equals(intent.getAction())) {
-            TextView tv = (TextView) findViewById(R.id.status_text);
-            tv.setText("Viewing content from ACTION_VIEW");
-        } else if (intent.hasExtra(EXTRA_TEXT)) {
-            TextView tv = (TextView) findViewById(R.id.status_text);
-            tv.setText(intent.getStringExtra(EXTRA_TEXT));
-        }
-    }
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// TODO Auto-generated method stub
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			Intent upintent = new Intent(this, AppNavHomeActivity.class);
+			startActivity(upintent);
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
 }

@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.pinecone.technology.mcommerce.learning.android.chapter04.R;
 
-public class TextViewActivity extends Activity {
+public class TextViewModifyByCodeActivity extends Activity {
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:autoLink="web"
-        android:text="@string/taobao_Mcommerce_android"
+        android:text="@string/sample_Mcommerce_android"
         android:textColor="#ff0000"
         android:textSize="24sp"
         android:textStyle="bold" />

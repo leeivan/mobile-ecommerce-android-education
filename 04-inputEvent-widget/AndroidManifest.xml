@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".text.TextViewActivity"
+            android:name=".text.TextViewModifyByCodeActivity"
             android:label="@string/textView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,7 +40,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".text.TextViewActivity01"
+            android:name=".text.AutoCompleteTextViewActivity"
             android:label="@string/textview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,7 +49,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".text.TextViewWebActivity"
+            android:name=".text.AutoLinkActivity"
             android:label="@string/textView_web" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -94,33 +94,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".button.RadioGroupActivity"
-            android:label="@string/radio_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce_04" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".button.CheckBoxActivity"
-            android:label="@string/checkbox_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce_04" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".button.ButtonActivity"
-            android:label="@string/button_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="SampleForMCommerce_04" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".intent.ActivityFirst"
             android:label="@string/IntentDataTransfer" >
             <intent-filter>
@@ -146,7 +119,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".button.RadioGroupActivity01"
+            android:name=".button.RadioGroupDemoActivity"
             android:label="@string/radioGroup" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -155,8 +128,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".button.CheckBoxActivity01"
+            android:name=".button.CheckBoxDemoActivity"
             android:label="@string/checkBox" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".button.ButtonActivity"
+            android:label="@string/button_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -166,6 +148,15 @@
         <activity
             android:name=".dialog.SimpleConfirmationDialogFragmentActivity"
             android:label="@string/dialog_fragment" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".dialog.ToastCustomActivity"
+            android:label="@string/dialog_toast" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

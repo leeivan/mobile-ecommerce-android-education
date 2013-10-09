@@ -6,10 +6,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.Toast;
 
 import com.pinecone.technology.mcommerce.learning.android.chapter04.R;
 
-public class CheckBoxActivity01 extends Activity {
+public class CheckBoxDemoActivity extends Activity {
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -27,14 +28,21 @@ public class CheckBoxActivity01 extends Activity {
 		fishCB.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
 			public void onCheckedChanged(CompoundButton arg0, boolean isChecked) {
-				Log.v("CheckBoxActivity", "The fish checkbox is now "
-						+ (isChecked ? "checked" : "not checked"));
+				Toast.makeText(
+						CheckBoxDemoActivity.this,
+						"The fish checkbox is now "
+								+ (isChecked ? "checked" : "not checked"),
+						Toast.LENGTH_SHORT).show();
+
 			}
 		});
 	}
 
 	public void doClick(View view) {
-		Log.v("CheckBoxActivity", "The steak checkbox is now "
-				+ (((CheckBox) view).isChecked() ? "checked" : "not checked"));
+		Toast.makeText(
+				this,
+				"The steak checkbox is now "
+						+ (((CheckBox) view).isChecked() ? "checked"
+								: "not checked"), Toast.LENGTH_SHORT).show();
 	}
 }

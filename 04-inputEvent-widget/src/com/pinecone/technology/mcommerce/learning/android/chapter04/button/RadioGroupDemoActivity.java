@@ -27,7 +27,7 @@ import android.widget.TextView;
 
 import com.pinecone.technology.mcommerce.learning.android.chapter04.R;
 
-public class RadioGroupActivity extends Activity implements
+public class RadioGroupDemoActivity extends Activity implements
 		RadioGroup.OnCheckedChangeListener, View.OnClickListener {
 
 	private TextView mChoice;
@@ -52,8 +52,10 @@ public class RadioGroupActivity extends Activity implements
 		// test listening to checked change events
 		String selection = getString(R.string.radio_group_selection);
 		mRadioGroup.setOnCheckedChangeListener(this);
+		RadioButton defauld = (RadioButton) findViewById(mRadioGroup
+				.getCheckedRadioButtonId());
 		mChoice = (TextView) findViewById(R.id.choice);
-		mChoice.setText(selection + mRadioGroup.getCheckedRadioButtonId());
+		mChoice.setText(selection + defauld.getText());
 
 		// test clearing the selection
 		Button clearButton = (Button) findViewById(R.id.clear);
@@ -62,9 +64,10 @@ public class RadioGroupActivity extends Activity implements
 
 	public void onCheckedChanged(RadioGroup group, int checkedId) {
 		String selection = getString(R.string.radio_group_selection);
+		RadioButton checked = (RadioButton) findViewById(checkedId);
 		String none = getString(R.string.radio_group_none);
 		mChoice.setText(selection
-				+ (checkedId == View.NO_ID ? none : checkedId));
+				+ (checkedId == View.NO_ID ? none : checked.getText()));
 	}
 
 	public void onClick(View v) {

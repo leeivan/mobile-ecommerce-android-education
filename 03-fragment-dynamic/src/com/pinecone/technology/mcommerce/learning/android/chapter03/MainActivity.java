@@ -48,6 +48,7 @@ public class MainActivity extends Activity implements
 		// fragment,
 		// and add the transaction to the back stack so the user can navigate
 		// back
+		transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
 		transaction.replace(R.id.fragment_container, newFragment);
 		transaction.addToBackStack(null);
 		// Commit the transaction

@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="17" />
 
     <application
@@ -13,7 +13,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.google.mcommerce.sample.android.SampleForMCommerce" >
+        <activity android:name=".SampleForMCommerce" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,105 +22,114 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.SimpleEventActivity"
+            android:name=".SimpleEventActivity"
             android:label="@string/simple_event" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.text.TextViewActivity"
+            android:name=".text.TextViewActivity"
             android:label="@string/textView" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.text.TextViewActivity01"
+            android:name=".text.TextViewActivity01"
             android:label="@string/textview_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.text.TextViewWebActivity"
+            android:name=".text.TextViewWebActivity"
             android:label="@string/textView_web" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.text.EditTextActivity"
+            android:name=".text.SpannableActivity"
+            android:label="@string/text_style" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".text.EditTextActivity"
             android:label="@string/editText" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.text.EditTextSearchActivity"
+            android:name=".text.EditTextSearchActivity"
             android:label="@string/editText_search" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.DateTimePickerActivity"
+            android:name=".DateTimePickerActivity"
             android:label="@string/datetimepicker_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.button.RadioGroupActivity"
+            android:name=".button.RadioGroupActivity"
             android:label="@string/radio_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.button.CheckBoxActivity"
+            android:name=".button.CheckBoxActivity"
             android:label="@string/checkbox_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.button.ButtonActivity"
+            android:name=".button.ButtonActivity"
             android:label="@string/button_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.intent.ActivityFirst"
+            android:name=".intent.ActivityFirst"
             android:label="@string/IntentDataTransfer" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
-        <activity android:name="com.google.mcommerce.sample.android.chapter04.intent.ActivitySecondySecond" >
+        <activity android:name=".intent.ActivitySecondySecond" >
             <intent-filter>
                 <action android:name="com.android.activity.MY_ACTION" />
 
@@ -128,33 +137,41 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.intent.CallIntentsActivity"
+            android:name=".intent.CallIntentsActivity"
             android:label="@string/implicitIntent" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.button.RadioGroupActivity01"
+            android:name=".button.RadioGroupActivity01"
             android:label="@string/radioGroup" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.google.mcommerce.sample.android.chapter04.button.CheckBoxActivity01"
+            android:name=".button.CheckBoxActivity01"
             android:label="@string/checkBox" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="SampleForMCommerce" />
+                <category android:name="SampleForMCommerce_04" />
             </intent-filter>
         </activity>
-        
+        <activity
+            android:name=".dialog.SimpleConfirmationDialogFragmentActivity"
+            android:label="@string/dialog_fragment" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

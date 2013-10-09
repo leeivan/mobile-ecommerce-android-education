@@ -2,7 +2,6 @@ package com.pinecone.technology.mcommerce.learning.android.chapter04.button;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;

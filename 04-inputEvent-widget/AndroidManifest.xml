@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="14"
         android:targetSdkVersion="17" />
 
     <application
@@ -137,7 +137,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".button.ButtonActivity"
+            android:name=".button.ButtonStyleActivity"
             android:label="@string/button_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

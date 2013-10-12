@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter05.broadcastReceiver;
+package com.pinecone.technology.mcommerce.learning.android.chapter05.broadcastReceiver;
 
 import android.util.Log;
 

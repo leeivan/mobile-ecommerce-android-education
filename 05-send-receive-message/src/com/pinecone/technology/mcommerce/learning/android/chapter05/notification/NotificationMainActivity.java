@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter05.notification;
+package com.pinecone.technology.mcommerce.learning.android.chapter05.notification;
 
 import android.app.Activity;
 import android.app.Notification;
@@ -18,12 +18,12 @@ public class NotificationMainActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.c05_activity_main);
+		setContentView(R.layout.c05_notification);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.c09_activity_main, menu);
+		getMenuInflater().inflate(R.menu.c05_activity_main, menu);
 		return true;
 	}
 

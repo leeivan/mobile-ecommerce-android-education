@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter05.notification;
+package com.pinecone.technology.mcommerce.learning.android.chapter05.notification;
 
 import android.app.Activity;
 import android.os.Bundle;

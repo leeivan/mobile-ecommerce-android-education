@@ -1,17 +1,17 @@
-package com.google.mcommerce.sample.android.chapter05.alarm;
+package com.pinecone.technology.mcommerce.learning.android.chapter05.broadcastReceiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-public class TestReceiver extends BroadcastReceiver {
-	private static final String tag = "TestReceiver";
+public class TestReceiver2 extends BroadcastReceiver {
+	private static final String tag = "TestReceiver2";
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		Utils.logThreadSignature();
-		Log.d("TestReceiver", "intent=" + intent);
+		Utils.logThreadSignature(tag);
+		Log.d(tag, "intent=" + intent);
 		String message = intent.getStringExtra("message");
 		Log.d(tag, message);
 	}

@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter05.broadcastReceiver;
+package com.pinecone.technology.mcommerce.learning.android.chapter05.broadcastReceiver;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -63,14 +63,15 @@ public class TestBCRActivity extends Activity {
 
 		// Create an intent with an action
 		Intent broadcastIntent = new Intent(
-				"com.google.mcommerce.sample.android.chapter09.test");
+				"com.pinecone.technology.mcommerce.learning.android.chapter05.RECEIVER_ACTION");
 		// load up the intent with a message
 		// you want to broadcast
-		broadcastIntent.putExtra("message", "Hello world");
+		broadcastIntent.putExtra("message", "Hello mobile world");
 
 		// send out the broadcast
 		// there may be multiple receivers receiving it
-		this.sendBroadcast(broadcastIntent);
+//		this.sendBroadcast(broadcastIntent);
+		this.sendOrderedBroadcast(broadcastIntent,null);
 
 		// Log a message after sending the broadcast
 		// This message should appear first in the log file

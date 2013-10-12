@@ -1,9 +1,11 @@
-package com.google.mcommerce.sample.android.chapter05.alarm;
+package com.pinecone.technology.mcommerce.learning.android.chapter05.alarm;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+
+import com.pinecone.technology.mcommerce.learning.android.chapter05.broadcastReceiver.TestReceiver;
 
 public class CancelRepeatingAlarmTester extends SendRepeatingAlarmTester {
 	private static String tag = "CancelRepeatingAlarmTester";

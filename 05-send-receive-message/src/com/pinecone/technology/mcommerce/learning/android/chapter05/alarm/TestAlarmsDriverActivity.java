@@ -1,4 +1,4 @@
-package com.google.mcommerce.sample.android.chapter05.alarm;
+package com.pinecone.technology.mcommerce.learning.android.chapter05.alarm;
 
 import android.app.Activity;
 import android.os.Bundle;

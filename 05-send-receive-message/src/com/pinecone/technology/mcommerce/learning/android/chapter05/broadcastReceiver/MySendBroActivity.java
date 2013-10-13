@@ -18,6 +18,7 @@ public class MySendBroActivity extends Activity {
 	private Button registerReceiver;
 	private Button unregisterReceiver;
 	private TestReceiver receiver;
+	private Button btnBroadcastSticky;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,17 @@ public class MySendBroActivity extends Activity {
 				sendBroadcast(intent);
 			}
 		});
-
+		btnBroadcastSticky = (Button) findViewById(R.id.btnBroadcast_sticky);
+		// 创建事件监听器
+		btnBroadcastSticky.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setAction(ACTION);
+				intent.putExtra("message", "Hello mobile world");
+				sendStickyBroadcast(intent);
+			}
+		});
 		registerReceiver = (Button) findViewById(R.id.btnregisterReceiver);
 		// 创建事件监听器
 		registerReceiver.setOnClickListener(new OnClickListener() {

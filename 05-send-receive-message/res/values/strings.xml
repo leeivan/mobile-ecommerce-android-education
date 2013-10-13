@@ -7,7 +7,7 @@
     <string name="alarm">AlarmManager</string>
     <string name="broadcast_register">BroadCastReceiver/Register And Unregister</string>
     <string name="broadcast_send">BroadCastReceiver/Send By Order</string>
-    <string name="broadcast_battery">BroadCastReceiver/Battery</string>
+    <string name="broadcast_battery">BroadCastReceiver/Battery Check</string>
     <string name="title_activity_main">Notification</string>
     <string name="btBasicNotification">Send Basic Notification</string>
     <string name="btBigTextNotification">Send Big Text Style Notification</string>

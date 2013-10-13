@@ -9,7 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="发送广播" />
-
+	<Button
+        android:id="@+id/btnBroadcast_sticky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送广播_sticky" />
     <Button
         android:id="@+id/btnregisterReceiver"
         android:layout_width="match_parent"

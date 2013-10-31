@@ -28,6 +28,42 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter05.intent.ActivityFirst"
+            android:label="@string/IntentDataTransfer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_05" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pinecone.technology.mcommerce.learning.android.chapter05.intent.ActivitySecond" >
+        </activity>
+        <activity
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter05.intent.ActionDataActivity"
+            android:label="@string/ActionData" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_05" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter05.intent.IntentFilterActivity"
+            android:label="@string/IntentFilter" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_05" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pinecone.technology.mcommerce.learning.android.chapter05.intent.BasicViewActivity" >
+            <intent-filter>
+                <action android:name="com.pinecone.intent.action.ShowBasicView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.pinecone.technology.mcommerce.learning.android.chapter05.notification.NotificationMainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>

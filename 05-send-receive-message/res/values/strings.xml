@@ -4,9 +4,10 @@
     <string name="app_name">05-send-receive-message</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="IntentDataTransfer">Intent/Data Transfer</string>
-    <string name="ActionData">Intent/Action Data Combo</string>
-    <string name="IntentFilter">Intent/Intent Filter</string>
+    <string name="IntentDataTransfer">Intent Function/Data Transfer</string>
+    <string name="ActionData">Intent Function/Action Data Combo</string>
+    <string name="ImplicitIntent">Intent Function/Implicit Intent</string>
+    <string name="ImagePick">Intent Function/Pick Up Image</string>
     <string name="alarm">AlarmManager</string>
     <string name="broadcast_register">BroadCastReceiver/Register And Unregister</string>
     <string name="broadcast_send">BroadCastReceiver/Send By Order</string>

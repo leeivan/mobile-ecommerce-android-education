@@ -48,8 +48,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pinecone.technology.mcommerce.learning.android.chapter05.intent.IntentFilterActivity"
-            android:label="@string/IntentFilter" >
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter05.intent.ImplicitIntentActivity"
+            android:label="@string/ImplicitIntent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_05" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter05.intent.ImagePickActivity"
+            android:label="@string/ImagePick" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

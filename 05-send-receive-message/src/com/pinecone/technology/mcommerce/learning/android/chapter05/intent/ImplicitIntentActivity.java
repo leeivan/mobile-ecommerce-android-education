@@ -18,7 +18,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class IntentFilterActivity extends Activity {
+public class ImplicitIntentActivity extends Activity {
 
 	private final static String tag = "IntentFilterActivity";
 

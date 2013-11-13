@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android" > <!-- label为搜索框上方的文本，hint搜索框里面的提示文本 -->
+	android:label="@string/search_label"
+	android:hint="@string/search_hint"
+	android:icon="@drawable/search32"
+	android:searchMode="showSearchLabelAsBadge"
+
+    <!-- 中间是语音搜索配置（看不懂....） -->
+	android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+	android:voiceLanguageModel="free_form"
+	android:voicePromptText="Invoke Search"
+    <!-- 这里的值必须SearchSuggestionSampleProvider.AUTHORITY相同，后面讲 -->
+	android:searchSuggestAuthority="SuggestionProvider"	
+	android:searchSuggestSelection=" ? ">    
+
+</searchable>

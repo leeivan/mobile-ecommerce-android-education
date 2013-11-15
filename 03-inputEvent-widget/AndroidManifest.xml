@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pinecone.technology.mcommerce.learning.android.chapter04"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".SampleForMCommerce" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SimpleEventActivity"
+            android:label="@string/simple_event" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".text.TextViewModifyByCodeActivity"
+            android:label="@string/textView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".text.AutoCompleteTextViewActivity"
+            android:label="@string/textview_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".text.AutoLinkActivity"
+            android:label="@string/textView_web" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".text.SpannableActivity"
+            android:label="@string/text_style" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".text.EditTextActivity"
+            android:label="@string/editText" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".text.EditTextSearchActivity"
+            android:label="@string/editText_search" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DateTimePickerActivity"
+            android:label="@string/datetimepicker_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".intent.ActivityFirst"
+            android:label="@string/IntentDataTransfer" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".intent.ActivitySecondySecond" >
+            <intent-filter>
+                <action android:name="com.android.activity.MY_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".intent.CallIntentsActivity"
+            android:label="@string/implicitIntent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".button.RadioGroupDemoActivity"
+            android:label="@string/radioGroup" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".button.CheckBoxDemoActivity"
+            android:label="@string/checkBox" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".button.ButtonStyleActivity"
+            android:label="@string/button_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".dialog.SimpleConfirmationDialogFragmentActivity"
+            android:label="@string/dialog_fragment" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".dialog.ToastCustomActivity"
+            android:label="@string/dialog_toast" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="SampleForMCommerce_04" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>06-music-store-sqlite</groupId>
+  <artifactId>06-music-store-sqlite</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>src-test</testSourceDirectory>
+  </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>de.greenrobot</groupId>
+  		<artifactId>greendao</artifactId>
+  		<version>1.3.4</version>
+  	</dependency>
+  </dependencies>
+</project>

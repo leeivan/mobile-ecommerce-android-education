@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pinecone.technology.mcommerce.learning.android.chapter07.musicstore"
+    package="com.pinecone.technology.mcommerce.learning.android.chapter06.musicstore"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.pinecone.technology.mcommerce.learning.android.chapter07.musicstore.MainActivity"
+            android:name="com.pinecone.technology.mcommerce.learning.android.chapter06.musicstore.MainActivity01"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

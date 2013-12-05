@@ -5,10 +5,10 @@ import java.util.List;
 
 import android.app.Application;
 
-import com.pinecone.technology.mcommerce.learning.android.chapter07.example.dao.DaoMaster;
-import com.pinecone.technology.mcommerce.learning.android.chapter07.example.dao.DaoSession;
-import com.pinecone.technology.mcommerce.learning.android.chapter07.example.dao.Invoice;
-import com.pinecone.technology.mcommerce.learning.android.chapter07.example.dao.InvoiceLine;
+import com.pinecone.technology.mcommerce.learning.android.chapter06.example.dao.DaoMaster;
+import com.pinecone.technology.mcommerce.learning.android.chapter06.example.dao.DaoSession;
+import com.pinecone.technology.mcommerce.learning.android.chapter06.example.dao.Invoice;
+import com.pinecone.technology.mcommerce.learning.android.chapter06.example.dao.InvoiceLine;
 
 import de.greenrobot.dao.test.AbstractDaoSessionTest;
 

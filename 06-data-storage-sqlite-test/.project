@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>07-data-storage-sqlite-test</name>
+	<name>06-data-storage-sqlite-test</name>
 	<comment></comment>
 	<projects>
 		<project>07-data-storage-sqlite</project>
